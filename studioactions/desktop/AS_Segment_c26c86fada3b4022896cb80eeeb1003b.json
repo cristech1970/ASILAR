@@ -1,0 +1,908 @@
+{
+    "AS_Segment_c26c86fada3b4022896cb80eeeb1003b": {
+        "id": "AS_Segment_c26c86fada3b4022896cb80eeeb1003b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmClientesGrid",
+            "type": "forms",
+            "KUID": "c7ce286d250148a2b059a2a16d99809d"
+        },
+        "language": "js",
+        "eventType": "onRowClick",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__f8082e47e28246888a5c8aa3edf9b96a",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmClientesDetails",
+            "formKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+            "projectName": "ASILAR",
+            "mappings": {
+                "ME_Mapping_ede574a53b4947b085b00af425211180": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ede574a53b4947b085b00af425211180",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblId1",
+                        "propertyKey": "segClientes_lblId1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "bb39992d83f84f438886eecc2ed142a6",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblId1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_fd59d231e84249aa955ee8d62dcad36c": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_fd59d231e84249aa955ee8d62dcad36c",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblInativoData1",
+                        "propertyKey": "segClientes_lblInativoData1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "d82550fdbe63417abcc41287388770b9",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblInativoData1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_j3b375720c434648ac61c1544cd52007": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_j3b375720c434648ac61c1544cd52007",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblInativoMotivo1",
+                        "propertyKey": "segClientes_lblInativoMotivo1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "bb2f2eedb0b04779be8ea57afe57ee2f",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblInativoMotivo1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_d13b3a85ef55433dae22fe021d7bd9a9": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_d13b3a85ef55433dae22fe021d7bd9a9",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblObitoDocumento1",
+                        "propertyKey": "segClientes_lblObitoDocumento1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "e3906d9422b74b88afcb90954cfde888",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblObitoDocumento1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_d52de9913d744c90abca94451ff9602a": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_d52de9913d744c90abca94451ff9602a",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblInativoDetalhes1",
+                        "propertyKey": "segClientes_lblInativoDetalhes1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "eb0f3b5b3434493d8f5d586ebeba30ca",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblInativoDetalhes1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_bb1590f2ab2645a6869a1cde402e8cbc": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_bb1590f2ab2645a6869a1cde402e8cbc",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblNacionalidade1",
+                        "propertyKey": "segClientes_lblNacionalidade1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "d8f743a021e5490eacb5f04d60d9d48a",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblNacionalidade1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_b043dbd013e7451bbeebd4e32c66b8c8": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_b043dbd013e7451bbeebd4e32c66b8c8",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblNaturalidade1",
+                        "propertyKey": "segClientes_lblNaturalidade1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "afefec8e5a644b36ba974c5979a56ea3",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblNaturalidade1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ged8650739eb4617960087aeb77f1b23": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ged8650739eb4617960087aeb77f1b23",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblPai1",
+                        "propertyKey": "segClientes_lblPai1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "j3301482cd054e4794057fa49388becd",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblPai1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_c8d939eef7634fb98118a065dc90aebf": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_c8d939eef7634fb98118a065dc90aebf",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblMae1",
+                        "propertyKey": "segClientes_lblMae1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "iba850d9ff094f238e7ba73c6a7dd993",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblMae1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ad55d1592ff8479ab3c92557831b341a": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ad55d1592ff8479ab3c92557831b341a",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblCivil1",
+                        "propertyKey": "segClientes_lblCivil1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "ec01ab0cc6984373a4e109aa0958d48c",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblCivil1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_fe7ca7504d294443b4209ed6d3bdae01": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_fe7ca7504d294443b4209ed6d3bdae01",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblRG1",
+                        "propertyKey": "segClientes_lblRG1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "ada6cbd6e7b14167a7a21cc8334ad05f",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblRG1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_iccb5d098c134a9591d4db214aa35e9e": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_iccb5d098c134a9591d4db214aa35e9e",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblCPF1",
+                        "propertyKey": "segClientes_lblCPF1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "a68fbf0af71f41bea6c443a4d62c434b",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblCPF1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_a0d920c6867a4692ba867f0b5df6e286": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a0d920c6867a4692ba867f0b5df6e286",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblSUS1",
+                        "propertyKey": "segClientes_lblSUS1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "aea635c1efb242c6b8bf8b81575e6fda",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblSUS1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ce3b1a57c4794f81acdbef25c419d428": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ce3b1a57c4794f81acdbef25c419d428",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblTituloEleitor1",
+                        "propertyKey": "segClientes_lblTituloEleitor1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "f45faf856da448db8114c023412f8b67",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblTituloEleitor1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_d1001bed32fd40ebbb924a6550de6ea3": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_d1001bed32fd40ebbb924a6550de6ea3",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblInterditado1",
+                        "propertyKey": "segClientes_lblInterditado1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "e6412b4ce556435980aacfc722f45e39",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblInterditado1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_bbc61bba659c4643932eeecb50f28454": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_bbc61bba659c4643932eeecb50f28454",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblInterditadoCurador1",
+                        "propertyKey": "segClientes_lblInterditadoCurador1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "b4eb4402375a4960bc9001e9462ffec8",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblInterditadoCurador1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_h9f34b8753a6452a8eb2fb091a824c01": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_h9f34b8753a6452a8eb2fb091a824c01",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblInterditadoData1",
+                        "propertyKey": "segClientes_lblInterditadoData1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "e41f9f8508a448b7bea6f9b086787d0e",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblInterditadoData1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_cc10c8a025fc43c282ea079effb49fe2": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_cc10c8a025fc43c282ea079effb49fe2",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblInterditadoCuradorTelefone1",
+                        "propertyKey": "segClientes_lblInterditadoCuradorTelefone1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "d834d141e9c5459e804c4b42477187fe",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblInterditadoCuradorTelefone1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ibac114ddef94a4999d2544217a64d23": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ibac114ddef94a4999d2544217a64d23",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblInterditadoCuradorEmail1",
+                        "propertyKey": "segClientes_lblInterditadoCuradorEmail1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "j0f76d02935449ce95d4a14b31ffbfc3",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblInterditadoCuradorEmail1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_hbc325f0275e4ce3a00528fb82733cc1": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_hbc325f0275e4ce3a00528fb82733cc1",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblControleCaixaFlag1",
+                        "propertyKey": "segClientes_lblControleCaixaFlag1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "c3203292f0d546fc8cbdc33d41e1a67a",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblControleCaixaFlag1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_h7257d93fb0c4cfab10a645f82f2d3ea": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_h7257d93fb0c4cfab10a645f82f2d3ea",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblEvangelicoFlag1",
+                        "propertyKey": "segClientes_lblEvangelicoFlag1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "ae4dac76aa764e8891a6889f24597d1f",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblEvangelicoFlag1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_e19f18b03921444fbc598b06447e6150": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_e19f18b03921444fbc598b06447e6150",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblEvangelicoTipo1",
+                        "propertyKey": "segClientes_lblEvangelicoTipo1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "e3e158af89a746d99de96f5bc6cfea8a",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblEvangelicoTipo1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_d96d2e13a9534301bcae308dc0296f52": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_d96d2e13a9534301bcae308dc0296f52",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblEvangelicoSetor1",
+                        "propertyKey": "segClientes_lblEvangelicoSetor1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "i62e6f46aa3145b98ea84292a4de4d8a",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblEvangelicoSetor1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_d67f369dbdbe4f3fb75a88fd5aabfe28": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_d67f369dbdbe4f3fb75a88fd5aabfe28",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblEvangelicoPastor1",
+                        "propertyKey": "segClientes_lblEvangelicoPastor1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "aa341dbdbc084b9abe064317c9d397a4",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblEvangelicoPastor1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_a3974a92017f414c8399bac88604040a": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a3974a92017f414c8399bac88604040a",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblEvangelicoMinisterio1",
+                        "propertyKey": "segClientes_lblEvangelicoMinisterio1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "b64b2ec3170c46789a989fff457bf6d2",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblEvangelicoMinisterio1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_eebdb18e661f45c99a632a9c57763b5e": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_eebdb18e661f45c99a632a9c57763b5e",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblEvangelicoDenominacao1",
+                        "propertyKey": "segClientes_lblEvangelicoDenominacao1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "ja8e106bb12d4757899046c87d595b38",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblEvangelicoDenominacao1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_b7882b044ac8440ba6d3bae7a88ebbc1": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_b7882b044ac8440ba6d3bae7a88ebbc1",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblEvangelicoAceiteJesusAsilar1",
+                        "propertyKey": "segClientes_lblEvangelicoAceiteJesusAsilar1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "ca888e9659b44b5486341417b7e191c1",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblEvangelicoAceiteJesusAsilar1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ha3ad25fda0b448b91ff1e18a703f9ad": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ha3ad25fda0b448b91ff1e18a703f9ad",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblEvangelicoDetalhes1",
+                        "propertyKey": "segClientes_lblEvangelicoDetalhes1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "a83b99e2f88d4411a325aaa42c739c07",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblEvangelicoDetalhes1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_g5dfbc4a162e418783cf56568cd5ffdf": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_g5dfbc4a162e418783cf56568cd5ffdf",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblMotivoAbrigamento1",
+                        "propertyKey": "segClientes_lblMotivoAbrigamento1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "df169514ae8c4ac7b7841bb02ac61b4e",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblMotivoAbrigamento1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_b8c533692c8d40369c9eac086eb2ba24": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_b8c533692c8d40369c9eac086eb2ba24",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblMotivoEscolha1",
+                        "propertyKey": "segClientes_lblMotivoEscolha1",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "c0e22c04bed94c1fa6f8d9bc18a0bf47",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblMotivoEscolha1"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_ede574a53b4947b085b00af425211180", "ME_Mapping_fd59d231e84249aa955ee8d62dcad36c", "ME_Mapping_j3b375720c434648ac61c1544cd52007", "ME_Mapping_d13b3a85ef55433dae22fe021d7bd9a9", "ME_Mapping_d52de9913d744c90abca94451ff9602a", "ME_Mapping_bb1590f2ab2645a6869a1cde402e8cbc", "ME_Mapping_b043dbd013e7451bbeebd4e32c66b8c8", "ME_Mapping_ged8650739eb4617960087aeb77f1b23", "ME_Mapping_c8d939eef7634fb98118a065dc90aebf", "ME_Mapping_ad55d1592ff8479ab3c92557831b341a", "ME_Mapping_fe7ca7504d294443b4209ed6d3bdae01", "ME_Mapping_iccb5d098c134a9591d4db214aa35e9e", "ME_Mapping_a0d920c6867a4692ba867f0b5df6e286", "ME_Mapping_ce3b1a57c4794f81acdbef25c419d428", "ME_Mapping_d1001bed32fd40ebbb924a6550de6ea3", "ME_Mapping_bbc61bba659c4643932eeecb50f28454", "ME_Mapping_h9f34b8753a6452a8eb2fb091a824c01", "ME_Mapping_cc10c8a025fc43c282ea079effb49fe2", "ME_Mapping_ibac114ddef94a4999d2544217a64d23", "ME_Mapping_hbc325f0275e4ce3a00528fb82733cc1", "ME_Mapping_h7257d93fb0c4cfab10a645f82f2d3ea", "ME_Mapping_e19f18b03921444fbc598b06447e6150", "ME_Mapping_d96d2e13a9534301bcae308dc0296f52", "ME_Mapping_d67f369dbdbe4f3fb75a88fd5aabfe28", "ME_Mapping_a3974a92017f414c8399bac88604040a", "ME_Mapping_eebdb18e661f45c99a632a9c57763b5e", "ME_Mapping_b7882b044ac8440ba6d3bae7a88ebbc1", "ME_Mapping_ha3ad25fda0b448b91ff1e18a703f9ad", "ME_Mapping_g5dfbc4a162e418783cf56568cd5ffdf", "ME_Mapping_b8c533692c8d40369c9eac086eb2ba24"],
+            "enableMappingEditor": true,
+            "package": "AsilarBD/Clientes",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"segClientes_lblId1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblId1\"], \"text\"),\n    \"segClientes_lblInativoData1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblInativoData1\"], \"text\"),\n    \"segClientes_lblInativoMotivo1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblInativoMotivo1\"], \"text\"),\n    \"segClientes_lblObitoDocumento1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblObitoDocumento1\"], \"text\"),\n    \"segClientes_lblInativoDetalhes1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblInativoDetalhes1\"], \"text\"),\n    \"segClientes_lblNacionalidade1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblNacionalidade1\"], \"text\"),\n    \"segClientes_lblNaturalidade1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblNaturalidade1\"], \"text\"),\n    \"segClientes_lblPai1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblPai1\"], \"text\"),\n    \"segClientes_lblMae1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblMae1\"], \"text\"),\n    \"segClientes_lblCivil1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblCivil1\"], \"text\"),\n    \"segClientes_lblRG1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblRG1\"], \"text\"),\n    \"segClientes_lblCPF1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblCPF1\"], \"text\"),\n    \"segClientes_lblSUS1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblSUS1\"], \"text\"),\n    \"segClientes_lblTituloEleitor1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblTituloEleitor1\"], \"text\"),\n    \"segClientes_lblInterditado1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblInterditado1\"], \"text\"),\n    \"segClientes_lblInterditadoCurador1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblInterditadoCurador1\"], \"text\"),\n    \"segClientes_lblInterditadoData1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblInterditadoData1\"], \"text\"),\n    \"segClientes_lblInterditadoCuradorTelefone1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblInterditadoCuradorTelefone1\"], \"text\"),\n    \"segClientes_lblInterditadoCuradorEmail1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblInterditadoCuradorEmail1\"], \"text\"),\n    \"segClientes_lblControleCaixaFlag1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblControleCaixaFlag1\"], \"text\"),\n    \"segClientes_lblEvangelicoFlag1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblEvangelicoFlag1\"], \"text\"),\n    \"segClientes_lblEvangelicoTipo1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblEvangelicoTipo1\"], \"text\"),\n    \"segClientes_lblEvangelicoSetor1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblEvangelicoSetor1\"], \"text\"),\n    \"segClientes_lblEvangelicoPastor1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblEvangelicoPastor1\"], \"text\"),\n    \"segClientes_lblEvangelicoMinisterio1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblEvangelicoMinisterio1\"], \"text\"),\n    \"segClientes_lblEvangelicoDenominacao1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblEvangelicoDenominacao1\"], \"text\"),\n    \"segClientes_lblEvangelicoAceiteJesusAsilar1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblEvangelicoAceiteJesusAsilar1\"], \"text\"),\n    \"segClientes_lblEvangelicoDetalhes1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblEvangelicoDetalhes1\"], \"text\"),\n    \"segClientes_lblMotivoAbrigamento1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblMotivoAbrigamento1\"], \"text\"),\n    \"segClientes_lblMotivoEscolha1\": voltmx.visualizer.getPropertyValue(self.view.segClientes.selectedRowItems[0][\"lblMotivoEscolha1\"], \"text\"),\n    \"_meta_\": {\n        \"eventName\": \"\",\n        \"widgetId\": \"\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

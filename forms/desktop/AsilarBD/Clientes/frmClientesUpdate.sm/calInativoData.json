@@ -1,0 +1,125 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizDateField",
+    "DNDConfig": null,
+    "Image": "calbtn.png",
+    "_bottom_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_data_": null,
+    "_date_": [
+        null,
+        null,
+        null
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "13dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": " ",
+    "_skin_": "se99ebf5e9e944ab8bc1edb1596234b9",
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "actionsInfo": {
+        "dataPropertyName": "InativoData",
+        "widgetPropertyName": "formattedDate"
+    },
+    "advview": "default",
+    "calendaricon": "calendar.png",
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "datecomponents": [
+        null,
+        null,
+        null,
+        0,
+        0,
+        0
+    ],
+    "dateeditable": true,
+    "dateformat": "dd/MM/yyyy",
+    "day": null,
+    "daytextalignmentincell": 5,
+    "entereddate": null,
+    "format": "dd/MM/yyyy",
+    "formatteddate": null,
+    "hidedaysheader": false,
+    "hidemonthsheader": false,
+    "hour": null,
+    "id": "calInativoData",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "d40ba3fcfc304de5a36c9025f1aa6705",
+    "luadate": [
+        null,
+        null,
+        null
+    ],
+    "minutes": null,
+    "month": null,
+    "name": "kony.ui.Calendar",
+    "noofmonths": 1,
+    "pagedate": "/2025",
+    "parent": "flexInativoData",
+    "pf": "frmClientesUpdate",
+    "responsiveData": {
+        "b1": {
+            "left": {
+                "type": "string",
+                "value": "13dp"
+            }
+        },
+        "b2": {
+            "centerX": {
+                "type": "string",
+                "value": ""
+            },
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            }
+        },
+        "b3": {
+            "centerX": {
+                "type": "string",
+                "value": ""
+            },
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "seconds": null,
+    "selectdate": "//2025",
+    "viewtype": "default",
+    "wType": "Calendar",
+    "widgetalignment": 5,
+    "year": null
+}

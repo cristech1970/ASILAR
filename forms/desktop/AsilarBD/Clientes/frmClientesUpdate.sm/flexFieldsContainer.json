@@ -1,0 +1,1356 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "75.5%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s80f9f123e074612953917c3b34e4e67",
+    "_top_": {
+        "type": "string",
+        "value": "16.5%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "42%"
+    },
+    "actionsInfo": {
+        "skipMapping": true
+    },
+    "allboxes": [],
+    "allowhorizontalbounce": false,
+    "allowverticalbounce": true,
+    "bounces": true,
+    "canUpdateUI": true,
+    "children": [
+        "flexId",
+        "flexInativoData",
+        "flexInativoMotivo",
+        "flexObitoDocumento",
+        "flexInativoDetalhes",
+        "flexNacionalidade",
+        "flexNaturalidade",
+        "flexPai",
+        "flexMae",
+        "flexCivil",
+        "flexRG",
+        "flexCPF",
+        "flexSUS",
+        "flexTituloEleitor",
+        "flexInterditado",
+        "flexInterditadoCurador",
+        "flexInterditadoData",
+        "flexInterditadoCuradorTelefone",
+        "flexInterditadoCuradorEmail",
+        "flexControleCaixaFlag",
+        "flexEvangelicoFlag",
+        "flexEvangelicoTipo",
+        "flexEvangelicoSetor",
+        "flexEvangelicoPastor",
+        "flexEvangelicoMinisterio",
+        "flexEvangelicoDenominacao",
+        "flexEvangelicoAceiteJesusAsilar",
+        "flexEvangelicoDetalhes",
+        "flexMotivoAbrigamento",
+        "flexMotivoEscolha"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "decelerat": false,
+    "dragg": false,
+    "enablescrolling": true,
+    "horizontalscrollindicator": true,
+    "id": "flexFieldsContainer",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "cbd5c27b0cc44c4ca0e23e563ee14381",
+    "layouttype": 4,
+    "name": "kony.ui.FlexScrollContainer",
+    "pagingenabled": false,
+    "parent": "frmClientesUpdate",
+    "pf": "frmClientesUpdate",
+    "responsiveData": {
+        "b1": {
+            "left": {
+                "type": "string",
+                "value": "10%"
+            },
+            "right": {
+                "type": "string",
+                "value": ""
+            },
+            "width": {
+                "type": "string",
+                "value": "42%"
+            }
+        },
+        "b2": {
+            "left": {
+                "type": "string",
+                "value": "5%"
+            },
+            "right": {
+                "type": "string",
+                "value": "5%"
+            },
+            "width": {
+                "type": "string",
+                "value": "90%"
+            }
+        },
+        "b3": {
+            "left": {
+                "type": "string",
+                "value": "5%"
+            },
+            "right": {
+                "type": "string",
+                "value": "5%"
+            },
+            "width": {
+                "type": "string",
+                "value": "90%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "scrolldirection": 2,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "track": false,
+    "verticalscrollindicator": true,
+    "vizProps": {
+        "dynamicPropertiesConfig": {
+            "flexKUID": "cbd5c27b0cc44c4ca0e23e563ee14381",
+            "methodName": "update",
+            "operationName": "Clientes",
+            "serviceName": "AsilarBD",
+            "serviceType": "objectsvcs",
+            "viewType": "Entry form ui",
+            "widgetsConfig": {
+                "CPF": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "ada937539f05435685e6fc6315b61058",
+                            "wType": "Label"
+                        },
+                        "kuid": "h8e963633f184ccabc88ba10f96294ba",
+                        "name": {
+                            "kuid": "b127cfacc4e54ef19e1b1f7bbf9770eb",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "fb27da17e16045f79ffc4e91d3bfb428",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "a4a88fda16fe4d659905662a27672122",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "CPF"
+                        },
+                        "generate": true,
+                        "index": 11,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "Civil": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "i3cf7a20e8e54fdcb7e4e4339e204f67",
+                            "wType": "Label"
+                        },
+                        "kuid": "db807661b3b646a3bbc5a9a841cb7102",
+                        "name": {
+                            "kuid": "faf6b36be7d14105a3a2772c0b845db3",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "c2526eb557ae425283e893f103b1e381",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "ff8e574097454c21b9a6ec66e8574cc5",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "Civil"
+                        },
+                        "generate": true,
+                        "index": 9,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "ControleCaixaFlag": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "f369eca14e8a479284e6c6b77da12125",
+                            "wType": "Label"
+                        },
+                        "kuid": "e706e5f93f7248a09f8f423e363df762",
+                        "name": {
+                            "kuid": "d4800490f0254a86b748fd6f2f6b9791",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "a6a2ed10cd6b4e2fab230611af3daa41",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "ffcb591f10e24cc4b42f2cfb07503d24",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "ControleCaixaFlag"
+                        },
+                        "generate": true,
+                        "index": 19,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "EvangelicoAceiteJesusAsilar": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "f8401204754545b0a4c4554727bacb6f",
+                            "wType": "Label"
+                        },
+                        "kuid": "f2d54f80e7de4715916d0ca0caf25c1d",
+                        "name": {
+                            "kuid": "c253568225934b58a7a56440d209c032",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "cc0fd3f4defd4d37ba8635b7884fcd46",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "b591bb8f0cdc479c82ef8c354383376e",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "EvangelicoAceiteJesusAsilar"
+                        },
+                        "generate": true,
+                        "index": 26,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "EvangelicoDenominacao": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "fa7dfb52fa6840b3b0d2586c60209496",
+                            "wType": "Label"
+                        },
+                        "kuid": "f88f6f0031df41a4ab6ae2dfa4772171",
+                        "name": {
+                            "kuid": "f4644b4142db47c2a2263a0bd1bdc6ee",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "c0524a1db4894013ba9a6630153f6429",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "b2030dd1ec434666a327dba62e067532",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "EvangelicoDenominacao"
+                        },
+                        "generate": true,
+                        "index": 25,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "EvangelicoDetalhes": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "d9b579ffb6b54daaaf6e231a6d1a57d5",
+                            "wType": "Label"
+                        },
+                        "kuid": "d65bd3c18670479d91daa8ce62ba1db2",
+                        "name": {
+                            "kuid": "be645298b898478d964118dabfb381f1",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "e36a4cd8e82746578ba8efb8b25b50d4",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "b050b4560ad64728aca77179e0d83487",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "EvangelicoDetalhes"
+                        },
+                        "generate": true,
+                        "index": 27,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "EvangelicoFlag": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "c9208ee9dbff4b53bbc6c3c8b659ed2f",
+                            "wType": "Label"
+                        },
+                        "kuid": "f39d585e1a24412b91a2b67e4af0ff9b",
+                        "name": {
+                            "kuid": "e5d2e1aeae1d43788a3b42849972da1f",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "c9d7018abbaa4e9d8ac66a9badea43f4",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "aa25e536a7a246fd9a061baa04b7a5e4",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "EvangelicoFlag"
+                        },
+                        "generate": true,
+                        "index": 20,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "EvangelicoMinisterio": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "ef9548afa03e49e991b571c796003c4c",
+                            "wType": "Label"
+                        },
+                        "kuid": "fbd523e4889b4f13b88842426707923f",
+                        "name": {
+                            "kuid": "ge84e72e17e84c99a3fda70f6e7d767f",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "i126f59faa714eae9f597dcb8adcdf44",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "b60e7737c6434033954ffbecf2ea62a0",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "EvangelicoMinisterio"
+                        },
+                        "generate": true,
+                        "index": 24,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "EvangelicoPastor": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "g020a1e931544a59a7f641a10dc1f193",
+                            "wType": "Label"
+                        },
+                        "kuid": "bb463a8fae574cb397544dd22af44599",
+                        "name": {
+                            "kuid": "b014f43600bd4b66b309e3f052142586",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "feb722de3f0d48fca9a5e9075b0e3492",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "c93d1c65f98f40fc98b7f32b26b77d34",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "EvangelicoPastor"
+                        },
+                        "generate": true,
+                        "index": 23,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "EvangelicoSetor": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "g86774d6f7424383a1e9a2534c7ea6b2",
+                            "wType": "Label"
+                        },
+                        "kuid": "h5de5fbcb59d485085e082b44714eeca",
+                        "name": {
+                            "kuid": "h2f5b5d5906d49f2951bd15c352fa2f5",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "fe608c85ebc242f899b945aa72b12018",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "cbee178d2d1e448487e75a4cc353a34d",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "EvangelicoSetor"
+                        },
+                        "generate": true,
+                        "index": 22,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "EvangelicoTipo": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "h79608df71f240c2b730c3a3cc5fbe1a",
+                            "wType": "Label"
+                        },
+                        "kuid": "hddb964bd2424bb584cc83534b7f4127",
+                        "name": {
+                            "kuid": "e5387209c98c42509e4b17debff8d7ec",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "h1973da2a9064a67bad185f4ca8147a5",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "a6b2b0a58d2040c0b501f3ba852b31c3",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "EvangelicoTipo"
+                        },
+                        "generate": true,
+                        "index": 21,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "Id": {
+                    "dataType": "number",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "jb003cd476f9485297331bdec5103091",
+                            "wType": "Label"
+                        },
+                        "kuid": "h826cff8ff6f4b2da61bdfa120647dd9",
+                        "name": {
+                            "kuid": "he4a6c95ce0348ff8adfa094315ba87b",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "ffc07e40b18a46dfbc2776a242afb991",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "b95c248201434f3998e016de02fb34c9",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "Id"
+                        },
+                        "generate": true,
+                        "index": 0,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "InativoData": {
+                    "dataType": "date",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "e21dd2513b97479991d1abc1ee74a4cf",
+                            "wType": "Label"
+                        },
+                        "kuid": "j9fdbf7691ff4caab72ed49d80bed54f",
+                        "name": {
+                            "kuid": "e67e83c63e484db1b9c9bed74818f201",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "da8bbe2ebffa4f0e880a960941f0d620",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "d40ba3fcfc304de5a36c9025f1aa6705",
+                            "wType": "Calendar"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "InativoData"
+                        },
+                        "generate": true,
+                        "index": 1,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "InativoDetalhes": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "bbec16300f4b46319f9ce7311ff923bf",
+                            "wType": "Label"
+                        },
+                        "kuid": "ef18ee227cb34121a3318a3db0dab6be",
+                        "name": {
+                            "kuid": "cf984c4239fa412ca149b23a03a2c634",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "b137bdd6fa9a4c8b9224d8c65612e51d",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "h2fcf928755f478d85a08fd413252af3",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "InativoDetalhes"
+                        },
+                        "generate": true,
+                        "index": 4,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "InativoMotivo": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "i841b949286e456b958dfb4d2466be5e",
+                            "wType": "Label"
+                        },
+                        "kuid": "b10b62ac91f442d8ab8037e369e6556d",
+                        "name": {
+                            "kuid": "ff39334d00dc419c920bebc1f964ddcc",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "h75ba74a77ea41e78e74f83bda4163f2",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "jb862ab14be0406d8ec98c2869cb3b6f",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "InativoMotivo"
+                        },
+                        "generate": true,
+                        "index": 2,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "Interditado": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "fff60df282384303856d1331cf9c6afe",
+                            "wType": "Label"
+                        },
+                        "kuid": "a30518ac87e94e6d9982c71675cef4ad",
+                        "name": {
+                            "kuid": "aa28abea54424799b7c9424aa2cd464f",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "b45b5d9f7e4a4a96aa242ac17d4532c5",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "i71eef337b3c4b2dbd3e6a27f5e699c0",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "Interditado"
+                        },
+                        "generate": true,
+                        "index": 14,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "InterditadoCurador": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "h0ba8215002d44579627ccf61f3f810b",
+                            "wType": "Label"
+                        },
+                        "kuid": "b4b7632750364d03bffa502654c4a491",
+                        "name": {
+                            "kuid": "e52a9228949c449ab42c1cecc87030a3",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "g3db1e8d6e97416f92f26708501898b0",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "dcb6a0626941428eb50d31a239511efa",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "InterditadoCurador"
+                        },
+                        "generate": true,
+                        "index": 15,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "InterditadoCuradorEmail": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "dcdec58a8f384980ba37929afe4b4fbb",
+                            "wType": "Label"
+                        },
+                        "kuid": "e0c13d2f918e4c21a9401de55a9e215b",
+                        "name": {
+                            "kuid": "aed081d3c0584104a3c5d53c755fc7b3",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "e764d3bfbcec4016b68ad88852d10b8c",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "c022177d9a2842e5a411a79f902764f9",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "InterditadoCuradorEmail"
+                        },
+                        "generate": true,
+                        "index": 18,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "InterditadoCuradorTelefone": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "e3d931e26df64bf5bce0d3a0c887c04d",
+                            "wType": "Label"
+                        },
+                        "kuid": "d884ba712f184bea804e6ddd3ae6d1e2",
+                        "name": {
+                            "kuid": "g84b99b7bcf0456ebc58ee1bcaed700d",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "ca158b8623be40038535dca4e25e43eb",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "j57ac3469f404f558353a7d5585d43dd",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "InterditadoCuradorTelefone"
+                        },
+                        "generate": true,
+                        "index": 17,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "InterditadoData": {
+                    "dataType": "date",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "gb61b6e3807d403d9358f4fe179cf13a",
+                            "wType": "Label"
+                        },
+                        "kuid": "hedc930a9f6b4f0eb16544b6cb24590e",
+                        "name": {
+                            "kuid": "e967b55d512c423494a48eab32d7dff0",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "e833a3a5dc0f4d2cb303f38d97831239",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "j54a9aa147c44b119b40d576123ee796",
+                            "wType": "Calendar"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "InterditadoData"
+                        },
+                        "generate": true,
+                        "index": 16,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "Mae": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "a6bd07c996064a71ad1df2ae24e45343",
+                            "wType": "Label"
+                        },
+                        "kuid": "a0f735bd7aec40feb406340cf28a31eb",
+                        "name": {
+                            "kuid": "c825b047c5e74f5f99fce51be82c3428",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "if0f11b084524f93af3bb1d5f9266fb9",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "cbc1cef90ee140f9aa1a8fbce50ce371",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "Mae"
+                        },
+                        "generate": true,
+                        "index": 8,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "MotivoAbrigamento": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "d0f3940c2b8d4f1a805803c9516545e2",
+                            "wType": "Label"
+                        },
+                        "kuid": "c6ba828c87ef41e7a83b06c2429df234",
+                        "name": {
+                            "kuid": "aba45dfb3ff1459a826abe22a481fe30",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "aa3310d00dcd451fadf2899d7b4ad107",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "efab03267e03419a8d211e6e40c304c7",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "MotivoAbrigamento"
+                        },
+                        "generate": true,
+                        "index": 28,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "MotivoEscolha": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "f2ece95273e04b7d9fdbe6441a858dab",
+                            "wType": "Label"
+                        },
+                        "kuid": "c4817d4182704691983faaa63d3aa51b",
+                        "name": {
+                            "kuid": "f878a71d59a04fc0823fd2dca2e73b3d",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "ac58368cc36c4535888d485bde8780f0",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "c82aa78784a947759df1b9d5560431ab",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "MotivoEscolha"
+                        },
+                        "generate": true,
+                        "index": 29,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "Nacionalidade": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "jdd6a3325eb24b64bb30a54c2c26cd61",
+                            "wType": "Label"
+                        },
+                        "kuid": "ba805fe6878040d3a32c988359d23f97",
+                        "name": {
+                            "kuid": "e4d5c6e2fbfc4d4398c931b88aa4e673",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "c2251e2de8f249a9a36121b9c1fc3703",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "g97ccc8aed834985b93d3e14b27bb5b8",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "Nacionalidade"
+                        },
+                        "generate": true,
+                        "index": 5,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "Naturalidade": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "h9cb7537d1c6483cb4df94f3a43b68ea",
+                            "wType": "Label"
+                        },
+                        "kuid": "b2bd48896460447e9804ab8ede7e6700",
+                        "name": {
+                            "kuid": "cf6eefdec0c34b47a86a9c70f02ea6ce",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "f905916dc3434f9a89a17db40dc51d30",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "fa41a2c4b7fb47de81ca146ccb6f6b24",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "Naturalidade"
+                        },
+                        "generate": true,
+                        "index": 6,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "ObitoDocumento": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "j0b31a0e576b4c7ebeec8951b2e9126f",
+                            "wType": "Label"
+                        },
+                        "kuid": "h78bb3a2bd8343618605e509d837acc3",
+                        "name": {
+                            "kuid": "b2bbc87c49bc48abbd9621a7d6f17717",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "f97fe913f2564ed3af2c872d13ab0860",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "b6ed3725220348b3a192ef60e0522c2f",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "ObitoDocumento"
+                        },
+                        "generate": true,
+                        "index": 3,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "Pai": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "j3cae0d2d9dc476ca3dbae1232deac13",
+                            "wType": "Label"
+                        },
+                        "kuid": "b9fb1ff3b9d1479f83b5d4c8faba044b",
+                        "name": {
+                            "kuid": "e2efe9260285406e88e9b09705eb01be",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "a4768fcbb5294785a9543b414b403c18",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "i07370d6a5f14d0093b004c948521d5f",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "Pai"
+                        },
+                        "generate": true,
+                        "index": 7,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "RG": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "f06f21939d2a4304a9c596aa2263f57d",
+                            "wType": "Label"
+                        },
+                        "kuid": "ffa7f37c5dc1457da1784011163fcfa2",
+                        "name": {
+                            "kuid": "a52a3bf8c6764102b9f3b4a65458192d",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "d4c383750dcb40c6b8d182c9777adf9c",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "bf843ae6d08d4554ac701f70a0a30bc4",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "RG"
+                        },
+                        "generate": true,
+                        "index": 10,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "SUS": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "cddc682fb8db45f79efc8801c68d1be3",
+                            "wType": "Label"
+                        },
+                        "kuid": "a20a4b86a648457ebd47d2fa08a665c2",
+                        "name": {
+                            "kuid": "hdcdaca421ec474faded2c5cea1c3602",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "a7b66291521f4d65810ec6339dff3238",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "eb29cfc690a24b229db0e57f20efdca5",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "SUS"
+                        },
+                        "generate": true,
+                        "index": 12,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "TituloEleitor": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "f63e5199979246478135c3300d9bd659",
+                            "wType": "Label"
+                        },
+                        "kuid": "b1d2469e4a3e47ea8a1de5a00684792f",
+                        "name": {
+                            "kuid": "b29665cb5beb43239277eb7742f4692d",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "ha9f22d04c1f4f648c3b67593fc2b265",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "dc26fe89060442f28d415f35dde4e1b8",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "TituloEleitor"
+                        },
+                        "generate": true,
+                        "index": 13,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "wType": "FlexScrollContainer",
+    "widgetalignment": 1
+}

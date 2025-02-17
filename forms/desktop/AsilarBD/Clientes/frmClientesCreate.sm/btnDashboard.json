@@ -1,0 +1,79 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s5d2efa667354f979ccdb0b118bd1aaa",
+    "_text_": "Dashboard",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "actionsInfo": {
+        "eventAssociationMeta": {
+            "actionTemplates": [
+                {
+                    "action_tag": "navigate_to_dashboard",
+                    "event": "onClick",
+                    "template": {
+                        "addSnippetAction": {
+                            "codeSnippet": "kony.application.destroyForm('frmClientesCreate');",
+                            "id": "ADD_SNIPPET_g5438d70feda4cc5afce256296b197f2",
+                            "type": "ADD_SNIPPET"
+                        },
+                        "backNavigationAction": {
+                            "formKUID": "ie3450f3df1a43418f4bdfdb71cf7abe",
+                            "id": "NAVIGATE_TO_FORM_de4041eb49cb477db23ddbfa34e8dc52",
+                            "parentId": null,
+                            "type": "NAVIGATE_TO_FORM"
+                        }
+                    }
+                }
+            ]
+        },
+        "skipMapping": true
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s5d2efa667354f979ccdb0b118bd1aaa",
+    "id": "btnDashboard",
+    "ide_onClick": "AS_Button_b678a57237634b759d0cd947db03b6bf",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "b5f69909e37e4812ad648d4845ff597a",
+    "name": "kony.ui.Button",
+    "parent": "flexBreadcrumb",
+    "pf": "frmClientesCreate",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button"
+}

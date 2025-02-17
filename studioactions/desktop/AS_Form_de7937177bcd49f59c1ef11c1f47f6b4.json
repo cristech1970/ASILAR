@@ -1,0 +1,590 @@
+{
+    "AS_Form_de7937177bcd49f59c1ef11c1f47f6b4": {
+        "id": "AS_Form_de7937177bcd49f59c1ef11c1f47f6b4",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "viewtodos",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ddf854a5bc014b5aad620d16d51f473f"
+        },
+        "language": "js",
+        "eventType": "onMapping",
+        "actions": [{
+            "id": "LOADING_INDICATOR_ad3f1dbc969e42dcbcdc787981ef5f52",
+            "selectedOption": "show",
+            "type": "LOADING_INDICATOR",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "INVOKE_ASYNC_SERVICE_f2069b4344324c63a01ccf2091859e94",
+            "type": "INVOKE_ASYNC_SERVICE",
+            "inputparams": null,
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": true,
+            "mappings": {},
+            "mappingsOrder": [],
+            "serviceconfig": {
+                "servicename": "app_asilar_api",
+                "type": "integration",
+                "operationname": "GetAll",
+                "serviceid": "ae1c54ce-7cb0-4ffb-904c-631077e427a2",
+                "operationid": "51"
+            },
+            "enableMappingEditor": true
+        }, {
+            "id": "LOADING_INDICATOR_baa891ee33d14e6089a0f55547e39abd",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_ASYNC_SERVICE_f2069b4344324c63a01ccf2091859e94",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Callback",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "_IF_CONDITION_a467196373db4b7e8cf16bd6f3165863",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValue": "GetAll.opstatus",
+                "rightValue": "0",
+                "leftValueType": "value",
+                "rightValueType": "value",
+                "operator": "==="
+            }],
+            "parentId": "INVOKE_ASYNC_SERVICE_f2069b4344324c63a01ccf2091859e94",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "_ELSE_CONDITION_e21b02fccf97464cbbd9df848e731062",
+            "type": "ELSE_CONDITION",
+            "conditions": [],
+            "parentId": "INVOKE_ASYNC_SERVICE_f2069b4344324c63a01ccf2091859e94",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "SHOW_ALERT_aacee4cd5f0f46f2ba715c90a234e452",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": null,
+            "yesLabel": null,
+            "noLabel": null,
+            "alertIcon": null,
+            "alertMessage": "Data fetch failed! Please try again later.",
+            "messageType": "constant",
+            "alertHandler": null,
+            "parentId": "_ELSE_CONDITION_e21b02fccf97464cbbd9df848e731062",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }, {
+            "id": "ADD_MAPPING_ef2f1469db3447f4bf904cfc7efefee3",
+            "type": "ADD_MAPPING",
+            "mappings": {
+                "ME_Mapping_i88626e8af084dde92b679087b1f5e0a": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_i88626e8af084dde92b679087b1f5e0a",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "clientes",
+                        "dataType": "collection",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "app_asilar_api",
+                            "type": "integration",
+                            "operationname": "GetAll",
+                            "serviceid": "ae1c54ce-7cb0-4ffb-904c-631077e427a2",
+                            "operationid": "51"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "rowData",
+                        "widgetId": "segGetAll",
+                        "widgetPath": "this.view.segGetAll",
+                        "widgetType": "Segment",
+                        "dataType": "collection",
+                        "itemId": "viewtodos",
+                        "collectionId": "masterdata",
+                        "widgetKUID": "a97f7fc31cf347f0b4bca060fbd1caa6",
+                        "itemKUID": "ddf854a5bc014b5aad620d16d51f473f",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_b2d9f23d222e472699a842abd08e31db": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_b2d9f23d222e472699a842abd08e31db",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Idade",
+                        "dataType": "string",
+                        "collectionId": "clientes",
+                        "propertyPath": "[\"clientes\"][0][\"Idade\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "app_asilar_api",
+                            "type": "integration",
+                            "operationname": "GetAll",
+                            "serviceid": "ae1c54ce-7cb0-4ffb-904c-631077e427a2",
+                            "operationid": "51"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblIdade1",
+                        "widgetPath": "this.view.lblIdade1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "viewtodos",
+                        "parentMappingId": "ME_Mapping_i88626e8af084dde92b679087b1f5e0a",
+                        "segmentId": "segGetAll",
+                        "segmentKUID": "a97f7fc31cf347f0b4bca060fbd1caa6",
+                        "widgetKUID": "a7e73cad52b64eb5a94a4f14b94d2b14",
+                        "itemKUID": "ddf854a5bc014b5aad620d16d51f473f",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_bb85eadb37124449986a63b991a0af28": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_bb85eadb37124449986a63b991a0af28",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Controle",
+                        "dataType": "string",
+                        "collectionId": "clientes",
+                        "propertyPath": "[\"clientes\"][0][\"Controle\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "app_asilar_api",
+                            "type": "integration",
+                            "operationname": "GetAll",
+                            "serviceid": "ae1c54ce-7cb0-4ffb-904c-631077e427a2",
+                            "operationid": "51"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblControle1",
+                        "widgetPath": "this.view.lblControle1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "viewtodos",
+                        "parentMappingId": "ME_Mapping_i88626e8af084dde92b679087b1f5e0a",
+                        "segmentId": "segGetAll",
+                        "segmentKUID": "a97f7fc31cf347f0b4bca060fbd1caa6",
+                        "widgetKUID": "iab357ebbc88406d8bf00eb2f38470b3",
+                        "itemKUID": "ddf854a5bc014b5aad620d16d51f473f",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_a08d987a1a4a48bba00f2232466ca900": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a08d987a1a4a48bba00f2232466ca900",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "DtNascto",
+                        "dataType": "string",
+                        "collectionId": "clientes",
+                        "propertyPath": "[\"clientes\"][0][\"DtNascto\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "app_asilar_api",
+                            "type": "integration",
+                            "operationname": "GetAll",
+                            "serviceid": "ae1c54ce-7cb0-4ffb-904c-631077e427a2",
+                            "operationid": "51"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblDtNascto1",
+                        "widgetPath": "this.view.lblDtNascto1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "viewtodos",
+                        "parentMappingId": "ME_Mapping_i88626e8af084dde92b679087b1f5e0a",
+                        "segmentId": "segGetAll",
+                        "segmentKUID": "a97f7fc31cf347f0b4bca060fbd1caa6",
+                        "widgetKUID": "e0ba4e79e0664e93abc881f8d05058b5",
+                        "itemKUID": "ddf854a5bc014b5aad620d16d51f473f",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_d46cc717e9e947c4a480da0919dab88c": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_d46cc717e9e947c4a480da0919dab88c",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Internacao",
+                        "dataType": "string",
+                        "collectionId": "clientes",
+                        "propertyPath": "[\"clientes\"][0][\"Internacao\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "app_asilar_api",
+                            "type": "integration",
+                            "operationname": "GetAll",
+                            "serviceid": "ae1c54ce-7cb0-4ffb-904c-631077e427a2",
+                            "operationid": "51"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblInternacao1",
+                        "widgetPath": "this.view.lblInternacao1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "viewtodos",
+                        "parentMappingId": "ME_Mapping_i88626e8af084dde92b679087b1f5e0a",
+                        "segmentId": "segGetAll",
+                        "segmentKUID": "a97f7fc31cf347f0b4bca060fbd1caa6",
+                        "widgetKUID": "i5520f1a339f4d389925453148a7bb45",
+                        "itemKUID": "ddf854a5bc014b5aad620d16d51f473f",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_b5637a506b064835a2d78cd13a837da5": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_b5637a506b064835a2d78cd13a837da5",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "ColunaD",
+                        "dataType": "string",
+                        "collectionId": "clientes",
+                        "propertyPath": "[\"clientes\"][0][\"ColunaD\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "app_asilar_api",
+                            "type": "integration",
+                            "operationname": "GetAll",
+                            "serviceid": "ae1c54ce-7cb0-4ffb-904c-631077e427a2",
+                            "operationid": "51"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblColunaD1",
+                        "widgetPath": "this.view.lblColunaD1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "viewtodos",
+                        "parentMappingId": "ME_Mapping_i88626e8af084dde92b679087b1f5e0a",
+                        "segmentId": "segGetAll",
+                        "segmentKUID": "a97f7fc31cf347f0b4bca060fbd1caa6",
+                        "widgetKUID": "e234ba5a5e15433da0f98b7b6f16cf39",
+                        "itemKUID": "ddf854a5bc014b5aad620d16d51f473f",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_i5c4d4140f0147629d2f3b7a391c2ede": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_i5c4d4140f0147629d2f3b7a391c2ede",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "TempoAbrigado",
+                        "dataType": "string",
+                        "collectionId": "clientes",
+                        "propertyPath": "[\"clientes\"][0][\"TempoAbrigado\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "app_asilar_api",
+                            "type": "integration",
+                            "operationname": "GetAll",
+                            "serviceid": "ae1c54ce-7cb0-4ffb-904c-631077e427a2",
+                            "operationid": "51"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblTempoAbrigado1",
+                        "widgetPath": "this.view.lblTempoAbrigado1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "viewtodos",
+                        "parentMappingId": "ME_Mapping_i88626e8af084dde92b679087b1f5e0a",
+                        "segmentId": "segGetAll",
+                        "segmentKUID": "a97f7fc31cf347f0b4bca060fbd1caa6",
+                        "widgetKUID": "ha1f840ece6e41c99904fee99131b889",
+                        "itemKUID": "ddf854a5bc014b5aad620d16d51f473f",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_f826c5ed3dcc4a7192b7377a855edb0f": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_f826c5ed3dcc4a7192b7377a855edb0f",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "ColunaE",
+                        "dataType": "string",
+                        "collectionId": "clientes",
+                        "propertyPath": "[\"clientes\"][0][\"ColunaE\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "app_asilar_api",
+                            "type": "integration",
+                            "operationname": "GetAll",
+                            "serviceid": "ae1c54ce-7cb0-4ffb-904c-631077e427a2",
+                            "operationid": "51"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblColunaE1",
+                        "widgetPath": "this.view.lblColunaE1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "viewtodos",
+                        "parentMappingId": "ME_Mapping_i88626e8af084dde92b679087b1f5e0a",
+                        "segmentId": "segGetAll",
+                        "segmentKUID": "a97f7fc31cf347f0b4bca060fbd1caa6",
+                        "widgetKUID": "j00690f6f6e34dd58f69b5f5da3aa421",
+                        "itemKUID": "ddf854a5bc014b5aad620d16d51f473f",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_cb024f5b59ad40738096816a5210f7cd": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_cb024f5b59ad40738096816a5210f7cd",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Nome",
+                        "dataType": "string",
+                        "collectionId": "clientes",
+                        "propertyPath": "[\"clientes\"][0][\"Nome\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "app_asilar_api",
+                            "type": "integration",
+                            "operationname": "GetAll",
+                            "serviceid": "ae1c54ce-7cb0-4ffb-904c-631077e427a2",
+                            "operationid": "51"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblNome1",
+                        "widgetPath": "this.view.lblNome1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "viewtodos",
+                        "parentMappingId": "ME_Mapping_i88626e8af084dde92b679087b1f5e0a",
+                        "segmentId": "segGetAll",
+                        "segmentKUID": "a97f7fc31cf347f0b4bca060fbd1caa6",
+                        "widgetKUID": "j45b1819faf84652993ac96fe8cb9b02",
+                        "itemKUID": "ddf854a5bc014b5aad620d16d51f473f",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_id5d6f84eb384ca492e78eab26f153c4": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_id5d6f84eb384ca492e78eab26f153c4",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Responsaveis",
+                        "dataType": "string",
+                        "collectionId": "clientes",
+                        "propertyPath": "[\"clientes\"][0][\"Responsaveis\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "app_asilar_api",
+                            "type": "integration",
+                            "operationname": "GetAll",
+                            "serviceid": "ae1c54ce-7cb0-4ffb-904c-631077e427a2",
+                            "operationid": "51"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblResponsaveis1",
+                        "widgetPath": "this.view.lblResponsaveis1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "viewtodos",
+                        "parentMappingId": "ME_Mapping_i88626e8af084dde92b679087b1f5e0a",
+                        "segmentId": "segGetAll",
+                        "segmentKUID": "a97f7fc31cf347f0b4bca060fbd1caa6",
+                        "widgetKUID": "c65fc2dac2b443ee9cd98928b3bf1146",
+                        "itemKUID": "ddf854a5bc014b5aad620d16d51f473f",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_a7323f96a1454fa2aca38b8dd7471c69": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a7323f96a1454fa2aca38b8dd7471c69",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "ColunaA",
+                        "dataType": "string",
+                        "collectionId": "clientes",
+                        "propertyPath": "[\"clientes\"][0][\"ColunaA\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "app_asilar_api",
+                            "type": "integration",
+                            "operationname": "GetAll",
+                            "serviceid": "ae1c54ce-7cb0-4ffb-904c-631077e427a2",
+                            "operationid": "51"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblColunaA1",
+                        "widgetPath": "this.view.lblColunaA1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "viewtodos",
+                        "parentMappingId": "ME_Mapping_i88626e8af084dde92b679087b1f5e0a",
+                        "segmentId": "segGetAll",
+                        "segmentKUID": "a97f7fc31cf347f0b4bca060fbd1caa6",
+                        "widgetKUID": "h68081e83b10451e9a7f9906a2173cdd",
+                        "itemKUID": "ddf854a5bc014b5aad620d16d51f473f",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_f1eb4642500041c4a0862fe109d24286": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_f1eb4642500041c4a0862fe109d24286",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "ColunaB",
+                        "dataType": "string",
+                        "collectionId": "clientes",
+                        "propertyPath": "[\"clientes\"][0][\"ColunaB\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "app_asilar_api",
+                            "type": "integration",
+                            "operationname": "GetAll",
+                            "serviceid": "ae1c54ce-7cb0-4ffb-904c-631077e427a2",
+                            "operationid": "51"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblColunaB1",
+                        "widgetPath": "this.view.lblColunaB1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "viewtodos",
+                        "parentMappingId": "ME_Mapping_i88626e8af084dde92b679087b1f5e0a",
+                        "segmentId": "segGetAll",
+                        "segmentKUID": "a97f7fc31cf347f0b4bca060fbd1caa6",
+                        "widgetKUID": "b89d31d1df4441c281ffcda8c009bcbd",
+                        "itemKUID": "ddf854a5bc014b5aad620d16d51f473f",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_a87f40866bf54b58af2b681aef6c57ce": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a87f40866bf54b58af2b681aef6c57ce",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "ColunaC",
+                        "dataType": "string",
+                        "collectionId": "clientes",
+                        "propertyPath": "[\"clientes\"][0][\"ColunaC\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "app_asilar_api",
+                            "type": "integration",
+                            "operationname": "GetAll",
+                            "serviceid": "ae1c54ce-7cb0-4ffb-904c-631077e427a2",
+                            "operationid": "51"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblColunaC1",
+                        "widgetPath": "this.view.lblColunaC1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "viewtodos",
+                        "parentMappingId": "ME_Mapping_i88626e8af084dde92b679087b1f5e0a",
+                        "segmentId": "segGetAll",
+                        "segmentKUID": "a97f7fc31cf347f0b4bca060fbd1caa6",
+                        "widgetKUID": "i1e8caa22d84430b9fd741f7e1b80040",
+                        "itemKUID": "ddf854a5bc014b5aad620d16d51f473f",
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_i88626e8af084dde92b679087b1f5e0a", "ME_Mapping_b2d9f23d222e472699a842abd08e31db", "ME_Mapping_bb85eadb37124449986a63b991a0af28", "ME_Mapping_a08d987a1a4a48bba00f2232466ca900", "ME_Mapping_d46cc717e9e947c4a480da0919dab88c", "ME_Mapping_b5637a506b064835a2d78cd13a837da5", "ME_Mapping_i5c4d4140f0147629d2f3b7a391c2ede", "ME_Mapping_f826c5ed3dcc4a7192b7377a855edb0f", "ME_Mapping_cb024f5b59ad40738096816a5210f7cd", "ME_Mapping_id5d6f84eb384ca492e78eab26f153c4", "ME_Mapping_a7323f96a1454fa2aca38b8dd7471c69", "ME_Mapping_f1eb4642500041c4a0862fe109d24286", "ME_Mapping_a87f40866bf54b58af2b681aef6c57ce"],
+            "parentId": "_IF_CONDITION_a467196373db4b7e8cf16bd6f3165863",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

@@ -1,0 +1,123 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "65%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s229690ea07a4f289fcb294f85971c33",
+    "_text_": "Cancel",
+    "_width_": {
+        "type": "string",
+        "value": "27%"
+    },
+    "actionsInfo": {
+        "eventAssociationMeta": {
+            "actionTemplates": [
+                {
+                    "action_tag": "back_and_add_snippet",
+                    "event": "onClick",
+                    "template": {
+                        "addSnippetAction": {
+                            "codeSnippet": "kony.application.destroyForm('frmClientesCreate');",
+                            "id": "ADD_SNIPPET_d5d192f7611041049931cbac88825fe8",
+                            "type": "ADD_SNIPPET"
+                        },
+                        "backNavigationAction": {
+                            "formKUID": "c7ce286d250148a2b059a2a16d99809d",
+                            "id": "NAVIGATE_TO_FORM_j5f7f32666b54cd4962efa2b437329f3",
+                            "parentId": null,
+                            "type": "NAVIGATE_TO_FORM"
+                        }
+                    }
+                }
+            ]
+        },
+        "skipMapping": true
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s8dd6d03b90d48eba7ed80e57cc26388",
+    "id": "btnBack",
+    "ide_onClick": "AS_Button_hdd6f8b0f43d486485fa646ca1d0e3bb",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "d664c34450134b049156edadb8fbeae4",
+    "name": "kony.ui.Button",
+    "parent": "flexSquaredBorderedButton",
+    "pf": "frmClientesCreate",
+    "responsiveData": {
+        "b1": {
+            "bottom": {
+                "type": "string",
+                "value": "2%"
+            },
+            "height": {
+                "type": "string",
+                "value": "65%"
+            },
+            "width": {
+                "type": "string",
+                "value": "27%"
+            }
+        },
+        "b2": {
+            "bottom": {
+                "type": "string",
+                "value": "5dp"
+            },
+            "height": {
+                "type": "string",
+                "value": "70%"
+            },
+            "width": {
+                "type": "string",
+                "value": "31%"
+            }
+        },
+        "b3": {
+            "bottom": {
+                "type": "string",
+                "value": "5dp"
+            },
+            "height": {
+                "type": "string",
+                "value": "70%"
+            },
+            "width": {
+                "type": "string",
+                "value": "31%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button"
+}

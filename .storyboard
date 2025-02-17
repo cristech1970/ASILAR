@@ -1,0 +1,28 @@
+{
+    "models": {
+        "desktop": {
+            "1366": {
+                "class": "GraphLinksModel",
+                "linkDataArray": [],
+                "nodeDataArray": [
+                    {
+                        "formKUID": "c5ead2c3fe174e12b84051010a50f1bb",
+                        "formName": "ClientesPosAtual",
+                        "isStartupForm": true,
+                        "key": "c5ead2c3fe174e12b84051010a50f1bb",
+                        "loc": "8 24.845263671875003",
+                        "thumbnailURL": "/assets/ASILAR/forms/desktop/Prontuario/ClientesPosAtual.sm/.thumbs/1366.jpeg"
+                    },
+                    {
+                        "formKUID": "i92b5434925a497daed6c8d34a6f064b",
+                        "formName": "Form1",
+                        "isStartupForm": false,
+                        "key": "i92b5434925a497daed6c8d34a6f064b",
+                        "loc": "228 264.845263671875",
+                        "thumbnailURL": "/assets/ASILAR/forms/desktop/Prontuario/Form1.sm/.thumbs/1366.jpeg"
+                    }
+                ]
+            }
+        }
+    }
+}

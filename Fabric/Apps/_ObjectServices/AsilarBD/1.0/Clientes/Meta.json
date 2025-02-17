@@ -1,0 +1,18 @@
+{
+  "type" : "SAAS",
+  "description" : "Tabela com dados dos abrigados no asilar",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "create" : "createMapping",
+    "update" : "updateMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "UniquePrefixId" : "480970ab-115b-48fd-b08b-110072a0f32b",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

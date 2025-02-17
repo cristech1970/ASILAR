@@ -1,0 +1,1759 @@
+{
+    "AS_Button_b339fa3bf2a94e68b5035ab1d9aaedea": {
+        "id": "AS_Button_b339fa3bf2a94e68b5035ab1d9aaedea",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmClientesUpdate",
+            "type": "forms",
+            "KUID": "ec8286934a5e43698aed65ecd90236c4"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "LOADING_INDICATOR_ja5a8b6c93994bc5a955036ab1d421ff",
+            "selectedOption": "show",
+            "type": "LOADING_INDICATOR",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "INVOKE_OBJECT_SERVICE_e7507ac256fd4c7faf1a113c089a4361",
+            "type": "INVOKE_OBJECT_SERVICE",
+            "inputparams": null,
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": null,
+            "isoffline": null,
+            "isobject": true,
+            "mappings": {
+                "ME_Mapping_f877d88dd1d043d89721955eb86cef21": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_f877d88dd1d043d89721955eb86cef21",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxId",
+                        "widgetPath": "this.view.tbxId",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "b95c248201434f3998e016de02fb34c9",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "Id",
+                        "dataType": "number",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_f1cc9c4873fd4c8cad99c286cabd43e3": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_f1cc9c4873fd4c8cad99c286cabd43e3",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "formattedDate",
+                        "widgetId": "calInativoData",
+                        "widgetPath": "this.view.calInativoData",
+                        "widgetType": "Calendar",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "d40ba3fcfc304de5a36c9025f1aa6705",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "InativoData",
+                        "dataType": "date",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_a146b30138b84939be3db28bee455d91": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a146b30138b84939be3db28bee455d91",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxInativoMotivo",
+                        "widgetPath": "this.view.tbxInativoMotivo",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "jb862ab14be0406d8ec98c2869cb3b6f",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "InativoMotivo",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_iba6c1c3ce8c402aa852c4325e572496": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_iba6c1c3ce8c402aa852c4325e572496",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxObitoDocumento",
+                        "widgetPath": "this.view.tbxObitoDocumento",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "b6ed3725220348b3a192ef60e0522c2f",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "ObitoDocumento",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_e4601a8c33b64642bb817db2fe2546fb": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_e4601a8c33b64642bb817db2fe2546fb",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxInativoDetalhes",
+                        "widgetPath": "this.view.tbxInativoDetalhes",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "h2fcf928755f478d85a08fd413252af3",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "InativoDetalhes",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_i04b33759caf435982bd3d875c908382": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_i04b33759caf435982bd3d875c908382",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxNacionalidade",
+                        "widgetPath": "this.view.tbxNacionalidade",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "g97ccc8aed834985b93d3e14b27bb5b8",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "Nacionalidade",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_ee1115b1818b4a3d85a6c140bc6b8898": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ee1115b1818b4a3d85a6c140bc6b8898",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxNaturalidade",
+                        "widgetPath": "this.view.tbxNaturalidade",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "fa41a2c4b7fb47de81ca146ccb6f6b24",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "Naturalidade",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_e8c2273cf43741dda3880e94341a97ba": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_e8c2273cf43741dda3880e94341a97ba",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxPai",
+                        "widgetPath": "this.view.tbxPai",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "i07370d6a5f14d0093b004c948521d5f",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "Pai",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_a1cb37c31c8f49f6b18df34f297b65da": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a1cb37c31c8f49f6b18df34f297b65da",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxMae",
+                        "widgetPath": "this.view.tbxMae",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "cbc1cef90ee140f9aa1a8fbce50ce371",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "Mae",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_e06900486e53433bb0c2fd51a71f38cf": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_e06900486e53433bb0c2fd51a71f38cf",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxCivil",
+                        "widgetPath": "this.view.tbxCivil",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "ff8e574097454c21b9a6ec66e8574cc5",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "Civil",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_eecd7aa3ad7747da94e1682cdaff209b": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_eecd7aa3ad7747da94e1682cdaff209b",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxRG",
+                        "widgetPath": "this.view.tbxRG",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "bf843ae6d08d4554ac701f70a0a30bc4",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "RG",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_b3d9704110204701a35d2e9cddea6354": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_b3d9704110204701a35d2e9cddea6354",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxCPF",
+                        "widgetPath": "this.view.tbxCPF",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "a4a88fda16fe4d659905662a27672122",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "CPF",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_e8fadc9ff4f54759b53e39f8576464ce": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_e8fadc9ff4f54759b53e39f8576464ce",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxSUS",
+                        "widgetPath": "this.view.tbxSUS",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "eb29cfc690a24b229db0e57f20efdca5",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "SUS",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_ie146f4ab9c4410880a24dea1a27dd9f": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ie146f4ab9c4410880a24dea1a27dd9f",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxTituloEleitor",
+                        "widgetPath": "this.view.tbxTituloEleitor",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "dc26fe89060442f28d415f35dde4e1b8",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "TituloEleitor",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_cc05f7c13e6644c6bdd449b92b3c2adb": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_cc05f7c13e6644c6bdd449b92b3c2adb",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxInterditado",
+                        "widgetPath": "this.view.tbxInterditado",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "i71eef337b3c4b2dbd3e6a27f5e699c0",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "Interditado",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_d0e6492c2ed9466a800efc41533ac0cd": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_d0e6492c2ed9466a800efc41533ac0cd",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxInterditadoCurador",
+                        "widgetPath": "this.view.tbxInterditadoCurador",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "dcb6a0626941428eb50d31a239511efa",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "InterditadoCurador",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_jb4fc30c4e864b95aeebdf2a60daa213": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_jb4fc30c4e864b95aeebdf2a60daa213",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "formattedDate",
+                        "widgetId": "calInterditadoData",
+                        "widgetPath": "this.view.calInterditadoData",
+                        "widgetType": "Calendar",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "j54a9aa147c44b119b40d576123ee796",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "InterditadoData",
+                        "dataType": "date",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_a56515ce33c34b7dbbe92673fe96c0a0": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a56515ce33c34b7dbbe92673fe96c0a0",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxInterditadoCuradorTelefone",
+                        "widgetPath": "this.view.tbxInterditadoCuradorTelefone",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "j57ac3469f404f558353a7d5585d43dd",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "InterditadoCuradorTelefone",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_fd7e4a38e16a43a39274632cfefeda3e": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_fd7e4a38e16a43a39274632cfefeda3e",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxInterditadoCuradorEmail",
+                        "widgetPath": "this.view.tbxInterditadoCuradorEmail",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "c022177d9a2842e5a411a79f902764f9",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "InterditadoCuradorEmail",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_d6ad3df523ba47d5a70420bca9f5699c": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_d6ad3df523ba47d5a70420bca9f5699c",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxControleCaixaFlag",
+                        "widgetPath": "this.view.tbxControleCaixaFlag",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "ffcb591f10e24cc4b42f2cfb07503d24",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "ControleCaixaFlag",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_b99062ba5f3746efb39435d169823d4b": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_b99062ba5f3746efb39435d169823d4b",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxEvangelicoFlag",
+                        "widgetPath": "this.view.tbxEvangelicoFlag",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "aa25e536a7a246fd9a061baa04b7a5e4",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "EvangelicoFlag",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_d48b94dcfb9e4be8bdb3c90c219ad63b": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_d48b94dcfb9e4be8bdb3c90c219ad63b",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxEvangelicoTipo",
+                        "widgetPath": "this.view.tbxEvangelicoTipo",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "a6b2b0a58d2040c0b501f3ba852b31c3",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "EvangelicoTipo",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_c57d6b9656b84ecd88eaf7f7d743b54d": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_c57d6b9656b84ecd88eaf7f7d743b54d",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxEvangelicoSetor",
+                        "widgetPath": "this.view.tbxEvangelicoSetor",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "cbee178d2d1e448487e75a4cc353a34d",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "EvangelicoSetor",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_j8458772820d4282b275653ecfa85faa": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_j8458772820d4282b275653ecfa85faa",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxEvangelicoPastor",
+                        "widgetPath": "this.view.tbxEvangelicoPastor",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "c93d1c65f98f40fc98b7f32b26b77d34",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "EvangelicoPastor",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_c1765256d728487689e4fae1c99f11d0": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_c1765256d728487689e4fae1c99f11d0",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxEvangelicoMinisterio",
+                        "widgetPath": "this.view.tbxEvangelicoMinisterio",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "b60e7737c6434033954ffbecf2ea62a0",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "EvangelicoMinisterio",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_j0bf41c0e3b54aa7af3293cb97de5b6b": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_j0bf41c0e3b54aa7af3293cb97de5b6b",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxEvangelicoDenominacao",
+                        "widgetPath": "this.view.tbxEvangelicoDenominacao",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "b2030dd1ec434666a327dba62e067532",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "EvangelicoDenominacao",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_a34ee5b6891e44759f5765c27185c563": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a34ee5b6891e44759f5765c27185c563",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxEvangelicoAceiteJesusAsilar",
+                        "widgetPath": "this.view.tbxEvangelicoAceiteJesusAsilar",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "b591bb8f0cdc479c82ef8c354383376e",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "EvangelicoAceiteJesusAsilar",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_f487e8b898b14bf2ae795f57b37d30ba": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_f487e8b898b14bf2ae795f57b37d30ba",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxEvangelicoDetalhes",
+                        "widgetPath": "this.view.tbxEvangelicoDetalhes",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "b050b4560ad64728aca77179e0d83487",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "EvangelicoDetalhes",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_eaa3a7ddceb84cdab3ce4eb3af375c96": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_eaa3a7ddceb84cdab3ce4eb3af375c96",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxMotivoAbrigamento",
+                        "widgetPath": "this.view.tbxMotivoAbrigamento",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "efab03267e03419a8d211e6e40c304c7",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "MotivoAbrigamento",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_bb63e95c152d4343a01435d97b4348b5": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_bb63e95c152d4343a01435d97b4348b5",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxMotivoEscolha",
+                        "widgetPath": "this.view.tbxMotivoEscolha",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "c82aa78784a947759df1b9d5560431ab",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "MotivoEscolha",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "update"
+                        }
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_f877d88dd1d043d89721955eb86cef21", "ME_Mapping_f1cc9c4873fd4c8cad99c286cabd43e3", "ME_Mapping_a146b30138b84939be3db28bee455d91", "ME_Mapping_iba6c1c3ce8c402aa852c4325e572496", "ME_Mapping_e4601a8c33b64642bb817db2fe2546fb", "ME_Mapping_i04b33759caf435982bd3d875c908382", "ME_Mapping_ee1115b1818b4a3d85a6c140bc6b8898", "ME_Mapping_e8c2273cf43741dda3880e94341a97ba", "ME_Mapping_a1cb37c31c8f49f6b18df34f297b65da", "ME_Mapping_e06900486e53433bb0c2fd51a71f38cf", "ME_Mapping_eecd7aa3ad7747da94e1682cdaff209b", "ME_Mapping_b3d9704110204701a35d2e9cddea6354", "ME_Mapping_e8fadc9ff4f54759b53e39f8576464ce", "ME_Mapping_ie146f4ab9c4410880a24dea1a27dd9f", "ME_Mapping_cc05f7c13e6644c6bdd449b92b3c2adb", "ME_Mapping_d0e6492c2ed9466a800efc41533ac0cd", "ME_Mapping_jb4fc30c4e864b95aeebdf2a60daa213", "ME_Mapping_a56515ce33c34b7dbbe92673fe96c0a0", "ME_Mapping_fd7e4a38e16a43a39274632cfefeda3e", "ME_Mapping_d6ad3df523ba47d5a70420bca9f5699c", "ME_Mapping_b99062ba5f3746efb39435d169823d4b", "ME_Mapping_d48b94dcfb9e4be8bdb3c90c219ad63b", "ME_Mapping_c57d6b9656b84ecd88eaf7f7d743b54d", "ME_Mapping_j8458772820d4282b275653ecfa85faa", "ME_Mapping_c1765256d728487689e4fae1c99f11d0", "ME_Mapping_j0bf41c0e3b54aa7af3293cb97de5b6b", "ME_Mapping_a34ee5b6891e44759f5765c27185c563", "ME_Mapping_f487e8b898b14bf2ae795f57b37d30ba", "ME_Mapping_eaa3a7ddceb84cdab3ce4eb3af375c96", "ME_Mapping_bb63e95c152d4343a01435d97b4348b5"],
+            "serviceconfig": {
+                "servicename": "AsilarBD",
+                "type": "objectsvcs",
+                "objectname": "Clientes",
+                "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                "methodname": "update"
+            },
+            "enableMappingEditor": true
+        }, {
+            "id": "LOADING_INDICATOR_g738445f82bb4f9bb9a48414f5c80beb",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_OBJECT_SERVICE_e7507ac256fd4c7faf1a113c089a4361",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Callback",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "_IF_CONDITION_a42d52f1d4f74ca894aa2d2a9d56956c",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValue": "Clientes.opstatus",
+                "rightValue": "0",
+                "leftValueType": "value",
+                "rightValueType": "value",
+                "operator": "==="
+            }],
+            "parentId": "INVOKE_OBJECT_SERVICE_e7507ac256fd4c7faf1a113c089a4361",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "_ELSE_CONDITION_e1efece19bdc46cb9790346d748b0704",
+            "type": "ELSE_CONDITION",
+            "conditions": [],
+            "parentId": "INVOKE_OBJECT_SERVICE_e7507ac256fd4c7faf1a113c089a4361",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "SHOW_ALERT_f65d6f48b383437cb6485bf27bde740c",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": null,
+            "yesLabel": null,
+            "noLabel": null,
+            "alertIcon": null,
+            "alertMessage": "Record updation failed! Please try again later.",
+            "messageType": "constant",
+            "alertHandler": null,
+            "parentId": "_ELSE_CONDITION_e1efece19bdc46cb9790346d748b0704",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }, {
+            "id": "NAVIGATE_TO_FORM__onClick_f917e5ee65df43709c635cf8c4fd3794",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmClientesDetails",
+            "formKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+            "projectName": "ASILAR",
+            "mappings": {
+                "ME_Mapping_f877d88dd1d043d89721955eb86cef21": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_f877d88dd1d043d89721955eb86cef21",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxId_text",
+                        "widgetId": "tbxId",
+                        "widgetPath": "this.view.tbxId",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "b95c248201434f3998e016de02fb34c9",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_f1cc9c4873fd4c8cad99c286cabd43e3": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_f1cc9c4873fd4c8cad99c286cabd43e3",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "formattedDate",
+                        "propertyKey": "calInativoData_formattedDate",
+                        "widgetId": "calInativoData",
+                        "widgetPath": "this.view.calInativoData",
+                        "widgetType": "Calendar",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "d40ba3fcfc304de5a36c9025f1aa6705",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_a146b30138b84939be3db28bee455d91": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a146b30138b84939be3db28bee455d91",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxInativoMotivo_text",
+                        "widgetId": "tbxInativoMotivo",
+                        "widgetPath": "this.view.tbxInativoMotivo",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "jb862ab14be0406d8ec98c2869cb3b6f",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_iba6c1c3ce8c402aa852c4325e572496": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_iba6c1c3ce8c402aa852c4325e572496",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxObitoDocumento_text",
+                        "widgetId": "tbxObitoDocumento",
+                        "widgetPath": "this.view.tbxObitoDocumento",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "b6ed3725220348b3a192ef60e0522c2f",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_e4601a8c33b64642bb817db2fe2546fb": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_e4601a8c33b64642bb817db2fe2546fb",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxInativoDetalhes_text",
+                        "widgetId": "tbxInativoDetalhes",
+                        "widgetPath": "this.view.tbxInativoDetalhes",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "h2fcf928755f478d85a08fd413252af3",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_i04b33759caf435982bd3d875c908382": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_i04b33759caf435982bd3d875c908382",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxNacionalidade_text",
+                        "widgetId": "tbxNacionalidade",
+                        "widgetPath": "this.view.tbxNacionalidade",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "g97ccc8aed834985b93d3e14b27bb5b8",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ee1115b1818b4a3d85a6c140bc6b8898": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ee1115b1818b4a3d85a6c140bc6b8898",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxNaturalidade_text",
+                        "widgetId": "tbxNaturalidade",
+                        "widgetPath": "this.view.tbxNaturalidade",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "fa41a2c4b7fb47de81ca146ccb6f6b24",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_e8c2273cf43741dda3880e94341a97ba": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_e8c2273cf43741dda3880e94341a97ba",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxPai_text",
+                        "widgetId": "tbxPai",
+                        "widgetPath": "this.view.tbxPai",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "i07370d6a5f14d0093b004c948521d5f",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_a1cb37c31c8f49f6b18df34f297b65da": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a1cb37c31c8f49f6b18df34f297b65da",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxMae_text",
+                        "widgetId": "tbxMae",
+                        "widgetPath": "this.view.tbxMae",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "cbc1cef90ee140f9aa1a8fbce50ce371",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_e06900486e53433bb0c2fd51a71f38cf": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_e06900486e53433bb0c2fd51a71f38cf",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxCivil_text",
+                        "widgetId": "tbxCivil",
+                        "widgetPath": "this.view.tbxCivil",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "ff8e574097454c21b9a6ec66e8574cc5",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_eecd7aa3ad7747da94e1682cdaff209b": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_eecd7aa3ad7747da94e1682cdaff209b",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxRG_text",
+                        "widgetId": "tbxRG",
+                        "widgetPath": "this.view.tbxRG",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "bf843ae6d08d4554ac701f70a0a30bc4",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_b3d9704110204701a35d2e9cddea6354": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_b3d9704110204701a35d2e9cddea6354",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxCPF_text",
+                        "widgetId": "tbxCPF",
+                        "widgetPath": "this.view.tbxCPF",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "a4a88fda16fe4d659905662a27672122",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_e8fadc9ff4f54759b53e39f8576464ce": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_e8fadc9ff4f54759b53e39f8576464ce",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxSUS_text",
+                        "widgetId": "tbxSUS",
+                        "widgetPath": "this.view.tbxSUS",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "eb29cfc690a24b229db0e57f20efdca5",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ie146f4ab9c4410880a24dea1a27dd9f": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ie146f4ab9c4410880a24dea1a27dd9f",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxTituloEleitor_text",
+                        "widgetId": "tbxTituloEleitor",
+                        "widgetPath": "this.view.tbxTituloEleitor",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "dc26fe89060442f28d415f35dde4e1b8",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_cc05f7c13e6644c6bdd449b92b3c2adb": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_cc05f7c13e6644c6bdd449b92b3c2adb",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxInterditado_text",
+                        "widgetId": "tbxInterditado",
+                        "widgetPath": "this.view.tbxInterditado",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "i71eef337b3c4b2dbd3e6a27f5e699c0",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_d0e6492c2ed9466a800efc41533ac0cd": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_d0e6492c2ed9466a800efc41533ac0cd",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxInterditadoCurador_text",
+                        "widgetId": "tbxInterditadoCurador",
+                        "widgetPath": "this.view.tbxInterditadoCurador",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "dcb6a0626941428eb50d31a239511efa",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_jb4fc30c4e864b95aeebdf2a60daa213": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_jb4fc30c4e864b95aeebdf2a60daa213",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "formattedDate",
+                        "propertyKey": "calInterditadoData_formattedDate",
+                        "widgetId": "calInterditadoData",
+                        "widgetPath": "this.view.calInterditadoData",
+                        "widgetType": "Calendar",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "j54a9aa147c44b119b40d576123ee796",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_a56515ce33c34b7dbbe92673fe96c0a0": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a56515ce33c34b7dbbe92673fe96c0a0",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxInterditadoCuradorTelefone_text",
+                        "widgetId": "tbxInterditadoCuradorTelefone",
+                        "widgetPath": "this.view.tbxInterditadoCuradorTelefone",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "j57ac3469f404f558353a7d5585d43dd",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_fd7e4a38e16a43a39274632cfefeda3e": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_fd7e4a38e16a43a39274632cfefeda3e",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxInterditadoCuradorEmail_text",
+                        "widgetId": "tbxInterditadoCuradorEmail",
+                        "widgetPath": "this.view.tbxInterditadoCuradorEmail",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "c022177d9a2842e5a411a79f902764f9",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_d6ad3df523ba47d5a70420bca9f5699c": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_d6ad3df523ba47d5a70420bca9f5699c",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxControleCaixaFlag_text",
+                        "widgetId": "tbxControleCaixaFlag",
+                        "widgetPath": "this.view.tbxControleCaixaFlag",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "ffcb591f10e24cc4b42f2cfb07503d24",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_b99062ba5f3746efb39435d169823d4b": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_b99062ba5f3746efb39435d169823d4b",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxEvangelicoFlag_text",
+                        "widgetId": "tbxEvangelicoFlag",
+                        "widgetPath": "this.view.tbxEvangelicoFlag",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "aa25e536a7a246fd9a061baa04b7a5e4",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_d48b94dcfb9e4be8bdb3c90c219ad63b": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_d48b94dcfb9e4be8bdb3c90c219ad63b",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxEvangelicoTipo_text",
+                        "widgetId": "tbxEvangelicoTipo",
+                        "widgetPath": "this.view.tbxEvangelicoTipo",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "a6b2b0a58d2040c0b501f3ba852b31c3",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_c57d6b9656b84ecd88eaf7f7d743b54d": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_c57d6b9656b84ecd88eaf7f7d743b54d",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxEvangelicoSetor_text",
+                        "widgetId": "tbxEvangelicoSetor",
+                        "widgetPath": "this.view.tbxEvangelicoSetor",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "cbee178d2d1e448487e75a4cc353a34d",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_j8458772820d4282b275653ecfa85faa": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_j8458772820d4282b275653ecfa85faa",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxEvangelicoPastor_text",
+                        "widgetId": "tbxEvangelicoPastor",
+                        "widgetPath": "this.view.tbxEvangelicoPastor",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "c93d1c65f98f40fc98b7f32b26b77d34",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_c1765256d728487689e4fae1c99f11d0": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_c1765256d728487689e4fae1c99f11d0",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxEvangelicoMinisterio_text",
+                        "widgetId": "tbxEvangelicoMinisterio",
+                        "widgetPath": "this.view.tbxEvangelicoMinisterio",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "b60e7737c6434033954ffbecf2ea62a0",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_j0bf41c0e3b54aa7af3293cb97de5b6b": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_j0bf41c0e3b54aa7af3293cb97de5b6b",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxEvangelicoDenominacao_text",
+                        "widgetId": "tbxEvangelicoDenominacao",
+                        "widgetPath": "this.view.tbxEvangelicoDenominacao",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "b2030dd1ec434666a327dba62e067532",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_a34ee5b6891e44759f5765c27185c563": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a34ee5b6891e44759f5765c27185c563",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxEvangelicoAceiteJesusAsilar_text",
+                        "widgetId": "tbxEvangelicoAceiteJesusAsilar",
+                        "widgetPath": "this.view.tbxEvangelicoAceiteJesusAsilar",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "b591bb8f0cdc479c82ef8c354383376e",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_f487e8b898b14bf2ae795f57b37d30ba": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_f487e8b898b14bf2ae795f57b37d30ba",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxEvangelicoDetalhes_text",
+                        "widgetId": "tbxEvangelicoDetalhes",
+                        "widgetPath": "this.view.tbxEvangelicoDetalhes",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "b050b4560ad64728aca77179e0d83487",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_eaa3a7ddceb84cdab3ce4eb3af375c96": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_eaa3a7ddceb84cdab3ce4eb3af375c96",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxMotivoAbrigamento_text",
+                        "widgetId": "tbxMotivoAbrigamento",
+                        "widgetPath": "this.view.tbxMotivoAbrigamento",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "efab03267e03419a8d211e6e40c304c7",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_bb63e95c152d4343a01435d97b4348b5": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_bb63e95c152d4343a01435d97b4348b5",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "tbxMotivoEscolha_text",
+                        "widgetId": "tbxMotivoEscolha",
+                        "widgetPath": "this.view.tbxMotivoEscolha",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "frmClientesUpdate",
+                        "widgetKUID": "c82aa78784a947759df1b9d5560431ab",
+                        "itemKUID": "ec8286934a5e43698aed65ecd90236c4",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_f877d88dd1d043d89721955eb86cef21", "ME_Mapping_f1cc9c4873fd4c8cad99c286cabd43e3", "ME_Mapping_a146b30138b84939be3db28bee455d91", "ME_Mapping_iba6c1c3ce8c402aa852c4325e572496", "ME_Mapping_e4601a8c33b64642bb817db2fe2546fb", "ME_Mapping_i04b33759caf435982bd3d875c908382", "ME_Mapping_ee1115b1818b4a3d85a6c140bc6b8898", "ME_Mapping_e8c2273cf43741dda3880e94341a97ba", "ME_Mapping_a1cb37c31c8f49f6b18df34f297b65da", "ME_Mapping_e06900486e53433bb0c2fd51a71f38cf", "ME_Mapping_eecd7aa3ad7747da94e1682cdaff209b", "ME_Mapping_b3d9704110204701a35d2e9cddea6354", "ME_Mapping_e8fadc9ff4f54759b53e39f8576464ce", "ME_Mapping_ie146f4ab9c4410880a24dea1a27dd9f", "ME_Mapping_cc05f7c13e6644c6bdd449b92b3c2adb", "ME_Mapping_d0e6492c2ed9466a800efc41533ac0cd", "ME_Mapping_jb4fc30c4e864b95aeebdf2a60daa213", "ME_Mapping_a56515ce33c34b7dbbe92673fe96c0a0", "ME_Mapping_fd7e4a38e16a43a39274632cfefeda3e", "ME_Mapping_d6ad3df523ba47d5a70420bca9f5699c", "ME_Mapping_b99062ba5f3746efb39435d169823d4b", "ME_Mapping_d48b94dcfb9e4be8bdb3c90c219ad63b", "ME_Mapping_c57d6b9656b84ecd88eaf7f7d743b54d", "ME_Mapping_j8458772820d4282b275653ecfa85faa", "ME_Mapping_c1765256d728487689e4fae1c99f11d0", "ME_Mapping_j0bf41c0e3b54aa7af3293cb97de5b6b", "ME_Mapping_a34ee5b6891e44759f5765c27185c563", "ME_Mapping_f487e8b898b14bf2ae795f57b37d30ba", "ME_Mapping_eaa3a7ddceb84cdab3ce4eb3af375c96", "ME_Mapping_bb63e95c152d4343a01435d97b4348b5"],
+            "parentId": "_IF_CONDITION_a42d52f1d4f74ca894aa2d2a9d56956c",
+            "enableMappingEditor": true,
+            "package": "AsilarBD/Clientes",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"tbxId_text\": self.view.tbxId.text,\n    \"calInativoData_formattedDate\": self.view.calInativoData.formattedDate,\n    \"tbxInativoMotivo_text\": self.view.tbxInativoMotivo.text,\n    \"tbxObitoDocumento_text\": self.view.tbxObitoDocumento.text,\n    \"tbxInativoDetalhes_text\": self.view.tbxInativoDetalhes.text,\n    \"tbxNacionalidade_text\": self.view.tbxNacionalidade.text,\n    \"tbxNaturalidade_text\": self.view.tbxNaturalidade.text,\n    \"tbxPai_text\": self.view.tbxPai.text,\n    \"tbxMae_text\": self.view.tbxMae.text,\n    \"tbxCivil_text\": self.view.tbxCivil.text,\n    \"tbxRG_text\": self.view.tbxRG.text,\n    \"tbxCPF_text\": self.view.tbxCPF.text,\n    \"tbxSUS_text\": self.view.tbxSUS.text,\n    \"tbxTituloEleitor_text\": self.view.tbxTituloEleitor.text,\n    \"tbxInterditado_text\": self.view.tbxInterditado.text,\n    \"tbxInterditadoCurador_text\": self.view.tbxInterditadoCurador.text,\n    \"calInterditadoData_formattedDate\": self.view.calInterditadoData.formattedDate,\n    \"tbxInterditadoCuradorTelefone_text\": self.view.tbxInterditadoCuradorTelefone.text,\n    \"tbxInterditadoCuradorEmail_text\": self.view.tbxInterditadoCuradorEmail.text,\n    \"tbxControleCaixaFlag_text\": self.view.tbxControleCaixaFlag.text,\n    \"tbxEvangelicoFlag_text\": self.view.tbxEvangelicoFlag.text,\n    \"tbxEvangelicoTipo_text\": self.view.tbxEvangelicoTipo.text,\n    \"tbxEvangelicoSetor_text\": self.view.tbxEvangelicoSetor.text,\n    \"tbxEvangelicoPastor_text\": self.view.tbxEvangelicoPastor.text,\n    \"tbxEvangelicoMinisterio_text\": self.view.tbxEvangelicoMinisterio.text,\n    \"tbxEvangelicoDenominacao_text\": self.view.tbxEvangelicoDenominacao.text,\n    \"tbxEvangelicoAceiteJesusAsilar_text\": self.view.tbxEvangelicoAceiteJesusAsilar.text,\n    \"tbxEvangelicoDetalhes_text\": self.view.tbxEvangelicoDetalhes.text,\n    \"tbxMotivoAbrigamento_text\": self.view.tbxMotivoAbrigamento.text,\n    \"tbxMotivoEscolha_text\": self.view.tbxMotivoEscolha.text,\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"btnSquared\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

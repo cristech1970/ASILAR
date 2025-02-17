@@ -1,0 +1,138 @@
+{
+    "AS_Button_edf32552f2cf46418d12376a441ad4e8": {
+        "id": "AS_Button_edf32552f2cf46418d12376a441ad4e8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmClientesDetails",
+            "type": "forms",
+            "KUID": "d6fa6afaf4374a268b543bc5e34f44e8"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "LOADING_INDICATOR_h248fda0ac7c4afeb4837a4c4aa47ac6",
+            "selectedOption": "show",
+            "type": "LOADING_INDICATOR",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "INVOKE_OBJECT_SERVICE_f79f9fda13f942f1b6b7ad82719f2652",
+            "type": "INVOKE_OBJECT_SERVICE",
+            "inputparams": null,
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": null,
+            "isoffline": null,
+            "isobject": true,
+            "mappings": {
+                "ME_Mapping_b61e5ff156d94f49a287cffe783d761c": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_b61e5ff156d94f49a287cffe783d761c",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblIdValue",
+                        "widgetPath": "this.view.lblIdValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "fcbddeceba704824a443fb4ed202d267",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "Id",
+                        "dataType": "number",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "delete"
+                        }
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_b61e5ff156d94f49a287cffe783d761c"],
+            "serviceconfig": {
+                "servicename": "AsilarBD",
+                "type": "objectsvcs",
+                "objectname": "Clientes",
+                "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                "methodname": "delete"
+            },
+            "enableMappingEditor": true
+        }, {
+            "id": "LOADING_INDICATOR_d0b3e35850234363a18bb3a20eb60f84",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_OBJECT_SERVICE_f79f9fda13f942f1b6b7ad82719f2652",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Callback",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "IF_CONDITION_cd1188d8c82e4d83af79f98aca520424",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValue": "Clientes.opstatus",
+                "leftValueType": "value",
+                "operator": "===",
+                "rightValue": "0",
+                "rightValueType": "value"
+            }],
+            "parentId": "INVOKE_OBJECT_SERVICE_f79f9fda13f942f1b6b7ad82719f2652",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "NAVIGATE_TO_FORM__onClick_i97cf1ba8fa8497588de15500d7da29a",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmClientesGrid",
+            "formKUID": "c7ce286d250148a2b059a2a16d99809d",
+            "projectName": "ASILAR",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "IF_CONDITION_cd1188d8c82e4d83af79f98aca520424",
+            "enableMappingEditor": true,
+            "package": "AsilarBD/Clientes",
+            "isCustomInput": false
+        }, {
+            "id": "ELSE_CONDITION_a65b53c578b44a93a27fa4e39ac90269",
+            "type": "ELSE_CONDITION",
+            "conditions": [],
+            "parentId": "INVOKE_OBJECT_SERVICE_f79f9fda13f942f1b6b7ad82719f2652",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "SHOW_ALERT_edd6c270a31e40c49474475af4ca15df",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": null,
+            "yesLabel": null,
+            "noLabel": null,
+            "alertIcon": null,
+            "alertMessage": "Record deletion failed! Please try again later.",
+            "messageType": "constant",
+            "alertHandler": null,
+            "parentId": "ELSE_CONDITION_a65b53c578b44a93a27fa4e39ac90269",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }]
+    }
+}

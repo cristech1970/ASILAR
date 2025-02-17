@@ -1,0 +1,93 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_skin_": "defDataPanelFooterBtnNormalDW",
+    "_text_": "Add New",
+    "_top_": {
+        "type": "string",
+        "value": "11%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "actionsInfo": {
+        "eventAssociationMeta": {
+            "event": "onClick"
+        },
+        "skipMapping": true
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "defDataPanelFooterBtnActiveDW",
+    "id": "btnCreate",
+    "ide_onClick": "AS_Button_dabb61723daa47979fb214183df04517",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "eb5e90d8ee6443de9389f51f25ba5442",
+    "name": "kony.ui.Button",
+    "parent": "frmClientesGrid",
+    "pf": "frmClientesGrid",
+    "responsiveData": {
+        "b1": {
+            "focusSkin": "se909b7254bf4719886416bab88675e0",
+            "right": {
+                "type": "string",
+                "value": "10%"
+            },
+            "skin": "se16cb34a16c408492ee39fbebfbc237",
+            "text": "Add New"
+        },
+        "b2": {
+            "focusSkin": "se909b7254bf4719886416bab88675e0",
+            "right": {
+                "type": "string",
+                "value": "5%"
+            },
+            "skin": "se16cb34a16c408492ee39fbebfbc237"
+        },
+        "b3": {
+            "focusSkin": "s2a12a12de17477fbd72b70116aacc08",
+            "height": {
+                "type": "string",
+                "value": "45dp"
+            },
+            "right": {
+                "type": "string",
+                "value": "5%"
+            },
+            "skin": "s2a12a12de17477fbd72b70116aacc08",
+            "text": "+",
+            "width": {
+                "type": "string",
+                "value": "45dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button"
+}

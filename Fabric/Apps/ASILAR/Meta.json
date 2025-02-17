@@ -1,0 +1,18 @@
+{
+  "icon" : "icon.png",
+  "subType" : "customapp",
+  "description" : "Asilar",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "app_asilar_api",
+    "version" : "1.0",
+    "etag" : "a509def0-a1c2-430d-89e9-16b5cc721fe3"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "AsilarBD",
+    "version" : "1.0",
+    "etag" : "2d9441f5-7cb8-4057-bfd1-ee5cfc85e8cb"
+  } ],
+  "identity" : [ "AsilarLdap" ],
+  "identitySvcConf" : "{\"session_idle_timeout_mins\":20,\"session_max_duration_mins\":360,\"show_security_attributes\":false,\"is_integrity_enabled\":false,\"auto_extend\":true}"
+}

@@ -1,0 +1,9 @@
+{
+    "AsilarBD_Clientes": {
+        "servicename": "AsilarBD",
+        "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+        "type": "objectsvcs",
+        "objectname": "Clientes",
+        "objectid": "107"
+    }
+}

@@ -1,0 +1,1351 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {
+            "lblCPF1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "CPF"
+            },
+            "lblCivil1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Civil"
+            },
+            "lblControleCaixaFlag1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ControleCaixaFlag"
+            },
+            "lblEvangelicoAceiteJesusAsilar1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoAceiteJesusAsilar"
+            },
+            "lblEvangelicoDenominacao1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoDenominacao"
+            },
+            "lblEvangelicoDetalhes1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoDetalhes"
+            },
+            "lblEvangelicoFlag1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoFlag"
+            },
+            "lblEvangelicoMinisterio1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoMinisterio"
+            },
+            "lblEvangelicoPastor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoPastor"
+            },
+            "lblEvangelicoSetor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoSetor"
+            },
+            "lblEvangelicoTipo1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoTipo"
+            },
+            "lblId1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Id"
+            },
+            "lblInativoData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoData"
+            },
+            "lblInativoDetalhes1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoDetalhes"
+            },
+            "lblInativoMotivo1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoMotivo"
+            },
+            "lblInterditado1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Interditado"
+            },
+            "lblInterditadoCurador1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCurador"
+            },
+            "lblInterditadoCuradorEmail1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCuradorEmail"
+            },
+            "lblInterditadoCuradorTelefone1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCuradorTelefone"
+            },
+            "lblInterditadoData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoData"
+            },
+            "lblMae1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Mae"
+            },
+            "lblMotivoAbrigamento1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MotivoAbrigamento"
+            },
+            "lblMotivoEscolha1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MotivoEscolha"
+            },
+            "lblNacionalidade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nacionalidade"
+            },
+            "lblNaturalidade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Naturalidade"
+            },
+            "lblObitoDocumento1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ObitoDocumento"
+            },
+            "lblPai1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Pai"
+            },
+            "lblRG1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RG"
+            },
+            "lblSUS1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SUS"
+            },
+            "lblTituloEleitor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TituloEleitor"
+            }
+        },
+        {
+            "lblCPF1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "CPF"
+            },
+            "lblCivil1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Civil"
+            },
+            "lblControleCaixaFlag1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ControleCaixaFlag"
+            },
+            "lblEvangelicoAceiteJesusAsilar1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoAceiteJesusAsilar"
+            },
+            "lblEvangelicoDenominacao1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoDenominacao"
+            },
+            "lblEvangelicoDetalhes1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoDetalhes"
+            },
+            "lblEvangelicoFlag1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoFlag"
+            },
+            "lblEvangelicoMinisterio1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoMinisterio"
+            },
+            "lblEvangelicoPastor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoPastor"
+            },
+            "lblEvangelicoSetor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoSetor"
+            },
+            "lblEvangelicoTipo1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoTipo"
+            },
+            "lblId1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Id"
+            },
+            "lblInativoData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoData"
+            },
+            "lblInativoDetalhes1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoDetalhes"
+            },
+            "lblInativoMotivo1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoMotivo"
+            },
+            "lblInterditado1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Interditado"
+            },
+            "lblInterditadoCurador1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCurador"
+            },
+            "lblInterditadoCuradorEmail1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCuradorEmail"
+            },
+            "lblInterditadoCuradorTelefone1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCuradorTelefone"
+            },
+            "lblInterditadoData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoData"
+            },
+            "lblMae1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Mae"
+            },
+            "lblMotivoAbrigamento1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MotivoAbrigamento"
+            },
+            "lblMotivoEscolha1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MotivoEscolha"
+            },
+            "lblNacionalidade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nacionalidade"
+            },
+            "lblNaturalidade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Naturalidade"
+            },
+            "lblObitoDocumento1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ObitoDocumento"
+            },
+            "lblPai1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Pai"
+            },
+            "lblRG1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RG"
+            },
+            "lblSUS1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SUS"
+            },
+            "lblTituloEleitor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TituloEleitor"
+            }
+        },
+        {
+            "lblCPF1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "CPF"
+            },
+            "lblCivil1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Civil"
+            },
+            "lblControleCaixaFlag1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ControleCaixaFlag"
+            },
+            "lblEvangelicoAceiteJesusAsilar1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoAceiteJesusAsilar"
+            },
+            "lblEvangelicoDenominacao1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoDenominacao"
+            },
+            "lblEvangelicoDetalhes1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoDetalhes"
+            },
+            "lblEvangelicoFlag1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoFlag"
+            },
+            "lblEvangelicoMinisterio1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoMinisterio"
+            },
+            "lblEvangelicoPastor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoPastor"
+            },
+            "lblEvangelicoSetor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoSetor"
+            },
+            "lblEvangelicoTipo1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoTipo"
+            },
+            "lblId1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Id"
+            },
+            "lblInativoData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoData"
+            },
+            "lblInativoDetalhes1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoDetalhes"
+            },
+            "lblInativoMotivo1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoMotivo"
+            },
+            "lblInterditado1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Interditado"
+            },
+            "lblInterditadoCurador1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCurador"
+            },
+            "lblInterditadoCuradorEmail1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCuradorEmail"
+            },
+            "lblInterditadoCuradorTelefone1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCuradorTelefone"
+            },
+            "lblInterditadoData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoData"
+            },
+            "lblMae1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Mae"
+            },
+            "lblMotivoAbrigamento1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MotivoAbrigamento"
+            },
+            "lblMotivoEscolha1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MotivoEscolha"
+            },
+            "lblNacionalidade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nacionalidade"
+            },
+            "lblNaturalidade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Naturalidade"
+            },
+            "lblObitoDocumento1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ObitoDocumento"
+            },
+            "lblPai1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Pai"
+            },
+            "lblRG1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RG"
+            },
+            "lblSUS1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SUS"
+            },
+            "lblTituloEleitor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TituloEleitor"
+            }
+        },
+        {
+            "lblCPF1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "CPF"
+            },
+            "lblCivil1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Civil"
+            },
+            "lblControleCaixaFlag1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ControleCaixaFlag"
+            },
+            "lblEvangelicoAceiteJesusAsilar1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoAceiteJesusAsilar"
+            },
+            "lblEvangelicoDenominacao1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoDenominacao"
+            },
+            "lblEvangelicoDetalhes1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoDetalhes"
+            },
+            "lblEvangelicoFlag1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoFlag"
+            },
+            "lblEvangelicoMinisterio1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoMinisterio"
+            },
+            "lblEvangelicoPastor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoPastor"
+            },
+            "lblEvangelicoSetor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoSetor"
+            },
+            "lblEvangelicoTipo1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoTipo"
+            },
+            "lblId1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Id"
+            },
+            "lblInativoData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoData"
+            },
+            "lblInativoDetalhes1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoDetalhes"
+            },
+            "lblInativoMotivo1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoMotivo"
+            },
+            "lblInterditado1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Interditado"
+            },
+            "lblInterditadoCurador1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCurador"
+            },
+            "lblInterditadoCuradorEmail1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCuradorEmail"
+            },
+            "lblInterditadoCuradorTelefone1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCuradorTelefone"
+            },
+            "lblInterditadoData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoData"
+            },
+            "lblMae1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Mae"
+            },
+            "lblMotivoAbrigamento1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MotivoAbrigamento"
+            },
+            "lblMotivoEscolha1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MotivoEscolha"
+            },
+            "lblNacionalidade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nacionalidade"
+            },
+            "lblNaturalidade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Naturalidade"
+            },
+            "lblObitoDocumento1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ObitoDocumento"
+            },
+            "lblPai1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Pai"
+            },
+            "lblRG1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RG"
+            },
+            "lblSUS1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SUS"
+            },
+            "lblTituloEleitor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TituloEleitor"
+            }
+        },
+        {
+            "lblCPF1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "CPF"
+            },
+            "lblCivil1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Civil"
+            },
+            "lblControleCaixaFlag1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ControleCaixaFlag"
+            },
+            "lblEvangelicoAceiteJesusAsilar1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoAceiteJesusAsilar"
+            },
+            "lblEvangelicoDenominacao1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoDenominacao"
+            },
+            "lblEvangelicoDetalhes1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoDetalhes"
+            },
+            "lblEvangelicoFlag1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoFlag"
+            },
+            "lblEvangelicoMinisterio1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoMinisterio"
+            },
+            "lblEvangelicoPastor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoPastor"
+            },
+            "lblEvangelicoSetor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoSetor"
+            },
+            "lblEvangelicoTipo1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoTipo"
+            },
+            "lblId1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Id"
+            },
+            "lblInativoData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoData"
+            },
+            "lblInativoDetalhes1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoDetalhes"
+            },
+            "lblInativoMotivo1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoMotivo"
+            },
+            "lblInterditado1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Interditado"
+            },
+            "lblInterditadoCurador1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCurador"
+            },
+            "lblInterditadoCuradorEmail1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCuradorEmail"
+            },
+            "lblInterditadoCuradorTelefone1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCuradorTelefone"
+            },
+            "lblInterditadoData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoData"
+            },
+            "lblMae1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Mae"
+            },
+            "lblMotivoAbrigamento1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MotivoAbrigamento"
+            },
+            "lblMotivoEscolha1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MotivoEscolha"
+            },
+            "lblNacionalidade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nacionalidade"
+            },
+            "lblNaturalidade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Naturalidade"
+            },
+            "lblObitoDocumento1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ObitoDocumento"
+            },
+            "lblPai1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Pai"
+            },
+            "lblRG1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RG"
+            },
+            "lblSUS1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SUS"
+            },
+            "lblTituloEleitor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TituloEleitor"
+            }
+        },
+        {
+            "lblCPF1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "CPF"
+            },
+            "lblCivil1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Civil"
+            },
+            "lblControleCaixaFlag1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ControleCaixaFlag"
+            },
+            "lblEvangelicoAceiteJesusAsilar1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoAceiteJesusAsilar"
+            },
+            "lblEvangelicoDenominacao1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoDenominacao"
+            },
+            "lblEvangelicoDetalhes1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoDetalhes"
+            },
+            "lblEvangelicoFlag1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoFlag"
+            },
+            "lblEvangelicoMinisterio1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoMinisterio"
+            },
+            "lblEvangelicoPastor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoPastor"
+            },
+            "lblEvangelicoSetor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoSetor"
+            },
+            "lblEvangelicoTipo1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoTipo"
+            },
+            "lblId1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Id"
+            },
+            "lblInativoData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoData"
+            },
+            "lblInativoDetalhes1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoDetalhes"
+            },
+            "lblInativoMotivo1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoMotivo"
+            },
+            "lblInterditado1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Interditado"
+            },
+            "lblInterditadoCurador1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCurador"
+            },
+            "lblInterditadoCuradorEmail1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCuradorEmail"
+            },
+            "lblInterditadoCuradorTelefone1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCuradorTelefone"
+            },
+            "lblInterditadoData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoData"
+            },
+            "lblMae1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Mae"
+            },
+            "lblMotivoAbrigamento1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MotivoAbrigamento"
+            },
+            "lblMotivoEscolha1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MotivoEscolha"
+            },
+            "lblNacionalidade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nacionalidade"
+            },
+            "lblNaturalidade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Naturalidade"
+            },
+            "lblObitoDocumento1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ObitoDocumento"
+            },
+            "lblPai1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Pai"
+            },
+            "lblRG1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RG"
+            },
+            "lblSUS1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SUS"
+            },
+            "lblTituloEleitor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TituloEleitor"
+            }
+        },
+        {
+            "lblCPF1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "CPF"
+            },
+            "lblCivil1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Civil"
+            },
+            "lblControleCaixaFlag1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ControleCaixaFlag"
+            },
+            "lblEvangelicoAceiteJesusAsilar1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoAceiteJesusAsilar"
+            },
+            "lblEvangelicoDenominacao1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoDenominacao"
+            },
+            "lblEvangelicoDetalhes1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoDetalhes"
+            },
+            "lblEvangelicoFlag1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoFlag"
+            },
+            "lblEvangelicoMinisterio1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoMinisterio"
+            },
+            "lblEvangelicoPastor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoPastor"
+            },
+            "lblEvangelicoSetor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoSetor"
+            },
+            "lblEvangelicoTipo1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoTipo"
+            },
+            "lblId1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Id"
+            },
+            "lblInativoData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoData"
+            },
+            "lblInativoDetalhes1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoDetalhes"
+            },
+            "lblInativoMotivo1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoMotivo"
+            },
+            "lblInterditado1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Interditado"
+            },
+            "lblInterditadoCurador1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCurador"
+            },
+            "lblInterditadoCuradorEmail1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCuradorEmail"
+            },
+            "lblInterditadoCuradorTelefone1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCuradorTelefone"
+            },
+            "lblInterditadoData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoData"
+            },
+            "lblMae1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Mae"
+            },
+            "lblMotivoAbrigamento1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MotivoAbrigamento"
+            },
+            "lblMotivoEscolha1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MotivoEscolha"
+            },
+            "lblNacionalidade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nacionalidade"
+            },
+            "lblNaturalidade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Naturalidade"
+            },
+            "lblObitoDocumento1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ObitoDocumento"
+            },
+            "lblPai1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Pai"
+            },
+            "lblRG1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RG"
+            },
+            "lblSUS1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SUS"
+            },
+            "lblTituloEleitor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TituloEleitor"
+            }
+        },
+        {
+            "lblCPF1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "CPF"
+            },
+            "lblCivil1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Civil"
+            },
+            "lblControleCaixaFlag1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ControleCaixaFlag"
+            },
+            "lblEvangelicoAceiteJesusAsilar1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoAceiteJesusAsilar"
+            },
+            "lblEvangelicoDenominacao1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoDenominacao"
+            },
+            "lblEvangelicoDetalhes1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoDetalhes"
+            },
+            "lblEvangelicoFlag1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoFlag"
+            },
+            "lblEvangelicoMinisterio1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoMinisterio"
+            },
+            "lblEvangelicoPastor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoPastor"
+            },
+            "lblEvangelicoSetor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoSetor"
+            },
+            "lblEvangelicoTipo1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoTipo"
+            },
+            "lblId1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Id"
+            },
+            "lblInativoData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoData"
+            },
+            "lblInativoDetalhes1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoDetalhes"
+            },
+            "lblInativoMotivo1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoMotivo"
+            },
+            "lblInterditado1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Interditado"
+            },
+            "lblInterditadoCurador1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCurador"
+            },
+            "lblInterditadoCuradorEmail1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCuradorEmail"
+            },
+            "lblInterditadoCuradorTelefone1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCuradorTelefone"
+            },
+            "lblInterditadoData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoData"
+            },
+            "lblMae1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Mae"
+            },
+            "lblMotivoAbrigamento1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MotivoAbrigamento"
+            },
+            "lblMotivoEscolha1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MotivoEscolha"
+            },
+            "lblNacionalidade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nacionalidade"
+            },
+            "lblNaturalidade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Naturalidade"
+            },
+            "lblObitoDocumento1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ObitoDocumento"
+            },
+            "lblPai1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Pai"
+            },
+            "lblRG1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RG"
+            },
+            "lblSUS1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SUS"
+            },
+            "lblTituloEleitor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TituloEleitor"
+            }
+        },
+        {
+            "lblCPF1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "CPF"
+            },
+            "lblCivil1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Civil"
+            },
+            "lblControleCaixaFlag1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ControleCaixaFlag"
+            },
+            "lblEvangelicoAceiteJesusAsilar1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoAceiteJesusAsilar"
+            },
+            "lblEvangelicoDenominacao1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoDenominacao"
+            },
+            "lblEvangelicoDetalhes1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoDetalhes"
+            },
+            "lblEvangelicoFlag1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoFlag"
+            },
+            "lblEvangelicoMinisterio1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoMinisterio"
+            },
+            "lblEvangelicoPastor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoPastor"
+            },
+            "lblEvangelicoSetor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoSetor"
+            },
+            "lblEvangelicoTipo1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoTipo"
+            },
+            "lblId1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Id"
+            },
+            "lblInativoData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoData"
+            },
+            "lblInativoDetalhes1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoDetalhes"
+            },
+            "lblInativoMotivo1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoMotivo"
+            },
+            "lblInterditado1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Interditado"
+            },
+            "lblInterditadoCurador1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCurador"
+            },
+            "lblInterditadoCuradorEmail1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCuradorEmail"
+            },
+            "lblInterditadoCuradorTelefone1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCuradorTelefone"
+            },
+            "lblInterditadoData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoData"
+            },
+            "lblMae1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Mae"
+            },
+            "lblMotivoAbrigamento1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MotivoAbrigamento"
+            },
+            "lblMotivoEscolha1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MotivoEscolha"
+            },
+            "lblNacionalidade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nacionalidade"
+            },
+            "lblNaturalidade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Naturalidade"
+            },
+            "lblObitoDocumento1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ObitoDocumento"
+            },
+            "lblPai1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Pai"
+            },
+            "lblRG1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RG"
+            },
+            "lblSUS1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SUS"
+            },
+            "lblTituloEleitor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TituloEleitor"
+            }
+        },
+        {
+            "lblCPF1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "CPF"
+            },
+            "lblCivil1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Civil"
+            },
+            "lblControleCaixaFlag1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ControleCaixaFlag"
+            },
+            "lblEvangelicoAceiteJesusAsilar1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoAceiteJesusAsilar"
+            },
+            "lblEvangelicoDenominacao1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoDenominacao"
+            },
+            "lblEvangelicoDetalhes1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoDetalhes"
+            },
+            "lblEvangelicoFlag1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoFlag"
+            },
+            "lblEvangelicoMinisterio1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoMinisterio"
+            },
+            "lblEvangelicoPastor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoPastor"
+            },
+            "lblEvangelicoSetor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoSetor"
+            },
+            "lblEvangelicoTipo1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EvangelicoTipo"
+            },
+            "lblId1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Id"
+            },
+            "lblInativoData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoData"
+            },
+            "lblInativoDetalhes1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoDetalhes"
+            },
+            "lblInativoMotivo1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InativoMotivo"
+            },
+            "lblInterditado1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Interditado"
+            },
+            "lblInterditadoCurador1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCurador"
+            },
+            "lblInterditadoCuradorEmail1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCuradorEmail"
+            },
+            "lblInterditadoCuradorTelefone1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoCuradorTelefone"
+            },
+            "lblInterditadoData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "InterditadoData"
+            },
+            "lblMae1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Mae"
+            },
+            "lblMotivoAbrigamento1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MotivoAbrigamento"
+            },
+            "lblMotivoEscolha1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MotivoEscolha"
+            },
+            "lblNacionalidade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nacionalidade"
+            },
+            "lblNaturalidade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Naturalidade"
+            },
+            "lblObitoDocumento1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ObitoDocumento"
+            },
+            "lblPai1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Pai"
+            },
+            "lblRG1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RG"
+            },
+            "lblSUS1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SUS"
+            },
+            "lblTituloEleitor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TituloEleitor"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "actionsInfo": {
+        "dataPropertyName": "records",
+        "eventAssociationMeta": {
+            "event": "onRowClick",
+            "skipMapping": true
+        },
+        "widgetPropertyName": "rowData"
+    },
+    "alternaterowskin": "sbbfc90cb34c4760bb0afcce800976c0",
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "afa4399b55354e1b969bd164fa599416",
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segClientes",
+    "ide_onRowClick": "AS_Segment_c26c86fada3b4022896cb80eeeb1003b",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "jda82769ade24c3596dbbadc71ccec4f",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": false,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "parent": "flexHeaderClientes",
+    "pf": "frmClientesGrid",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "afa4399b55354e1b969bd164fa599416",
+    "rowfocusskin": "s27888f5612843dba3cce76400cea322",
+    "rowskin": "sd49f70e0fa64cabb1ff16f0fda2723f",
+    "rowtemplate": "FBoxClientes",
+    "screenlevelwidget": false,
+    "sectionheaderskin": "s6e45efb39ee409e9a8b187ba49ce79d",
+    "selectedRows": null,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": null,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": false,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "lblCPF1": "lblCPF1",
+        "lblCivil1": "lblCivil1",
+        "lblControleCaixaFlag1": "lblControleCaixaFlag1",
+        "lblEvangelicoAceiteJesusAsilar1": "lblEvangelicoAceiteJesusAsilar1",
+        "lblEvangelicoDenominacao1": "lblEvangelicoDenominacao1",
+        "lblEvangelicoDetalhes1": "lblEvangelicoDetalhes1",
+        "lblEvangelicoFlag1": "lblEvangelicoFlag1",
+        "lblEvangelicoMinisterio1": "lblEvangelicoMinisterio1",
+        "lblEvangelicoPastor1": "lblEvangelicoPastor1",
+        "lblEvangelicoSetor1": "lblEvangelicoSetor1",
+        "lblEvangelicoTipo1": "lblEvangelicoTipo1",
+        "lblId1": "lblId1",
+        "lblInativoData1": "lblInativoData1",
+        "lblInativoDetalhes1": "lblInativoDetalhes1",
+        "lblInativoMotivo1": "lblInativoMotivo1",
+        "lblInterditado1": "lblInterditado1",
+        "lblInterditadoCurador1": "lblInterditadoCurador1",
+        "lblInterditadoCuradorEmail1": "lblInterditadoCuradorEmail1",
+        "lblInterditadoCuradorTelefone1": "lblInterditadoCuradorTelefone1",
+        "lblInterditadoData1": "lblInterditadoData1",
+        "lblMae1": "lblMae1",
+        "lblMotivoAbrigamento1": "lblMotivoAbrigamento1",
+        "lblMotivoEscolha1": "lblMotivoEscolha1",
+        "lblNacionalidade1": "lblNacionalidade1",
+        "lblNaturalidade1": "lblNaturalidade1",
+        "lblObitoDocumento1": "lblObitoDocumento1",
+        "lblPai1": "lblPai1",
+        "lblRG1": "lblRG1",
+        "lblSUS1": "lblSUS1",
+        "lblTituloEleitor1": "lblTituloEleitor1"
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "AS_Form_g70fa176016d4156bc79d5be75d7d5a9": {
+        "id": "AS_Form_g70fa176016d4156bc79d5be75d7d5a9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "breakpoint"
+        }],
+        "contextObj": {
+            "name": "frmClientesGrid",
+            "type": "forms",
+            "KUID": "c7ce286d250148a2b059a2a16d99809d"
+        },
+        "language": "js",
+        "eventType": "onBreakpointChange",
+        "actions": [{
+            "id": "IF_CONDITION_c7dfb05c0a694a4f9109323423bbfbfa",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValue": "[640].indexOf(kony.application.getCurrentBreakpoint()) !== -1",
+                "leftValueType": "expression"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "SET_FORM_WIDGET_PROPERTY_Untitled__onBreakpointChange_f1df7732a737466297ef04ab99eb15fe",
+            "type": "SET_WIDGET_PROPERTY",
+            "itemType": "FORM",
+            "itemId": "frmClientesGrid",
+            "widgetId": "flexClientes",
+            "propertyName": "isVisible",
+            "propertyValue": "false",
+            "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+            "widgetKUID": "e1045359ffa44a9c8859710a084d8918",
+            "isSkinProperty": false,
+            "forkedPlatform": "all",
+            "parentId": "IF_CONDITION_c7dfb05c0a694a4f9109323423bbfbfa",
+            "widgetPath": "this.view.flexClientes"
+        }, {
+            "id": "ADD_SNIPPET_onBreakpointChange_d6a49752b3b2424c9ab2979635e33882",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var templateId = self.view.segClientes.rowTemplate;\nself.view.segClientes.data.forEach(function(row) {\n    row[templateId] = {\n        layoutType: kony.flex.FLOW_VERTICAL\n    };\n    Object.keys(row).forEach(function(key) {\n        if (key.includes(\"lbl\")) {\n            row[key].width = '80%';\n            row[key].height = kony.flex.USE_PREFERRED_SIZE;\n        }\n    });\n});\nvar clonedWidgetDataMap = self.view.segClientes.widgetDataMap;\nclonedWidgetDataMap[templateId] = templateId;\nself.view.segClientes.widgetDataMap = clonedWidgetDataMap;\nself.view.segClientes.setData(self.view.segClientes.data);\nself.view.forceLayout();",
+            "parentId": "IF_CONDITION_c7dfb05c0a694a4f9109323423bbfbfa"
+        }, {
+            "id": "ELSE_CONDITION_d3e5d3db85bb40168aa209a2815b9462",
+            "type": "ELSE_CONDITION",
+            "conditions": [],
+            "parentId": null,
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "SET_FORM_WIDGET_PROPERTY_Untitled__onBreakpointChange_b50325d2dd684a3cb3e37b6fe1490589",
+            "type": "SET_WIDGET_PROPERTY",
+            "itemType": "FORM",
+            "itemId": "frmClientesGrid",
+            "widgetId": "flexClientes",
+            "propertyName": "isVisible",
+            "propertyValue": "true",
+            "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+            "widgetKUID": "e1045359ffa44a9c8859710a084d8918",
+            "isSkinProperty": false,
+            "forkedPlatform": "all",
+            "parentId": "ELSE_CONDITION_d3e5d3db85bb40168aa209a2815b9462",
+            "widgetPath": "this.view.flexClientes"
+        }, {
+            "id": "ADD_SNIPPET_onBreakpointChange_d15e1d10660c40e88791c3bf1d5564d3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var templateId = self.view.segClientes.rowTemplate;\nself.view.segClientes.data.forEach(function(row) {\n    row[templateId] = {\n        layoutType: kony.flex.FLOW_HORIZONTAL\n    };\n    Object.keys(row).forEach(function(key) {\n        if (key.includes(\"lbl\")) {\n            row[key].width = '2.5%';\n            row[key].height = \"\";\n        }\n    });\n});\nvar clonedWidgetDataMap = self.view.segClientes.widgetDataMap;\nclonedWidgetDataMap[templateId] = templateId;\nself.view.segClientes.widgetDataMap = clonedWidgetDataMap;\nself.view.segClientes.setData(self.view.segClientes.data);\nself.view.forceLayout();",
+            "parentId": "ELSE_CONDITION_d3e5d3db85bb40168aa209a2815b9462"
+        }]
+    }
+}

@@ -1,0 +1,877 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "75.5%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s80f9f123e074612953917c3b34e4e67",
+    "_top_": {
+        "type": "string",
+        "value": "16.5%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "actionsInfo": {
+        "skipMapping": true
+    },
+    "allboxes": [],
+    "allowhorizontalbounce": false,
+    "allowverticalbounce": true,
+    "bounces": true,
+    "canUpdateUI": true,
+    "children": [
+        "flexSeparator",
+        "flexId",
+        "flexSeparator1",
+        "flexInativoData",
+        "flexSeparator2",
+        "flexInativoMotivo",
+        "flexSeparator3",
+        "flexObitoDocumento",
+        "flexSeparator4",
+        "flexInativoDetalhes",
+        "flexSeparator5",
+        "flexNacionalidade",
+        "flexSeparator6",
+        "flexNaturalidade",
+        "flexSeparator7",
+        "flexPai",
+        "flexSeparator8",
+        "flexMae",
+        "flexSeparator9",
+        "flexCivil",
+        "flexSeparator10",
+        "flexRG",
+        "flexSeparator11",
+        "flexCPF",
+        "flexSeparator12",
+        "flexSUS",
+        "flexSeparator13",
+        "flexTituloEleitor",
+        "flexSeparator14",
+        "flexInterditado",
+        "flexSeparator15",
+        "flexInterditadoCurador",
+        "flexSeparator16",
+        "flexInterditadoData",
+        "flexSeparator17",
+        "flexInterditadoCuradorTelefone",
+        "flexSeparator18",
+        "flexInterditadoCuradorEmail",
+        "flexSeparator19",
+        "flexControleCaixaFlag",
+        "flexSeparator20",
+        "flexEvangelicoFlag",
+        "flexSeparator21",
+        "flexEvangelicoTipo",
+        "flexSeparator22",
+        "flexEvangelicoSetor",
+        "flexSeparator23",
+        "flexEvangelicoPastor",
+        "flexSeparator24",
+        "flexEvangelicoMinisterio",
+        "flexSeparator25",
+        "flexEvangelicoDenominacao",
+        "flexSeparator26",
+        "flexEvangelicoAceiteJesusAsilar",
+        "flexSeparator27",
+        "flexEvangelicoDetalhes",
+        "flexSeparator28",
+        "flexMotivoAbrigamento",
+        "flexSeparator29",
+        "flexMotivoEscolha"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "decelerat": false,
+    "dragg": false,
+    "enablescrolling": true,
+    "horizontalscrollindicator": true,
+    "id": "flexFieldsContainer",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "c63a3eb53ea446a3a3ed5776d8e56bed",
+    "layouttype": 4,
+    "name": "kony.ui.FlexScrollContainer",
+    "pagingenabled": false,
+    "parent": "frmClientesDetails",
+    "pf": "frmClientesDetails",
+    "responsiveData": {
+        "b1": {
+            "left": {
+                "type": "string",
+                "value": "10%"
+            },
+            "right": {
+                "type": "string",
+                "value": ""
+            },
+            "width": {
+                "type": "string",
+                "value": "80%"
+            }
+        },
+        "b2": {
+            "left": {
+                "type": "string",
+                "value": "5%"
+            },
+            "right": {
+                "type": "string",
+                "value": "5%"
+            },
+            "width": {
+                "type": "string",
+                "value": "90%"
+            }
+        },
+        "b3": {
+            "left": {
+                "type": "string",
+                "value": "5%"
+            },
+            "right": {
+                "type": "string",
+                "value": "5%"
+            },
+            "width": {
+                "type": "string",
+                "value": "90%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "scrolldirection": 2,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "track": false,
+    "verticalscrollindicator": true,
+    "vizProps": {
+        "dynamicPropertiesConfig": {
+            "dataCollectionId": "records",
+            "flexKUID": "c63a3eb53ea446a3a3ed5776d8e56bed",
+            "methodName": "get",
+            "operationName": "Clientes",
+            "serviceName": "AsilarBD",
+            "serviceType": "objectsvcs",
+            "viewType": "Detail form ui",
+            "widgetsConfig": {
+                "CPF": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "d5fc1aa652824317904211816793ad3b",
+                        "name": {
+                            "kuid": "b3cb62d8f64c4c679dc51b0a57f648e4",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "f0d51b613c304f48baa359789c73bc4e",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "CPF"
+                        },
+                        "generate": true,
+                        "index": 11
+                    }
+                },
+                "Civil": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "b5c837f4a8484f498614381cd23ee88b",
+                        "name": {
+                            "kuid": "de82246617634b0a92681effc433141d",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "jed918179f7c4743bd4891257c0ff2ac",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "Civil"
+                        },
+                        "generate": true,
+                        "index": 9
+                    }
+                },
+                "ControleCaixaFlag": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "f9565f9713c7451da71f4c729f2b039c",
+                        "name": {
+                            "kuid": "caafe25bce564eb4923f160afad5fb5b",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "dccfe292d7ef42d1899cbd5906fefb01",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "ControleCaixaFlag"
+                        },
+                        "generate": true,
+                        "index": 19
+                    }
+                },
+                "EvangelicoAceiteJesusAsilar": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "db09d45d995347f5aea6f42ad9a5b097",
+                        "name": {
+                            "kuid": "h34e15a9144a4f70b1e77053835f783e",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "ddfabe23083140a88a9bb2d9467cad56",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "EvangelicoAceiteJesusAsilar"
+                        },
+                        "generate": true,
+                        "index": 26
+                    }
+                },
+                "EvangelicoDenominacao": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "ae7849fee64242c1adbf3eb5f1943a3f",
+                        "name": {
+                            "kuid": "ia1b4f4a2c0949c9b6eff79cab832468",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "abf62113790f4c919649a7de785a1f08",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "EvangelicoDenominacao"
+                        },
+                        "generate": true,
+                        "index": 25
+                    }
+                },
+                "EvangelicoDetalhes": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "g2478ba24faf43b5a6d721bc4096450a",
+                        "name": {
+                            "kuid": "ea67084ee5324724a69faf0c728d75f2",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "g126fc377811402cadd464a53fc94a93",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "EvangelicoDetalhes"
+                        },
+                        "generate": true,
+                        "index": 27
+                    }
+                },
+                "EvangelicoFlag": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "b9d3537549674813b25710ee79c09f16",
+                        "name": {
+                            "kuid": "e6b74201390845ad91a37b1ae86fd373",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "ebf2820c72f04f82affb109f3cdb6b4e",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "EvangelicoFlag"
+                        },
+                        "generate": true,
+                        "index": 20
+                    }
+                },
+                "EvangelicoMinisterio": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "ffa04b5c854d4a8cabd6472551170e63",
+                        "name": {
+                            "kuid": "fea6b9bbe46c493d9f8bae212d67d81e",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "bac240508f3241a39051bafe1fa479c1",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "EvangelicoMinisterio"
+                        },
+                        "generate": true,
+                        "index": 24
+                    }
+                },
+                "EvangelicoPastor": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "aa659d99eb0d4ca59f302abfe93aaafb",
+                        "name": {
+                            "kuid": "b7e5591ce02247feba2ba7989e23513d",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "fb8770bd106644eba89c1509eb0662d9",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "EvangelicoPastor"
+                        },
+                        "generate": true,
+                        "index": 23
+                    }
+                },
+                "EvangelicoSetor": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "d2e53312df2e41a99dd80569a5c79070",
+                        "name": {
+                            "kuid": "aba7eb16186e48cf950d70b87e63cdc7",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "ae1fff83e5054be988d39f02a63ad8f4",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "EvangelicoSetor"
+                        },
+                        "generate": true,
+                        "index": 22
+                    }
+                },
+                "EvangelicoTipo": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "eea40c3c1621456caeb1eaed93e78990",
+                        "name": {
+                            "kuid": "d3f3fbdb94aa4f59ab928c894c028f4e",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "b864e09a56c84bde9beea427e4abf168",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "EvangelicoTipo"
+                        },
+                        "generate": true,
+                        "index": 21
+                    }
+                },
+                "Id": {
+                    "dataType": "number",
+                    "layoutConfig": {
+                        "kuid": "h1b3ad1ffba94a36ae9897a341d40213",
+                        "name": {
+                            "kuid": "d500b687c7874610a84f1c3e7a1d90fa",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "fcbddeceba704824a443fb4ed202d267",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "Id"
+                        },
+                        "generate": true,
+                        "index": 0
+                    }
+                },
+                "InativoData": {
+                    "dataType": "date",
+                    "layoutConfig": {
+                        "kuid": "e7d44604484f4c28bef9f4b0951c2100",
+                        "name": {
+                            "kuid": "fa10b4c38ff041a79d534748f811c25e",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "b426eda4d90643dda636838f7522812d",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "InativoData"
+                        },
+                        "generate": true,
+                        "index": 1
+                    }
+                },
+                "InativoDetalhes": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "ec744eee497b4d55aad3ee893ab05758",
+                        "name": {
+                            "kuid": "j7477ef1e0f04718a726208040354261",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "d91de750f3c948bf92707f08016c57e1",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "InativoDetalhes"
+                        },
+                        "generate": true,
+                        "index": 4
+                    }
+                },
+                "InativoMotivo": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "bcba7489e402495395ec196c6fb4544a",
+                        "name": {
+                            "kuid": "d9f76e1b5ee0430fbfb1c8d0b0602175",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "dfa4d06fd003492e86c7d00e36454277",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "InativoMotivo"
+                        },
+                        "generate": true,
+                        "index": 2
+                    }
+                },
+                "Interditado": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "j3ed78f8709b41db9fec68f28183a8e5",
+                        "name": {
+                            "kuid": "d36ededefd69433ca2ce04fa4589a226",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "c8abe977b1f040fc9e1427a4746ca8e5",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "Interditado"
+                        },
+                        "generate": true,
+                        "index": 14
+                    }
+                },
+                "InterditadoCurador": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "df5d03ccc665487ca191a46d3ca26bb7",
+                        "name": {
+                            "kuid": "fc3d03bfce1141a79531176d83380612",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "j8deef7d672f4d2f9251138f3f7edbcf",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "InterditadoCurador"
+                        },
+                        "generate": true,
+                        "index": 15
+                    }
+                },
+                "InterditadoCuradorEmail": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "daee920921f843b79f0fe5f4204ad2d8",
+                        "name": {
+                            "kuid": "g34a2143c65b49bfae03833ff994830a",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "g590a8c642db486998748bd42183c738",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "InterditadoCuradorEmail"
+                        },
+                        "generate": true,
+                        "index": 18
+                    }
+                },
+                "InterditadoCuradorTelefone": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "d04361d6232842fd9720cd2ce66bfd2d",
+                        "name": {
+                            "kuid": "ddf91e67158349b6b9f964064eee638c",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "b3de0cae76f647db8923af00af3b69de",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "InterditadoCuradorTelefone"
+                        },
+                        "generate": true,
+                        "index": 17
+                    }
+                },
+                "InterditadoData": {
+                    "dataType": "date",
+                    "layoutConfig": {
+                        "kuid": "ge7cc3446ab642d28869b62a3236f263",
+                        "name": {
+                            "kuid": "a8454d56d9544753bd87239651866302",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "d6da072c3d654a859992544248dbf1df",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "InterditadoData"
+                        },
+                        "generate": true,
+                        "index": 16
+                    }
+                },
+                "Mae": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "h385f07ae30348c58bcc1dae022e0b16",
+                        "name": {
+                            "kuid": "da3f000cecde43628b0d93852dbc9e86",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "dcbececa3c0f418b91c708215b662aba",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "Mae"
+                        },
+                        "generate": true,
+                        "index": 8
+                    }
+                },
+                "MotivoAbrigamento": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "j7dc322c94b4498d8a7b6a1a7ccdee62",
+                        "name": {
+                            "kuid": "a1ba95b2312049d5bfeb2b0f72f33a45",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "d34ac83f65774074bf910521acbc563d",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "MotivoAbrigamento"
+                        },
+                        "generate": true,
+                        "index": 28
+                    }
+                },
+                "MotivoEscolha": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "c4e8429935894067bae7f08b353b2962",
+                        "name": {
+                            "kuid": "e5c6de3667944b1eb60f58098ac2991a",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "c47054c66763453988c7912eaf173790",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "MotivoEscolha"
+                        },
+                        "generate": true,
+                        "index": 29
+                    }
+                },
+                "Nacionalidade": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "h6aad9319d1a4cdfacc3274e8b750548",
+                        "name": {
+                            "kuid": "j8a55dac7629482bbc1daee3deef8617",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "bcf220796c104f08b676c49ad9ad3f3e",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "Nacionalidade"
+                        },
+                        "generate": true,
+                        "index": 5
+                    }
+                },
+                "Naturalidade": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "d6dc297150c148aaba63a55c21d981cc",
+                        "name": {
+                            "kuid": "c3c85c6145ae4a77a1c00e28a08d829e",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "a9297c7d749b433eb3969d25bc0df336",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "Naturalidade"
+                        },
+                        "generate": true,
+                        "index": 6
+                    }
+                },
+                "ObitoDocumento": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "a2959ec5c2314a48bd70df324c072460",
+                        "name": {
+                            "kuid": "ab23c838971f453392e3b0a326dff377",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "j43ff64998f44c1bb7f59644a911c24b",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "ObitoDocumento"
+                        },
+                        "generate": true,
+                        "index": 3
+                    }
+                },
+                "Pai": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "g9c54df3e978467e8967ca5b97fc6175",
+                        "name": {
+                            "kuid": "cc45e97d69d64f729dc8872fbe98e49d",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "ibe1cb7d472f48fe81501c1b25169b37",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "Pai"
+                        },
+                        "generate": true,
+                        "index": 7
+                    }
+                },
+                "RG": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "b9c0ea9a3f2f4a65b4cac04849c29c16",
+                        "name": {
+                            "kuid": "c86a9153ccbd4b68bbf529e984f34cca",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "f7b681c2d1ea4e41b9efd1d4ca50f9d4",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "RG"
+                        },
+                        "generate": true,
+                        "index": 10
+                    }
+                },
+                "SUS": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "be6a398383b24cd38fc34583720bf56e",
+                        "name": {
+                            "kuid": "g671b97b52414921a492626464862561",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "bbd472d67e15440dbf5c6652b35b0414",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "SUS"
+                        },
+                        "generate": true,
+                        "index": 12
+                    }
+                },
+                "TituloEleitor": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "kuid": "e09c6d4bc2ac4162af4b4d93aee8b1c6",
+                        "name": {
+                            "kuid": "e2e1a6fa59c641389791d377f6a3a4d9",
+                            "wType": "Label"
+                        },
+                        "value": {
+                            "kuid": "ee1df4d2578f49e4a9170ac460f99d65",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "TituloEleitor"
+                        },
+                        "generate": true,
+                        "index": 13
+                    }
+                }
+            }
+        }
+    },
+    "wType": "FlexScrollContainer",
+    "widgetalignment": 1
+}

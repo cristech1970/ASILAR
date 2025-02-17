@@ -1,0 +1,30 @@
+{
+    "AS_Button_fc820e3a0c8e4031873d132a2bdcbf46": {
+        "id": "AS_Button_fc820e3a0c8e4031873d132a2bdcbf46",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmClientesDetails",
+            "type": "forms",
+            "KUID": "d6fa6afaf4374a268b543bc5e34f44e8"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__onClick_ef9e9ef635874ea0910b5baec82f92c6",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmClientesGrid",
+            "formKUID": "c7ce286d250148a2b059a2a16d99809d",
+            "projectName": "ASILAR",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": null,
+            "enableMappingEditor": true,
+            "package": "AsilarBD/Clientes",
+            "isCustomInput": false
+        }]
+    }
+}

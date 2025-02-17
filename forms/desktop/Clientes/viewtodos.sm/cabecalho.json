@@ -1,0 +1,130 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "80dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s9f2333c2dbf4e1d84c7fea6726d6f3e",
+    "_top_": {
+        "type": "string",
+        "value": "-6dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "clipbounds": false,
+    "containerweight": 0,
+    "dataDiffs": {
+        "FlexContainer0b2887448741346": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "aff8715fd0d647b0bbf40e30f8139e5c",
+                "srcKUID": "cd22e68715534522a7831ed26a69b662",
+                "wType": "FlexContainer"
+            }
+        },
+        "Image0hc170f6966cf41": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f2612b496f8445c39653fc8b93c1d376",
+                "srcKUID": "a3ab920f16774dd796ce78da32bb050b",
+                "wType": "Image"
+            }
+        },
+        "Label0a9e0a3bba7fc49": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e261db43753347a8a6d9ca4e3cfd72f1",
+                "srcKUID": "d7d04a291cba4291b57c59ff01dc79c2",
+                "wType": "Label"
+            },
+            "responsiveData": {
+                "b1": {
+                    "skin": "s9fa044763b74342b27c4733fb144f7f"
+                }
+            }
+        },
+        "brnMenu": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fbeff2365ac5455d97d44ddaedcff19a",
+                "srcKUID": "b264005e188341169af4358bc8d2ab78",
+                "wType": "Button"
+            },
+            "responsiveData": {
+                "b1": {
+                    "contentAlignment": 5
+                },
+                "b2": {}
+            }
+        },
+        "cabecalho": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "ed6d275f8e284e8baeee61cb775f7723",
+                "srcKUID": "h6fae206fe9f44a4abf6d2535472d47d",
+                "wType": "FlexContainer"
+            },
+            "responsiveData": {
+                "b3": {}
+            }
+        }
+    },
+    "enablescrolling": true,
+    "id": "cabecalho",
+    "info": null,
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "ed6d275f8e284e8baeee61cb775f7723",
+    "layouttype": 2,
+    "masterType": 0,
+    "maxwidth": {
+        "type": "string",
+        "value": ""
+    },
+    "minwidth": {
+        "type": "string",
+        "value": ""
+    },
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "viewtodos",
+    "pf": "viewtodos",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "h6fae206fe9f44a4abf6d2535472d47d",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

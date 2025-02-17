@@ -1,0 +1,722 @@
+{
+    "AS_Button_eef68d13edc3414dbf46e41561972175": {
+        "id": "AS_Button_eef68d13edc3414dbf46e41561972175",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmClientesDetails",
+            "type": "forms",
+            "KUID": "d6fa6afaf4374a268b543bc5e34f44e8"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__j4d1422a58fe4a73b200b334b36d2baa",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmClientesUpdate",
+            "formKUID": "ec8286934a5e43698aed65ecd90236c4",
+            "projectName": "ASILAR",
+            "mappings": {
+                "ME_Mapping_e451c37cd2804623a62dfda82dc8f5f9": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_e451c37cd2804623a62dfda82dc8f5f9",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblIdValue_text",
+                        "widgetId": "lblIdValue",
+                        "widgetPath": "this.view.lblIdValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "fcbddeceba704824a443fb4ed202d267",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_d57cf04b91c24a2b8ba6f3d96c0735a8": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_d57cf04b91c24a2b8ba6f3d96c0735a8",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblInativoDataValue_text",
+                        "widgetId": "lblInativoDataValue",
+                        "widgetPath": "this.view.lblInativoDataValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "b426eda4d90643dda636838f7522812d",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_d7b91c62d78e47608cc7b717508e207f": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_d7b91c62d78e47608cc7b717508e207f",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblInativoMotivoValue_text",
+                        "widgetId": "lblInativoMotivoValue",
+                        "widgetPath": "this.view.lblInativoMotivoValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "dfa4d06fd003492e86c7d00e36454277",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_db7730c809f94f508f206cabbddabc19": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_db7730c809f94f508f206cabbddabc19",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblObitoDocumentoValue_text",
+                        "widgetId": "lblObitoDocumentoValue",
+                        "widgetPath": "this.view.lblObitoDocumentoValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "j43ff64998f44c1bb7f59644a911c24b",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_a89a1dc651df4294addbacd8257d1913": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a89a1dc651df4294addbacd8257d1913",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblInativoDetalhesValue_text",
+                        "widgetId": "lblInativoDetalhesValue",
+                        "widgetPath": "this.view.lblInativoDetalhesValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "d91de750f3c948bf92707f08016c57e1",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_a50de18d97684617ac9d9cbac0ce1f34": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a50de18d97684617ac9d9cbac0ce1f34",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblNacionalidadeValue_text",
+                        "widgetId": "lblNacionalidadeValue",
+                        "widgetPath": "this.view.lblNacionalidadeValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "bcf220796c104f08b676c49ad9ad3f3e",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_gd89b61afaba4ff89c02abec226f2a8e": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_gd89b61afaba4ff89c02abec226f2a8e",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblNaturalidadeValue_text",
+                        "widgetId": "lblNaturalidadeValue",
+                        "widgetPath": "this.view.lblNaturalidadeValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "a9297c7d749b433eb3969d25bc0df336",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_fa217d55b30d41e2a0718ede7c16b720": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_fa217d55b30d41e2a0718ede7c16b720",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblPaiValue_text",
+                        "widgetId": "lblPaiValue",
+                        "widgetPath": "this.view.lblPaiValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "ibe1cb7d472f48fe81501c1b25169b37",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_a6d19b6c3e5045e190d0ed7295fedf6c": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a6d19b6c3e5045e190d0ed7295fedf6c",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblMaeValue_text",
+                        "widgetId": "lblMaeValue",
+                        "widgetPath": "this.view.lblMaeValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "dcbececa3c0f418b91c708215b662aba",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_d86becde9003413b85b04cc748c968b1": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_d86becde9003413b85b04cc748c968b1",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblCivilValue_text",
+                        "widgetId": "lblCivilValue",
+                        "widgetPath": "this.view.lblCivilValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "jed918179f7c4743bd4891257c0ff2ac",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_a645dccbacb84f9aba47e0e1be00aa7e": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a645dccbacb84f9aba47e0e1be00aa7e",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblRGValue_text",
+                        "widgetId": "lblRGValue",
+                        "widgetPath": "this.view.lblRGValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "f7b681c2d1ea4e41b9efd1d4ca50f9d4",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_jaee9915aa0e4b8eb7a6001167eef20e": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_jaee9915aa0e4b8eb7a6001167eef20e",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblCPFValue_text",
+                        "widgetId": "lblCPFValue",
+                        "widgetPath": "this.view.lblCPFValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "f0d51b613c304f48baa359789c73bc4e",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_c64ebaf923e94b979160a799e57d170f": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_c64ebaf923e94b979160a799e57d170f",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblSUSValue_text",
+                        "widgetId": "lblSUSValue",
+                        "widgetPath": "this.view.lblSUSValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "bbd472d67e15440dbf5c6652b35b0414",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_g29835038ba647cc9e6a071a52627651": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_g29835038ba647cc9e6a071a52627651",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblTituloEleitorValue_text",
+                        "widgetId": "lblTituloEleitorValue",
+                        "widgetPath": "this.view.lblTituloEleitorValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "ee1df4d2578f49e4a9170ac460f99d65",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_j258e3d18e304a9cbf9fdbf6293eb484": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_j258e3d18e304a9cbf9fdbf6293eb484",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblInterditadoValue_text",
+                        "widgetId": "lblInterditadoValue",
+                        "widgetPath": "this.view.lblInterditadoValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "c8abe977b1f040fc9e1427a4746ca8e5",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_acaa4e506e554838b5bfe44a97b145f4": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_acaa4e506e554838b5bfe44a97b145f4",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblInterditadoCuradorValue_text",
+                        "widgetId": "lblInterditadoCuradorValue",
+                        "widgetPath": "this.view.lblInterditadoCuradorValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "j8deef7d672f4d2f9251138f3f7edbcf",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_g950a8188c7f41eca592111a86a88f52": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_g950a8188c7f41eca592111a86a88f52",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblInterditadoDataValue_text",
+                        "widgetId": "lblInterditadoDataValue",
+                        "widgetPath": "this.view.lblInterditadoDataValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "d6da072c3d654a859992544248dbf1df",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_bbef70ea7a5849698e68d2ec170543c8": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_bbef70ea7a5849698e68d2ec170543c8",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblInterditadoCuradorTelefoneValue_text",
+                        "widgetId": "lblInterditadoCuradorTelefoneValue",
+                        "widgetPath": "this.view.lblInterditadoCuradorTelefoneValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "b3de0cae76f647db8923af00af3b69de",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ebaf2ebdf26e4a3cafdaf0a5bc749033": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ebaf2ebdf26e4a3cafdaf0a5bc749033",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblInterditadoCuradorEmailValue_text",
+                        "widgetId": "lblInterditadoCuradorEmailValue",
+                        "widgetPath": "this.view.lblInterditadoCuradorEmailValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "g590a8c642db486998748bd42183c738",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_gd13c16f82454b9594e9b4c4104d7bec": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_gd13c16f82454b9594e9b4c4104d7bec",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblControleCaixaFlagValue_text",
+                        "widgetId": "lblControleCaixaFlagValue",
+                        "widgetPath": "this.view.lblControleCaixaFlagValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "dccfe292d7ef42d1899cbd5906fefb01",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ef4ff5dcd7874f5ba14b19a7fcf959c3": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ef4ff5dcd7874f5ba14b19a7fcf959c3",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblEvangelicoFlagValue_text",
+                        "widgetId": "lblEvangelicoFlagValue",
+                        "widgetPath": "this.view.lblEvangelicoFlagValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "ebf2820c72f04f82affb109f3cdb6b4e",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ia6c1a58b50b45a2b76f5aaa77264c57": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ia6c1a58b50b45a2b76f5aaa77264c57",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblEvangelicoTipoValue_text",
+                        "widgetId": "lblEvangelicoTipoValue",
+                        "widgetPath": "this.view.lblEvangelicoTipoValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "b864e09a56c84bde9beea427e4abf168",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_a293b0f680f747a4bad8b31f3894e483": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a293b0f680f747a4bad8b31f3894e483",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblEvangelicoSetorValue_text",
+                        "widgetId": "lblEvangelicoSetorValue",
+                        "widgetPath": "this.view.lblEvangelicoSetorValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "ae1fff83e5054be988d39f02a63ad8f4",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_g425a29331744b648e20f413f8b4688a": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_g425a29331744b648e20f413f8b4688a",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblEvangelicoPastorValue_text",
+                        "widgetId": "lblEvangelicoPastorValue",
+                        "widgetPath": "this.view.lblEvangelicoPastorValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "fb8770bd106644eba89c1509eb0662d9",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_dcf3e6c9622f41998db23080d20f35b8": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_dcf3e6c9622f41998db23080d20f35b8",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblEvangelicoMinisterioValue_text",
+                        "widgetId": "lblEvangelicoMinisterioValue",
+                        "widgetPath": "this.view.lblEvangelicoMinisterioValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "bac240508f3241a39051bafe1fa479c1",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_c62571321fb44f0f8f362698e5895e57": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_c62571321fb44f0f8f362698e5895e57",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblEvangelicoDenominacaoValue_text",
+                        "widgetId": "lblEvangelicoDenominacaoValue",
+                        "widgetPath": "this.view.lblEvangelicoDenominacaoValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "abf62113790f4c919649a7de785a1f08",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_a107fe772c5940b1bb75698c80cf7a74": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a107fe772c5940b1bb75698c80cf7a74",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblEvangelicoAceiteJesusAsilarValue_text",
+                        "widgetId": "lblEvangelicoAceiteJesusAsilarValue",
+                        "widgetPath": "this.view.lblEvangelicoAceiteJesusAsilarValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "ddfabe23083140a88a9bb2d9467cad56",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_hfe64dc5864e4d8296e048e95d8067c4": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_hfe64dc5864e4d8296e048e95d8067c4",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblEvangelicoDetalhesValue_text",
+                        "widgetId": "lblEvangelicoDetalhesValue",
+                        "widgetPath": "this.view.lblEvangelicoDetalhesValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "g126fc377811402cadd464a53fc94a93",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_je06d8790dff468890b4cfdbeea41219": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_je06d8790dff468890b4cfdbeea41219",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblMotivoAbrigamentoValue_text",
+                        "widgetId": "lblMotivoAbrigamentoValue",
+                        "widgetPath": "this.view.lblMotivoAbrigamentoValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "d34ac83f65774074bf910521acbc563d",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_bb2e0cb5c81f428eacd01d7c5941b579": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_bb2e0cb5c81f428eacd01d7c5941b579",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "lblMotivoEscolhaValue_text",
+                        "widgetId": "lblMotivoEscolhaValue",
+                        "widgetPath": "this.view.lblMotivoEscolhaValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "frmClientesDetails",
+                        "widgetKUID": "c47054c66763453988c7912eaf173790",
+                        "itemKUID": "d6fa6afaf4374a268b543bc5e34f44e8",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_e451c37cd2804623a62dfda82dc8f5f9", "ME_Mapping_d57cf04b91c24a2b8ba6f3d96c0735a8", "ME_Mapping_d7b91c62d78e47608cc7b717508e207f", "ME_Mapping_db7730c809f94f508f206cabbddabc19", "ME_Mapping_a89a1dc651df4294addbacd8257d1913", "ME_Mapping_a50de18d97684617ac9d9cbac0ce1f34", "ME_Mapping_gd89b61afaba4ff89c02abec226f2a8e", "ME_Mapping_fa217d55b30d41e2a0718ede7c16b720", "ME_Mapping_a6d19b6c3e5045e190d0ed7295fedf6c", "ME_Mapping_d86becde9003413b85b04cc748c968b1", "ME_Mapping_a645dccbacb84f9aba47e0e1be00aa7e", "ME_Mapping_jaee9915aa0e4b8eb7a6001167eef20e", "ME_Mapping_c64ebaf923e94b979160a799e57d170f", "ME_Mapping_g29835038ba647cc9e6a071a52627651", "ME_Mapping_j258e3d18e304a9cbf9fdbf6293eb484", "ME_Mapping_acaa4e506e554838b5bfe44a97b145f4", "ME_Mapping_g950a8188c7f41eca592111a86a88f52", "ME_Mapping_bbef70ea7a5849698e68d2ec170543c8", "ME_Mapping_ebaf2ebdf26e4a3cafdaf0a5bc749033", "ME_Mapping_gd13c16f82454b9594e9b4c4104d7bec", "ME_Mapping_ef4ff5dcd7874f5ba14b19a7fcf959c3", "ME_Mapping_ia6c1a58b50b45a2b76f5aaa77264c57", "ME_Mapping_a293b0f680f747a4bad8b31f3894e483", "ME_Mapping_g425a29331744b648e20f413f8b4688a", "ME_Mapping_dcf3e6c9622f41998db23080d20f35b8", "ME_Mapping_c62571321fb44f0f8f362698e5895e57", "ME_Mapping_a107fe772c5940b1bb75698c80cf7a74", "ME_Mapping_hfe64dc5864e4d8296e048e95d8067c4", "ME_Mapping_je06d8790dff468890b4cfdbeea41219", "ME_Mapping_bb2e0cb5c81f428eacd01d7c5941b579"],
+            "enableMappingEditor": true,
+            "package": "AsilarBD/Clientes",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"lblIdValue_text\": self.view.lblIdValue.text,\n    \"lblInativoDataValue_text\": self.view.lblInativoDataValue.text,\n    \"lblInativoMotivoValue_text\": self.view.lblInativoMotivoValue.text,\n    \"lblObitoDocumentoValue_text\": self.view.lblObitoDocumentoValue.text,\n    \"lblInativoDetalhesValue_text\": self.view.lblInativoDetalhesValue.text,\n    \"lblNacionalidadeValue_text\": self.view.lblNacionalidadeValue.text,\n    \"lblNaturalidadeValue_text\": self.view.lblNaturalidadeValue.text,\n    \"lblPaiValue_text\": self.view.lblPaiValue.text,\n    \"lblMaeValue_text\": self.view.lblMaeValue.text,\n    \"lblCivilValue_text\": self.view.lblCivilValue.text,\n    \"lblRGValue_text\": self.view.lblRGValue.text,\n    \"lblCPFValue_text\": self.view.lblCPFValue.text,\n    \"lblSUSValue_text\": self.view.lblSUSValue.text,\n    \"lblTituloEleitorValue_text\": self.view.lblTituloEleitorValue.text,\n    \"lblInterditadoValue_text\": self.view.lblInterditadoValue.text,\n    \"lblInterditadoCuradorValue_text\": self.view.lblInterditadoCuradorValue.text,\n    \"lblInterditadoDataValue_text\": self.view.lblInterditadoDataValue.text,\n    \"lblInterditadoCuradorTelefoneValue_text\": self.view.lblInterditadoCuradorTelefoneValue.text,\n    \"lblInterditadoCuradorEmailValue_text\": self.view.lblInterditadoCuradorEmailValue.text,\n    \"lblControleCaixaFlagValue_text\": self.view.lblControleCaixaFlagValue.text,\n    \"lblEvangelicoFlagValue_text\": self.view.lblEvangelicoFlagValue.text,\n    \"lblEvangelicoTipoValue_text\": self.view.lblEvangelicoTipoValue.text,\n    \"lblEvangelicoSetorValue_text\": self.view.lblEvangelicoSetorValue.text,\n    \"lblEvangelicoPastorValue_text\": self.view.lblEvangelicoPastorValue.text,\n    \"lblEvangelicoMinisterioValue_text\": self.view.lblEvangelicoMinisterioValue.text,\n    \"lblEvangelicoDenominacaoValue_text\": self.view.lblEvangelicoDenominacaoValue.text,\n    \"lblEvangelicoAceiteJesusAsilarValue_text\": self.view.lblEvangelicoAceiteJesusAsilarValue.text,\n    \"lblEvangelicoDetalhesValue_text\": self.view.lblEvangelicoDetalhesValue.text,\n    \"lblMotivoAbrigamentoValue_text\": self.view.lblMotivoAbrigamentoValue.text,\n    \"lblMotivoEscolhaValue_text\": self.view.lblMotivoEscolhaValue.text,\n    \"_meta_\": {\n        \"eventName\": \"\",\n        \"widgetId\": \"\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "AS_Button_b678a57237634b759d0cd947db03b6bf": {
+        "id": "AS_Button_b678a57237634b759d0cd947db03b6bf",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmClientesCreate",
+            "type": "forms",
+            "KUID": "ed085eb2c2e445279d198d14efc2b9c6"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__onClick_aa0951109d1b474cb94fc8bf416623f7",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmAsilarBDDashboard",
+            "formKUID": "ie3450f3df1a43418f4bdfdb71cf7abe",
+            "projectName": "ASILAR",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": null,
+            "enableMappingEditor": true,
+            "package": "AsilarBD",
+            "isCustomInput": false
+        }, {
+            "id": "ADD_SNIPPET_onClick_ic102651fdaf43cb904c897e92ff9195",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.destroyForm('frmClientesCreate');",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s74a9f34d31b48c9a9b009f8b5fbab44",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "actionsInfo": {
+        "skipMapping": true
+    },
+    "allboxes": [],
+    "autogrowmode": 1,
+    "breakpointInfo": {
+        "b1": {
+            "width": 1366
+        },
+        "b2": {
+            "width": 1024
+        },
+        "b3": {
+            "width": 640
+        }
+    },
+    "canUpdateUI": true,
+    "children": [
+        "lblId1",
+        "lblInativoData1",
+        "lblInativoMotivo1",
+        "lblObitoDocumento1",
+        "lblInativoDetalhes1",
+        "lblNacionalidade1",
+        "lblNaturalidade1",
+        "lblPai1",
+        "lblMae1",
+        "lblCivil1",
+        "lblRG1",
+        "lblCPF1",
+        "lblSUS1",
+        "lblTituloEleitor1",
+        "lblInterditado1",
+        "lblInterditadoCurador1",
+        "lblInterditadoData1",
+        "lblInterditadoCuradorTelefone1",
+        "lblInterditadoCuradorEmail1",
+        "lblControleCaixaFlag1",
+        "lblEvangelicoFlag1",
+        "lblEvangelicoTipo1",
+        "lblEvangelicoSetor1",
+        "lblEvangelicoPastor1",
+        "lblEvangelicoMinisterio1",
+        "lblEvangelicoDenominacao1",
+        "lblEvangelicoAceiteJesusAsilar1",
+        "lblEvangelicoDetalhes1",
+        "lblMotivoAbrigamento1",
+        "lblMotivoEscolha1"
+    ],
+    "clipbounds": false,
+    "containerId": true,
+    "containerweight": 100,
+    "controllerInfo": {
+        "default": {
+            "channel": "desktop",
+            "name": "FBoxClientesController"
+        }
+    },
+    "enablescrolling": true,
+    "id": "FBoxClientes",
+    "info": null,
+    "isGeneratedTemplate": true,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "afa4399b55354e1b969bd164fa599416",
+    "layouttype": 3,
+    "name": "kony.ui.FlexContainer",
+    "pf": "FBoxClientes",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

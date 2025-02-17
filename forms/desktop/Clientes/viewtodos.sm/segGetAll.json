@@ -1,0 +1,632 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {
+            "lblColunaA1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaA"
+            },
+            "lblColunaB1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaB"
+            },
+            "lblColunaC1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaC"
+            },
+            "lblColunaD1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaD"
+            },
+            "lblColunaE1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaE"
+            },
+            "lblControle1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Controle"
+            },
+            "lblDtNascto1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "DtNascto"
+            },
+            "lblIdade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Idade"
+            },
+            "lblInternacao1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Internacao"
+            },
+            "lblNome1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nome"
+            },
+            "lblResponsaveis1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Responsaveis"
+            },
+            "lblTempoAbrigado1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TempoAbrigado"
+            }
+        },
+        {
+            "lblColunaA1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaA"
+            },
+            "lblColunaB1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaB"
+            },
+            "lblColunaC1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaC"
+            },
+            "lblColunaD1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaD"
+            },
+            "lblColunaE1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaE"
+            },
+            "lblControle1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Controle"
+            },
+            "lblDtNascto1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "DtNascto"
+            },
+            "lblIdade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Idade"
+            },
+            "lblInternacao1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Internacao"
+            },
+            "lblNome1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nome"
+            },
+            "lblResponsaveis1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Responsaveis"
+            },
+            "lblTempoAbrigado1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TempoAbrigado"
+            }
+        },
+        {
+            "lblColunaA1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaA"
+            },
+            "lblColunaB1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaB"
+            },
+            "lblColunaC1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaC"
+            },
+            "lblColunaD1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaD"
+            },
+            "lblColunaE1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaE"
+            },
+            "lblControle1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Controle"
+            },
+            "lblDtNascto1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "DtNascto"
+            },
+            "lblIdade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Idade"
+            },
+            "lblInternacao1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Internacao"
+            },
+            "lblNome1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nome"
+            },
+            "lblResponsaveis1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Responsaveis"
+            },
+            "lblTempoAbrigado1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TempoAbrigado"
+            }
+        },
+        {
+            "lblColunaA1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaA"
+            },
+            "lblColunaB1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaB"
+            },
+            "lblColunaC1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaC"
+            },
+            "lblColunaD1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaD"
+            },
+            "lblColunaE1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaE"
+            },
+            "lblControle1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Controle"
+            },
+            "lblDtNascto1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "DtNascto"
+            },
+            "lblIdade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Idade"
+            },
+            "lblInternacao1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Internacao"
+            },
+            "lblNome1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nome"
+            },
+            "lblResponsaveis1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Responsaveis"
+            },
+            "lblTempoAbrigado1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TempoAbrigado"
+            }
+        },
+        {
+            "lblColunaA1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaA"
+            },
+            "lblColunaB1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaB"
+            },
+            "lblColunaC1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaC"
+            },
+            "lblColunaD1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaD"
+            },
+            "lblColunaE1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaE"
+            },
+            "lblControle1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Controle"
+            },
+            "lblDtNascto1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "DtNascto"
+            },
+            "lblIdade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Idade"
+            },
+            "lblInternacao1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Internacao"
+            },
+            "lblNome1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nome"
+            },
+            "lblResponsaveis1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Responsaveis"
+            },
+            "lblTempoAbrigado1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TempoAbrigado"
+            }
+        },
+        {
+            "lblColunaA1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaA"
+            },
+            "lblColunaB1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaB"
+            },
+            "lblColunaC1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaC"
+            },
+            "lblColunaD1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaD"
+            },
+            "lblColunaE1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaE"
+            },
+            "lblControle1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Controle"
+            },
+            "lblDtNascto1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "DtNascto"
+            },
+            "lblIdade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Idade"
+            },
+            "lblInternacao1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Internacao"
+            },
+            "lblNome1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nome"
+            },
+            "lblResponsaveis1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Responsaveis"
+            },
+            "lblTempoAbrigado1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TempoAbrigado"
+            }
+        },
+        {
+            "lblColunaA1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaA"
+            },
+            "lblColunaB1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaB"
+            },
+            "lblColunaC1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaC"
+            },
+            "lblColunaD1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaD"
+            },
+            "lblColunaE1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaE"
+            },
+            "lblControle1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Controle"
+            },
+            "lblDtNascto1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "DtNascto"
+            },
+            "lblIdade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Idade"
+            },
+            "lblInternacao1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Internacao"
+            },
+            "lblNome1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nome"
+            },
+            "lblResponsaveis1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Responsaveis"
+            },
+            "lblTempoAbrigado1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TempoAbrigado"
+            }
+        },
+        {
+            "lblColunaA1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaA"
+            },
+            "lblColunaB1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaB"
+            },
+            "lblColunaC1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaC"
+            },
+            "lblColunaD1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaD"
+            },
+            "lblColunaE1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaE"
+            },
+            "lblControle1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Controle"
+            },
+            "lblDtNascto1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "DtNascto"
+            },
+            "lblIdade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Idade"
+            },
+            "lblInternacao1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Internacao"
+            },
+            "lblNome1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nome"
+            },
+            "lblResponsaveis1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Responsaveis"
+            },
+            "lblTempoAbrigado1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TempoAbrigado"
+            }
+        },
+        {
+            "lblColunaA1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaA"
+            },
+            "lblColunaB1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaB"
+            },
+            "lblColunaC1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaC"
+            },
+            "lblColunaD1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaD"
+            },
+            "lblColunaE1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaE"
+            },
+            "lblControle1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Controle"
+            },
+            "lblDtNascto1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "DtNascto"
+            },
+            "lblIdade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Idade"
+            },
+            "lblInternacao1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Internacao"
+            },
+            "lblNome1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nome"
+            },
+            "lblResponsaveis1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Responsaveis"
+            },
+            "lblTempoAbrigado1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TempoAbrigado"
+            }
+        },
+        {
+            "lblColunaA1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaA"
+            },
+            "lblColunaB1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaB"
+            },
+            "lblColunaC1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaC"
+            },
+            "lblColunaD1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaD"
+            },
+            "lblColunaE1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ColunaE"
+            },
+            "lblControle1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Controle"
+            },
+            "lblDtNascto1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "DtNascto"
+            },
+            "lblIdade1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Idade"
+            },
+            "lblInternacao1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Internacao"
+            },
+            "lblNome1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nome"
+            },
+            "lblResponsaveis1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Responsaveis"
+            },
+            "lblTempoAbrigado1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TempoAbrigado"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "actionsInfo": {
+        "dataPropertyName": "clientes",
+        "eventAssociationMeta": {
+            "event": "onRowClick",
+            "skipMapping": true
+        },
+        "widgetPropertyName": "rowData"
+    },
+    "alternaterowskin": "sbbfc90cb34c4760bb0afcce800976c0",
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "containerweight": 100,
+    "counter": "09",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "jc3ff1d93828487bbfb953e296d8ca0a",
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segGetAll",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "a97f7fc31cf347f0b4bca060fbd1caa6",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": false,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "parent": "flexHeaderGetAll",
+    "pf": "viewtodos",
+    "responsiveData": {
+        "b1": {
+            "centerX": {
+                "type": "string",
+                "value": ""
+            },
+            "left": {
+                "type": "string",
+                "value": "0%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "jc3ff1d93828487bbfb953e296d8ca0a",
+    "rowcounter": 9,
+    "rowfocusskin": "s27888f5612843dba3cce76400cea322",
+    "rowskin": "sd49f70e0fa64cabb1ff16f0fda2723f",
+    "rowtemplate": "FBoxGetAll",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s6e45efb39ee409e9a8b187ba49ce79d",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": null,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": false,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "lblColunaA1": "lblColunaA1",
+        "lblColunaB1": "lblColunaB1",
+        "lblColunaC1": "lblColunaC1",
+        "lblColunaD1": "lblColunaD1",
+        "lblColunaE1": "lblColunaE1",
+        "lblControle1": "lblControle1",
+        "lblDtNascto1": "lblDtNascto1",
+        "lblIdade1": "lblIdade1",
+        "lblInternacao1": "lblInternacao1",
+        "lblNome1": "lblNome1",
+        "lblResponsaveis1": "lblResponsaveis1",
+        "lblTempoAbrigado1": "lblTempoAbrigado1"
+    }
+}

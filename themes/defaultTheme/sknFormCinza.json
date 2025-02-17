@@ -1,0 +1,14 @@
+{
+  "background_color": "f4f2eeff",
+  "bg_type": "one",
+  "border_color": "ffffffff",
+  "constants": {
+    "background_color": {
+      "key": "color",
+      "value": "${themes.cinzaLinkedin}"
+    }
+  },
+  "isDefaultSkin": false,
+  "kuid": "s4fd4c84b52f454a97dccf8747a278b8",
+  "wType": "Form"
+}

@@ -1,0 +1,104 @@
+{
+    "AS_Form_h3dd5180e7904eb9ac81093d1293792b": {
+        "id": "AS_Form_h3dd5180e7904eb9ac81093d1293792b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "c5ead2c3fe174e12b84051010a50f1bb"
+        },
+        "language": "js",
+        "eventType": "onMapping",
+        "actions": [{
+            "id": "LOADING_INDICATOR_ha2f57ee3f584160b07fcf8e276ced9d",
+            "selectedOption": "show",
+            "type": "LOADING_INDICATOR",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "INVOKE_ASYNC_SERVICE_ce0e2bad45ba4900bf428b09815632b4",
+            "type": "INVOKE_ASYNC_SERVICE",
+            "inputparams": null,
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": true,
+            "mappings": {},
+            "mappingsOrder": [],
+            "serviceconfig": {
+                "servicename": "HCLDomino",
+                "type": "integration",
+                "operationname": "TodosOsClientes",
+                "serviceid": "8bc114a9-ca80-4c93-84fb-f89a2af2be7a",
+                "operationid": "64"
+            },
+            "enableMappingEditor": true
+        }, {
+            "id": "LOADING_INDICATOR_dd5a51e4417d48ffb5bbb59639b9cc4c",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_ASYNC_SERVICE_ce0e2bad45ba4900bf428b09815632b4",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Callback",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "_IF_CONDITION_ie8cd3cce3b64e24b2c68a681ab4d75d",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValue": "TodosOsClientes.opstatus",
+                "rightValue": "0",
+                "leftValueType": "value",
+                "rightValueType": "value",
+                "operator": "==="
+            }],
+            "parentId": "INVOKE_ASYNC_SERVICE_ce0e2bad45ba4900bf428b09815632b4",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "_ELSE_CONDITION_g722dc7af7844d4a8634dc9b6b913438",
+            "type": "ELSE_CONDITION",
+            "conditions": [],
+            "parentId": "INVOKE_ASYNC_SERVICE_ce0e2bad45ba4900bf428b09815632b4",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "SHOW_ALERT_e022af8e4a82454fac715dc78ac39932",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": null,
+            "yesLabel": null,
+            "noLabel": null,
+            "alertIcon": null,
+            "alertMessage": "Data fetch failed! Please try again later.",
+            "messageType": "constant",
+            "alertHandler": null,
+            "parentId": "_ELSE_CONDITION_g722dc7af7844d4a8634dc9b6b913438",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }, {
+            "id": "ADD_MAPPING_fe2268bc3b53467caeb03999206dba89",
+            "type": "ADD_MAPPING",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "_IF_CONDITION_ie8cd3cce3b64e24b2c68a681ab4d75d",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }, {
+            "id": "ADD_SNIPPET_onMapping_ea85acf73b99437dadd8f85d0af1585f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {\n    var templateId = self.view.segTodosOsClientes.rowTemplate;\n    self.view.segTodosOsClientes.data.forEach(function(row) {\n        row[templateId] = {\n            layoutType: kony.flex.FLOW_VERTICAL\n        };\n        Object.keys(row).forEach(function(key) {\n            if (key.includes(\"lbl\")) {\n                row[key].width = '80%';\n                row[key].height = kony.flex.USE_PREFERRED_SIZE;\n            }\n        });\n    });\n    var clonedWidgetDataMap = self.view.segTodosOsClientes.widgetDataMap;\n    clonedWidgetDataMap[templateId] = templateId;\n    self.view.segTodosOsClientes.widgetDataMap = clonedWidgetDataMap;\n    self.view.segTodosOsClientes.setData(self.view.segTodosOsClientes.data);\n    self.view.forceLayout();\n}",
+            "parentId": "_IF_CONDITION_ie8cd3cce3b64e24b2c68a681ab4d75d"
+        }]
+    }
+}

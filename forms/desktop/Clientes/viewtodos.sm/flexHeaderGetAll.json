@@ -1,0 +1,374 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sfa69470419346b1852afc8cc2eb6c84",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "actionsInfo": {
+        "skipMapping": true
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "children": [
+        "flexGetAll",
+        "segGetAll"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flexHeaderGetAll",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "gde23250e0f44ad586678b988915eb52",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "FlexScrollContainerMain",
+    "pf": "viewtodos",
+    "responsiveData": {
+        "b1": {
+            "centerX": {
+                "type": "string",
+                "value": ""
+            },
+            "left": {
+                "type": "string",
+                "value": "1%"
+            },
+            "width": {
+                "type": "string",
+                "value": "98%"
+            }
+        },
+        "b2": {
+            "left": {
+                "type": "string",
+                "value": "5%"
+            },
+            "width": {
+                "type": "string",
+                "value": "90%"
+            }
+        },
+        "b3": {
+            "centerX": {
+                "type": "string",
+                "value": ""
+            },
+            "left": {
+                "type": "string",
+                "value": "1%"
+            },
+            "width": {
+                "type": "string",
+                "value": "98%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "vizProps": {
+        "dynamicPropertiesConfig": {
+            "dataCollectionId": "clientes",
+            "flexKUID": "gc8ee380d44d4644a37c7465e4c2d396",
+            "operationName": "GetAll",
+            "rowTemplateKUID": "jc3ff1d93828487bbfb953e296d8ca0a",
+            "segmentKUID": "a97f7fc31cf347f0b4bca060fbd1caa6",
+            "serviceName": "app_asilar_api",
+            "serviceType": "integration",
+            "viewType": "Grid form ui",
+            "widgetsConfig": {
+                "ColunaA": {
+                    "dataType": "string",
+                    "kuid": "h68081e83b10451e9a7f9906a2173cdd",
+                    "layoutConfig": {
+                        "kuid": "i4a28942b6b647adaa594dccbdd32693",
+                        "name": {
+                            "kuid": "bd2f24551d974c869313427db7defcdd",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "ColunaA"
+                        },
+                        "generate": true,
+                        "index": 9
+                    },
+                    "wType": "Label"
+                },
+                "ColunaB": {
+                    "dataType": "string",
+                    "kuid": "b89d31d1df4441c281ffcda8c009bcbd",
+                    "layoutConfig": {
+                        "kuid": "ee169748ac1e47b495710c274798ab54",
+                        "name": {
+                            "kuid": "a604833b4926451fb79a86c9941deb1b",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "ColunaB"
+                        },
+                        "generate": true,
+                        "index": 10
+                    },
+                    "wType": "Label"
+                },
+                "ColunaC": {
+                    "dataType": "string",
+                    "kuid": "i1e8caa22d84430b9fd741f7e1b80040",
+                    "layoutConfig": {
+                        "kuid": "g976aca9f91641b2b0ce3b88cfac2fe0",
+                        "name": {
+                            "kuid": "ae2886faf82b4ff3923831f6bceba462",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "ColunaC"
+                        },
+                        "generate": true,
+                        "index": 11
+                    },
+                    "wType": "Label"
+                },
+                "ColunaD": {
+                    "dataType": "string",
+                    "kuid": "e234ba5a5e15433da0f98b7b6f16cf39",
+                    "layoutConfig": {
+                        "kuid": "g5b4dcd920bb479fbf51672b0aa89291",
+                        "name": {
+                            "kuid": "j4e15f5576904e4b9dfc1f3b46f296c1",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "ColunaD"
+                        },
+                        "generate": true,
+                        "index": 4
+                    },
+                    "wType": "Label"
+                },
+                "ColunaE": {
+                    "dataType": "string",
+                    "kuid": "j00690f6f6e34dd58f69b5f5da3aa421",
+                    "layoutConfig": {
+                        "kuid": "jb6c3ab86816482d858449073c16518b",
+                        "name": {
+                            "kuid": "d2091ee5387646859908588b01d0dd83",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "ColunaE"
+                        },
+                        "generate": true,
+                        "index": 6
+                    },
+                    "wType": "Label"
+                },
+                "Controle": {
+                    "dataType": "string",
+                    "kuid": "iab357ebbc88406d8bf00eb2f38470b3",
+                    "layoutConfig": {
+                        "kuid": "h2a009b0a0324ae49ed345ae577ae19e",
+                        "name": {
+                            "kuid": "d09df5d530794f719481261b11f927ba",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "Controle"
+                        },
+                        "generate": true,
+                        "index": 1
+                    },
+                    "wType": "Label"
+                },
+                "DtNascto": {
+                    "dataType": "string",
+                    "kuid": "e0ba4e79e0664e93abc881f8d05058b5",
+                    "layoutConfig": {
+                        "kuid": "dbcc702f3d394c389b5fc6f11a6676f2",
+                        "name": {
+                            "kuid": "j6f8e5cc9cf441eab1c7c2637b0fb813",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "DtNascto"
+                        },
+                        "generate": true,
+                        "index": 2
+                    },
+                    "wType": "Label"
+                },
+                "Idade": {
+                    "dataType": "string",
+                    "kuid": "a7e73cad52b64eb5a94a4f14b94d2b14",
+                    "layoutConfig": {
+                        "kuid": "h3ea3b6b638a4c27a9eef92241261138",
+                        "name": {
+                            "kuid": "b9951410cd8c41e6b98a1e462ac992cc",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "Idade"
+                        },
+                        "generate": true,
+                        "index": 0
+                    },
+                    "wType": "Label"
+                },
+                "Internacao": {
+                    "dataType": "string",
+                    "kuid": "i5520f1a339f4d389925453148a7bb45",
+                    "layoutConfig": {
+                        "kuid": "aa9384f25c40453a8d618c4fa3fe0c38",
+                        "name": {
+                            "kuid": "daaf4f74f30b48d6aaa0d91658f240c2",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "Internacao"
+                        },
+                        "generate": true,
+                        "index": 3
+                    },
+                    "wType": "Label"
+                },
+                "Nome": {
+                    "dataType": "string",
+                    "kuid": "j45b1819faf84652993ac96fe8cb9b02",
+                    "layoutConfig": {
+                        "kuid": "a411d6b1e4664a58aca38de7f9723279",
+                        "name": {
+                            "kuid": "e66de9d24a8048c0820f7a450cb0fcb2",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "Nome"
+                        },
+                        "generate": true,
+                        "index": 7
+                    },
+                    "wType": "Label"
+                },
+                "Responsaveis": {
+                    "dataType": "string",
+                    "kuid": "c65fc2dac2b443ee9cd98928b3bf1146",
+                    "layoutConfig": {
+                        "kuid": "d80f7198a7ff46248cdde9ebdc2b2b51",
+                        "name": {
+                            "kuid": "h78ece46ea734b449875591af3489e38",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "Responsaveis"
+                        },
+                        "generate": true,
+                        "index": 8
+                    },
+                    "wType": "Label"
+                },
+                "TempoAbrigado": {
+                    "dataType": "string",
+                    "kuid": "ha1f840ece6e41c99904fee99131b889",
+                    "layoutConfig": {
+                        "kuid": "ae22dd534a40454da9555e65136e627f",
+                        "name": {
+                            "kuid": "a3438e7014be476e8b55c133f59f7f21",
+                            "wType": "Label"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "TempoAbrigado"
+                        },
+                        "generate": true,
+                        "index": 5
+                    },
+                    "wType": "Label"
+                }
+            }
+        }
+    },
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

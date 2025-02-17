@@ -1,0 +1,91 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s6da4d79b6d64be68360f0ecfbd20b34",
+    "_text_": "Nacionalidade",
+    "_top_": {
+        "type": "string",
+        "value": "15dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_wrapping_": 2,
+    "actionsInfo": {
+        "dataCollectionId": "records",
+        "dataPropertyName": "Nacionalidade",
+        "widgetPropertyName": "text"
+    },
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblNacionalidadeValue",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "bcf220796c104f08b676c49ad9ad3f3e",
+    "name": "kony.ui.Label",
+    "parent": "flexNacionalidade",
+    "pf": "frmClientesDetails",
+    "responsiveData": {
+        "b1": {
+            "top": {
+                "type": "string",
+                "value": "15dp"
+            }
+        },
+        "b2": {
+            "top": {
+                "type": "string",
+                "value": "10dp"
+            }
+        },
+        "b3": {
+            "top": {
+                "type": "string",
+                "value": "10dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "tooltip": "",
+    "wType": "Label"
+}

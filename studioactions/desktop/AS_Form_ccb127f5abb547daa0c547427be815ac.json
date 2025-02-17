@@ -1,0 +1,1280 @@
+{
+    "AS_Form_ccb127f5abb547daa0c547427be815ac": {
+        "id": "AS_Form_ccb127f5abb547daa0c547427be815ac",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmClientesGrid",
+            "type": "forms",
+            "KUID": "c7ce286d250148a2b059a2a16d99809d"
+        },
+        "language": "js",
+        "eventType": "onMapping",
+        "actions": [{
+            "id": "LOADING_INDICATOR_e8b42d2433314e4f9c12adaa234a527d",
+            "selectedOption": "show",
+            "type": "LOADING_INDICATOR",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "INVOKE_OBJECT_SERVICE_a0387030efb54cae993988fed06a973d",
+            "type": "INVOKE_OBJECT_SERVICE",
+            "inputparams": null,
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": null,
+            "isoffline": null,
+            "isobject": true,
+            "mappings": {},
+            "mappingsOrder": [],
+            "serviceconfig": {
+                "servicename": "AsilarBD",
+                "type": "objectsvcs",
+                "objectname": "Clientes",
+                "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                "methodname": "get"
+            },
+            "enableMappingEditor": true
+        }, {
+            "id": "LOADING_INDICATOR_c1d277d2b70742208f952cd810173c38",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_OBJECT_SERVICE_a0387030efb54cae993988fed06a973d",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Callback",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "_IF_CONDITION_d0911596dfd04137a6f199034a40ccf5",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValue": "Clientes.opstatus",
+                "rightValue": "0",
+                "leftValueType": "value",
+                "rightValueType": "value",
+                "operator": "==="
+            }],
+            "parentId": "INVOKE_OBJECT_SERVICE_a0387030efb54cae993988fed06a973d",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "_ELSE_CONDITION_ede9c5bfee6e48958978445bcbf00604",
+            "type": "ELSE_CONDITION",
+            "conditions": [],
+            "parentId": "INVOKE_OBJECT_SERVICE_a0387030efb54cae993988fed06a973d",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "SHOW_ALERT_ice4cc52ab3f4a348ea08e22679efaf1",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": null,
+            "yesLabel": null,
+            "noLabel": null,
+            "alertIcon": null,
+            "alertMessage": "Data fetch failed! Please try again later.",
+            "messageType": "constant",
+            "alertHandler": null,
+            "parentId": "_ELSE_CONDITION_ede9c5bfee6e48958978445bcbf00604",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }, {
+            "id": "ADD_MAPPING_b00c48ecc08a4265941089e2d9241ba9",
+            "type": "ADD_MAPPING",
+            "mappings": {
+                "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "records",
+                        "dataType": "collection",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "rowData",
+                        "widgetId": "segClientes",
+                        "widgetPath": "this.view.segClientes",
+                        "widgetType": "Segment",
+                        "dataType": "collection",
+                        "itemId": "frmClientesGrid",
+                        "collectionId": "masterdata",
+                        "widgetKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ib5bbdfb982f4a0dae23e00717285935": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ib5bbdfb982f4a0dae23e00717285935",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Id",
+                        "dataType": "number",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Id\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblId1",
+                        "widgetPath": "this.view.lblId1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "bb39992d83f84f438886eecc2ed142a6",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_cd41e949161f46caa101d16317630e05": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_cd41e949161f46caa101d16317630e05",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "InativoData",
+                        "dataType": "date",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"InativoData\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblInativoData1",
+                        "widgetPath": "this.view.lblInativoData1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "d82550fdbe63417abcc41287388770b9",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_j9070a15d3034f2f90ffb4d0488e1fa0": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_j9070a15d3034f2f90ffb4d0488e1fa0",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "InativoMotivo",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"InativoMotivo\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblInativoMotivo1",
+                        "widgetPath": "this.view.lblInativoMotivo1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "bb2f2eedb0b04779be8ea57afe57ee2f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_gea1973d986246ad95485f799e7385bd": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_gea1973d986246ad95485f799e7385bd",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "ObitoDocumento",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"ObitoDocumento\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblObitoDocumento1",
+                        "widgetPath": "this.view.lblObitoDocumento1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "e3906d9422b74b88afcb90954cfde888",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_a4f2cb9d7106408c86627df6e93b9afd": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a4f2cb9d7106408c86627df6e93b9afd",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "InativoDetalhes",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"InativoDetalhes\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblInativoDetalhes1",
+                        "widgetPath": "this.view.lblInativoDetalhes1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "eb0f3b5b3434493d8f5d586ebeba30ca",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_i4391b7ac0b94a7cb5ace22f5bdaf9b6": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_i4391b7ac0b94a7cb5ace22f5bdaf9b6",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Nacionalidade",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Nacionalidade\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblNacionalidade1",
+                        "widgetPath": "this.view.lblNacionalidade1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "d8f743a021e5490eacb5f04d60d9d48a",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_fb8d475f72a44fe885ca60b4bbd3d97b": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_fb8d475f72a44fe885ca60b4bbd3d97b",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Naturalidade",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Naturalidade\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblNaturalidade1",
+                        "widgetPath": "this.view.lblNaturalidade1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "afefec8e5a644b36ba974c5979a56ea3",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_eec926db575e4f3daf5382dc76da04cf": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_eec926db575e4f3daf5382dc76da04cf",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Pai",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Pai\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblPai1",
+                        "widgetPath": "this.view.lblPai1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "j3301482cd054e4794057fa49388becd",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_f07337bd132044b198ed4c3bfe94462e": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_f07337bd132044b198ed4c3bfe94462e",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Mae",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Mae\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblMae1",
+                        "widgetPath": "this.view.lblMae1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "iba850d9ff094f238e7ba73c6a7dd993",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_j8f237159aef4558bd284ff58a3414f5": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_j8f237159aef4558bd284ff58a3414f5",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Civil",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Civil\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblCivil1",
+                        "widgetPath": "this.view.lblCivil1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "ec01ab0cc6984373a4e109aa0958d48c",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_fd2bf20470fb48328bebe6493436d9b5": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_fd2bf20470fb48328bebe6493436d9b5",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "RG",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"RG\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblRG1",
+                        "widgetPath": "this.view.lblRG1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "ada6cbd6e7b14167a7a21cc8334ad05f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_f3fd590b5eba4abd9759546b1820bc99": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_f3fd590b5eba4abd9759546b1820bc99",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "CPF",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"CPF\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblCPF1",
+                        "widgetPath": "this.view.lblCPF1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "a68fbf0af71f41bea6c443a4d62c434b",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_afd9104852b6483fa266de66b8720592": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_afd9104852b6483fa266de66b8720592",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "SUS",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"SUS\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblSUS1",
+                        "widgetPath": "this.view.lblSUS1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "aea635c1efb242c6b8bf8b81575e6fda",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ia71c12836c742a69bcec39a256cc65f": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ia71c12836c742a69bcec39a256cc65f",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "TituloEleitor",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"TituloEleitor\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblTituloEleitor1",
+                        "widgetPath": "this.view.lblTituloEleitor1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "f45faf856da448db8114c023412f8b67",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_e7941d55945747089795e88e20976aa1": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_e7941d55945747089795e88e20976aa1",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Interditado",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Interditado\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblInterditado1",
+                        "widgetPath": "this.view.lblInterditado1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "e6412b4ce556435980aacfc722f45e39",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_h109f4c42e234c32b334e7d132ba0bc5": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_h109f4c42e234c32b334e7d132ba0bc5",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "InterditadoCurador",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"InterditadoCurador\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblInterditadoCurador1",
+                        "widgetPath": "this.view.lblInterditadoCurador1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "b4eb4402375a4960bc9001e9462ffec8",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_cd87ad52105a46b9a9d589a7f82d8f3a": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_cd87ad52105a46b9a9d589a7f82d8f3a",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "InterditadoData",
+                        "dataType": "date",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"InterditadoData\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblInterditadoData1",
+                        "widgetPath": "this.view.lblInterditadoData1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "e41f9f8508a448b7bea6f9b086787d0e",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_de7bbde189934659a377f76d2011aa5d": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_de7bbde189934659a377f76d2011aa5d",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "InterditadoCuradorTelefone",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"InterditadoCuradorTelefone\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblInterditadoCuradorTelefone1",
+                        "widgetPath": "this.view.lblInterditadoCuradorTelefone1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "d834d141e9c5459e804c4b42477187fe",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_j464bf5fafc84aa2924f52855611df83": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_j464bf5fafc84aa2924f52855611df83",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "InterditadoCuradorEmail",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"InterditadoCuradorEmail\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblInterditadoCuradorEmail1",
+                        "widgetPath": "this.view.lblInterditadoCuradorEmail1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "j0f76d02935449ce95d4a14b31ffbfc3",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_b38c73e7a4cc465b90e58a368cb164cf": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_b38c73e7a4cc465b90e58a368cb164cf",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "ControleCaixaFlag",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"ControleCaixaFlag\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblControleCaixaFlag1",
+                        "widgetPath": "this.view.lblControleCaixaFlag1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "c3203292f0d546fc8cbdc33d41e1a67a",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_h4555d9f85404ca5a3be3b68e0e455e1": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_h4555d9f85404ca5a3be3b68e0e455e1",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "EvangelicoFlag",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"EvangelicoFlag\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblEvangelicoFlag1",
+                        "widgetPath": "this.view.lblEvangelicoFlag1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "ae4dac76aa764e8891a6889f24597d1f",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_abeabc2922284bf481bde2dbc5087adb": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_abeabc2922284bf481bde2dbc5087adb",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "EvangelicoTipo",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"EvangelicoTipo\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblEvangelicoTipo1",
+                        "widgetPath": "this.view.lblEvangelicoTipo1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "e3e158af89a746d99de96f5bc6cfea8a",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_f546cb7e8f7541c19bf13593cf7bb702": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_f546cb7e8f7541c19bf13593cf7bb702",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "EvangelicoSetor",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"EvangelicoSetor\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblEvangelicoSetor1",
+                        "widgetPath": "this.view.lblEvangelicoSetor1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "i62e6f46aa3145b98ea84292a4de4d8a",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ee27ed9f84c845268e7a57e5e599c6c8": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ee27ed9f84c845268e7a57e5e599c6c8",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "EvangelicoPastor",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"EvangelicoPastor\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblEvangelicoPastor1",
+                        "widgetPath": "this.view.lblEvangelicoPastor1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "aa341dbdbc084b9abe064317c9d397a4",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_j77eb72ecb554fa788e49daede6347ac": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_j77eb72ecb554fa788e49daede6347ac",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "EvangelicoMinisterio",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"EvangelicoMinisterio\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblEvangelicoMinisterio1",
+                        "widgetPath": "this.view.lblEvangelicoMinisterio1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "b64b2ec3170c46789a989fff457bf6d2",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_habece34c1b74c90b0c4df726b268d1b": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_habece34c1b74c90b0c4df726b268d1b",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "EvangelicoDenominacao",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"EvangelicoDenominacao\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblEvangelicoDenominacao1",
+                        "widgetPath": "this.view.lblEvangelicoDenominacao1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "ja8e106bb12d4757899046c87d595b38",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_b5e4bc24b4004f4dbe6fe4786bd26bda": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_b5e4bc24b4004f4dbe6fe4786bd26bda",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "EvangelicoAceiteJesusAsilar",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"EvangelicoAceiteJesusAsilar\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblEvangelicoAceiteJesusAsilar1",
+                        "widgetPath": "this.view.lblEvangelicoAceiteJesusAsilar1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "ca888e9659b44b5486341417b7e191c1",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_i790bc11c8554796b1a52e654c7a3075": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_i790bc11c8554796b1a52e654c7a3075",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "EvangelicoDetalhes",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"EvangelicoDetalhes\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblEvangelicoDetalhes1",
+                        "widgetPath": "this.view.lblEvangelicoDetalhes1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "a83b99e2f88d4411a325aaa42c739c07",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_h9b255eed6f947c0950b18adbfc2d0df": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_h9b255eed6f947c0950b18adbfc2d0df",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "MotivoAbrigamento",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"MotivoAbrigamento\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblMotivoAbrigamento1",
+                        "widgetPath": "this.view.lblMotivoAbrigamento1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "df169514ae8c4ac7b7841bb02ac61b4e",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_f1eeb46af9fb456dae4d91d50b4f2ed0": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_f1eeb46af9fb456dae4d91d50b4f2ed0",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "MotivoEscolha",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"MotivoEscolha\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarBD",
+                            "type": "objectsvcs",
+                            "objectname": "Clientes",
+                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblMotivoEscolha1",
+                        "widgetPath": "this.view.lblMotivoEscolha1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "frmClientesGrid",
+                        "parentMappingId": "ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6",
+                        "segmentId": "segClientes",
+                        "segmentKUID": "jda82769ade24c3596dbbadc71ccec4f",
+                        "widgetKUID": "c0e22c04bed94c1fa6f8d9bc18a0bf47",
+                        "itemKUID": "c7ce286d250148a2b059a2a16d99809d",
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_b19577ed9ffd446f837d8d36be1e68b6", "ME_Mapping_ib5bbdfb982f4a0dae23e00717285935", "ME_Mapping_cd41e949161f46caa101d16317630e05", "ME_Mapping_j9070a15d3034f2f90ffb4d0488e1fa0", "ME_Mapping_gea1973d986246ad95485f799e7385bd", "ME_Mapping_a4f2cb9d7106408c86627df6e93b9afd", "ME_Mapping_i4391b7ac0b94a7cb5ace22f5bdaf9b6", "ME_Mapping_fb8d475f72a44fe885ca60b4bbd3d97b", "ME_Mapping_eec926db575e4f3daf5382dc76da04cf", "ME_Mapping_f07337bd132044b198ed4c3bfe94462e", "ME_Mapping_j8f237159aef4558bd284ff58a3414f5", "ME_Mapping_fd2bf20470fb48328bebe6493436d9b5", "ME_Mapping_f3fd590b5eba4abd9759546b1820bc99", "ME_Mapping_afd9104852b6483fa266de66b8720592", "ME_Mapping_ia71c12836c742a69bcec39a256cc65f", "ME_Mapping_e7941d55945747089795e88e20976aa1", "ME_Mapping_h109f4c42e234c32b334e7d132ba0bc5", "ME_Mapping_cd87ad52105a46b9a9d589a7f82d8f3a", "ME_Mapping_de7bbde189934659a377f76d2011aa5d", "ME_Mapping_j464bf5fafc84aa2924f52855611df83", "ME_Mapping_b38c73e7a4cc465b90e58a368cb164cf", "ME_Mapping_h4555d9f85404ca5a3be3b68e0e455e1", "ME_Mapping_abeabc2922284bf481bde2dbc5087adb", "ME_Mapping_f546cb7e8f7541c19bf13593cf7bb702", "ME_Mapping_ee27ed9f84c845268e7a57e5e599c6c8", "ME_Mapping_j77eb72ecb554fa788e49daede6347ac", "ME_Mapping_habece34c1b74c90b0c4df726b268d1b", "ME_Mapping_b5e4bc24b4004f4dbe6fe4786bd26bda", "ME_Mapping_i790bc11c8554796b1a52e654c7a3075", "ME_Mapping_h9b255eed6f947c0950b18adbfc2d0df", "ME_Mapping_f1eeb46af9fb456dae4d91d50b4f2ed0"],
+            "parentId": "_IF_CONDITION_d0911596dfd04137a6f199034a40ccf5",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }, {
+            "id": "ADD_SNIPPET_onMapping_acc285a3474f484fa44892e6622f83ca",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {\n    var templateId = self.view.segClientes.rowTemplate;\n    self.view.segClientes.data.forEach(function(row) {\n        row[templateId] = {\n            layoutType: kony.flex.FLOW_VERTICAL\n        };\n        Object.keys(row).forEach(function(key) {\n            if (key.includes(\"lbl\")) {\n                row[key].width = '80%';\n                row[key].height = kony.flex.USE_PREFERRED_SIZE;\n            }\n        });\n    });\n    var clonedWidgetDataMap = self.view.segClientes.widgetDataMap;\n    clonedWidgetDataMap[templateId] = templateId;\n    self.view.segClientes.widgetDataMap = clonedWidgetDataMap;\n    self.view.segClientes.setData(self.view.segClientes.data);\n    self.view.forceLayout();\n}",
+            "parentId": "_IF_CONDITION_d0911596dfd04137a6f199034a40ccf5"
+        }]
+    }
+}

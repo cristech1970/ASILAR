@@ -1,0 +1,29 @@
+{
+    "Azul1": {
+        "color": {
+            "value": "003e75ff"
+        },
+        "colorType": {
+            "value": "one"
+        },
+        "type": "color"
+    },
+    "azul2": {
+        "color": {
+            "value": "0975a3ff"
+        },
+        "colorType": {
+            "value": "one"
+        },
+        "type": "color"
+    },
+    "cinzaLinkedin": {
+        "color": {
+            "value": "f4f2eeff"
+        },
+        "colorType": {
+            "value": "one"
+        },
+        "type": "color"
+    }
+}

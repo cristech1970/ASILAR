@@ -1,0 +1,57 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s5d2efa667354f979ccdb0b118bd1aaa",
+    "_text_": "Clientes",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "actionsInfo": {
+        "skipMapping": true
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s5d2efa667354f979ccdb0b118bd1aaa",
+    "id": "btnClientes",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "b588cf57b5994766b17dff4e7a77d98a",
+    "name": "kony.ui.Button",
+    "parent": "flexBreadcrumb",
+    "pf": "frmClientesGrid",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button"
+}

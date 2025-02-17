@@ -1,0 +1,175 @@
+{
+    "AS_Button_e639b9f06f1f4736984d7ffac617fd42": {
+        "id": "AS_Button_e639b9f06f1f4736984d7ffac617fd42",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Login",
+            "type": "forms",
+            "platform": null,
+            "KUID": "c09971a3c9d944d4b9b150c36e907041"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__f1366a874d0947d2a3001da77ce7c46e",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "Login",
+            "formKUID": "c09971a3c9d944d4b9b150c36e907041",
+            "projectName": "ASILAR",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "SHOW_ALERT_f518da10513f411493c8d14a7d93bbf1",
+            "callbackType": "True",
+            "enableMappingEditor": true,
+            "package": "Acesso",
+            "isCustomInput": false
+        }, {
+            "id": "LOADING_INDICATOR_j8a95b53884e4c63899fd7937bd51af6",
+            "selectedOption": "show",
+            "type": "LOADING_INDICATOR",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "INVOKE_IDENTITY_SERVICE_de3aa9b50d3a479ba9474e3118ecf829",
+            "type": "INVOKE_IDENTITY_SERVICE",
+            "mappings": {
+                "ME_Mapping_cba111c341434ae39a49b1601e92967e": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_cba111c341434ae39a49b1601e92967e",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxuserid",
+                        "widgetPath": "this.view.tbxuserid",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "Login",
+                        "widgetKUID": "f45e8e17bcfb4d3c8f5eafb3c233ca64",
+                        "itemKUID": "c09971a3c9d944d4b9b150c36e907041",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "userid",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarLdap",
+                            "type": "identity",
+                            "operationname": "login",
+                            "serviceid": "11bea183-2b52-49b1-af03-c02ac1f09fcc",
+                            "login_type": "basic",
+                            "isDeepLinkRequired": false
+                        }
+                    }
+                },
+                "ME_Mapping_bea885fc7a124c5fb9d8fb876c017efe": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_bea885fc7a124c5fb9d8fb876c017efe",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxpassword",
+                        "widgetPath": "this.view.tbxpassword",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "Login",
+                        "widgetKUID": "cb58c64faee949e289564df63b1c1249",
+                        "itemKUID": "c09971a3c9d944d4b9b150c36e907041",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "password",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "AsilarLdap",
+                            "type": "identity",
+                            "operationname": "login",
+                            "serviceid": "11bea183-2b52-49b1-af03-c02ac1f09fcc",
+                            "login_type": "basic",
+                            "isDeepLinkRequired": false
+                        }
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_cba111c341434ae39a49b1601e92967e", "ME_Mapping_bea885fc7a124c5fb9d8fb876c017efe"],
+            "serviceconfig": {
+                "servicename": "AsilarLdap",
+                "type": "identity",
+                "operationname": "login",
+                "serviceid": "11bea183-2b52-49b1-af03-c02ac1f09fcc",
+                "login_type": "basic",
+                "isDeepLinkRequired": false
+            },
+            "enableMappingEditor": true,
+            "useDeviceBrowser": false,
+            "isDeepLinkRequired": false
+        }, {
+            "id": "LOADING_INDICATOR_ad37276c89204aa7b095e04985a93160",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_IDENTITY_SERVICE_de3aa9b50d3a479ba9474e3118ecf829",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Success",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "NAVIGATE_TO_FORM__j15f5b4b39164840bb68af57fa16e968",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmAsilarBDDashboard",
+            "formKUID": "ie3450f3df1a43418f4bdfdb71cf7abe",
+            "projectName": "ASILAR",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "INVOKE_IDENTITY_SERVICE_de3aa9b50d3a479ba9474e3118ecf829",
+            "callbackType": "Success",
+            "enableMappingEditor": true,
+            "package": "AsilarBD",
+            "isCustomInput": false
+        }, {
+            "id": "LOADING_INDICATOR_ae59b68a234c406eb538aa90ab342e58",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_IDENTITY_SERVICE_de3aa9b50d3a479ba9474e3118ecf829",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Failure",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "SHOW_ALERT_f518da10513f411493c8d14a7d93bbf1",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": null,
+            "yesLabel": null,
+            "noLabel": null,
+            "alertIcon": null,
+            "alertMessage": "Login failed. Please try again.",
+            "messageType": "constant",
+            "alertHandler": null,
+            "parentId": "INVOKE_IDENTITY_SERVICE_de3aa9b50d3a479ba9474e3118ecf829",
+            "callbackType": "Failure",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }]
+    }
+}

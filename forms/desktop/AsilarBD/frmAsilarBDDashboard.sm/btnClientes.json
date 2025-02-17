@@ -1,0 +1,79 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "165dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sf4329314c5346979bd88470987ca7b7",
+    "_text_": "Clientes",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "30%"
+    },
+    "actionsInfo": {
+        "eventAssociationMeta": {
+            "actionTemplates": [
+                {
+                    "action_tag": "navigate_to_object_form",
+                    "event": "onClick",
+                    "template": {
+                        "navigationAction": {
+                            "formKUID": "c7ce286d250148a2b059a2a16d99809d",
+                            "id": "NAVIGATE_TO_FORM_f41a81b1766a43bb8b19a2cfba2e5350",
+                            "parentId": null,
+                            "type": "NAVIGATE_TO_FORM"
+                        }
+                    }
+                }
+            ]
+        },
+        "formKUID": "c7ce286d250148a2b059a2a16d99809d",
+        "skipMapping": true
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sf4329314c5346979bd88470987ca7b7",
+    "id": "btnClientes",
+    "ide_onClick": "AS_Button_h471eebc6f1949089f88b8e93165794d",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "ee2b7b82323c434a8b63cf46a010c701",
+    "name": "kony.ui.Button",
+    "parent": "flexinternalRows",
+    "pf": "frmAsilarBDDashboard",
+    "responsiveData": {
+        "b3": {
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button"
+}

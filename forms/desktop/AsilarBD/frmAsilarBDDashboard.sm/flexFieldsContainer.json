@@ -1,0 +1,93 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "83.5%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_right_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_skin_": "s80f9f123e074612953917c3b34e4e67",
+    "_top_": {
+        "type": "string",
+        "value": "16.5%"
+    },
+    "actionsInfo": {
+        "skipMapping": true
+    },
+    "allboxes": [],
+    "allowhorizontalbounce": false,
+    "allowverticalbounce": true,
+    "bounces": true,
+    "canUpdateUI": true,
+    "children": [
+        "flexinternalRows"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "decelerat": false,
+    "dragg": false,
+    "enablescrolling": true,
+    "horizontalscrollindicator": true,
+    "id": "flexFieldsContainer",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f78b7455d0e74f70991729250934e7c6",
+    "layouttype": 4,
+    "name": "kony.ui.FlexScrollContainer",
+    "pagingenabled": false,
+    "parent": "frmAsilarBDDashboard",
+    "pf": "frmAsilarBDDashboard",
+    "responsiveData": {
+        "b2": {
+            "left": {
+                "type": "string",
+                "value": "5%"
+            },
+            "right": {
+                "type": "string",
+                "value": "5%"
+            }
+        },
+        "b3": {
+            "left": {
+                "type": "string",
+                "value": "5%"
+            },
+            "right": {
+                "type": "string",
+                "value": "5%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "scrolldirection": 2,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "track": false,
+    "verticalscrollindicator": true,
+    "wType": "FlexScrollContainer",
+    "widgetalignment": 1
+}

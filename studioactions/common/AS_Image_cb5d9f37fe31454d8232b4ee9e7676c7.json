@@ -1,0 +1,39 @@
+{
+    "AS_Image_cb5d9f37fe31454d8232b4ee9e7676c7": {
+        "id": "AS_Image_cb5d9f37fe31454d8232b4ee9e7676c7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "userwidgetmodel",
+            "type": "userwidgets",
+            "KUID": "ud366e8641e540b38217cf014f9fd38b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "SET_FORM_WIDGET_PROPERTY_Untitled__e3fb272ac2404922856cacda3a256bdb",
+            "type": "SET_WIDGET_PROPERTY",
+            "itemType": "COMPONENT",
+            "itemId": "userwidgetmodel",
+            "widgetId": "flxError",
+            "propertyName": "isVisible",
+            "propertyValue": "false",
+            "itemKUID": "ud366e8641e540b38217cf014f9fd38b",
+            "widgetKUID": "ua773cf41a534b8ab8ca9ca80d426886",
+            "isSkinProperty": false,
+            "wType": "FlexContainer",
+            "forkedPlatform": "all",
+            "parentId": null,
+            "callbackType": null,
+            "widgetPath": "this.view.flxError"
+        }]
+    }
+}

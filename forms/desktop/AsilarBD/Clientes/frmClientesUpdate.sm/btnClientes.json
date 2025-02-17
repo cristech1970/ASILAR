@@ -1,0 +1,74 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s5d2efa667354f979ccdb0b118bd1aaa",
+    "_text_": "Clientes",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "actionsInfo": {
+        "eventAssociationMeta": {
+            "actionTemplates": [
+                {
+                    "action_tag": "back_navigation_to_list",
+                    "event": "onClick",
+                    "template": {
+                        "navigationAction": {
+                            "formKUID": "c7ce286d250148a2b059a2a16d99809d",
+                            "id": "NAVIGATE_TO_FORM_e55cdbf75f5449159c600f83ef8c03f9",
+                            "parentId": null,
+                            "type": "NAVIGATE_TO_FORM"
+                        }
+                    }
+                }
+            ]
+        },
+        "skipMapping": true
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s5d2efa667354f979ccdb0b118bd1aaa",
+    "id": "btnClientes",
+    "ide_onClick": "AS_Button_d302e0a0100c44ba8065d15ba7ab021a",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "a06942cb19ad4b2c8919254f0991a3d0",
+    "name": "kony.ui.Button",
+    "parent": "flexBreadcrumb",
+    "pf": "frmClientesUpdate",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button"
+}

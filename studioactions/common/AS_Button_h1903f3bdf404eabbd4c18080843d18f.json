@@ -1,0 +1,27 @@
+{
+    "AS_Button_h1903f3bdf404eabbd4c18080843d18f": {
+        "id": "AS_Button_h1903f3bdf404eabbd4c18080843d18f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "userwidgetmodel",
+            "type": "userwidgets",
+            "KUID": "ud366e8641e540b38217cf014f9fd38b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ha5e7a9d7b0348b6b91d9c3be4d23316",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "validateUsernameAndPassword",
+            "display": "validateUsernameAndPassword",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

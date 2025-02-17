@@ -1,0 +1,22 @@
+{
+    "AS_FlexContainer_fe8ed8d6754043ecaded652c93752aee": {
+        "id": "AS_FlexContainer_fe8ed8d6754043ecaded652c93752aee",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_h1b889e8f88a47db86f25617b5a4ceb4",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "expandirMenu",
+            "display": "expandirMenu",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

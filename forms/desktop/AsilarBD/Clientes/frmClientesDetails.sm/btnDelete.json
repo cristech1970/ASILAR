@@ -1,0 +1,181 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "65%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s229690ea07a4f289fcb294f85971c33",
+    "_text_": "Delete",
+    "_width_": {
+        "type": "string",
+        "value": "15%"
+    },
+    "actionsInfo": {
+        "eventAssociationMeta": {
+            "actionTemplates": [
+                {
+                    "action_tag": "delete_record",
+                    "event": "onClick",
+                    "template": {
+                        "dismissLoadingIndicator": {
+                            "callbackType": "Callback",
+                            "id": "LOADING_INDICATOR_d0b3e35850234363a18bb3a20eb60f84",
+                            "parentId": "INVOKE_OBJECT_SERVICE_f79f9fda13f942f1b6b7ad82719f2652",
+                            "selectedOption": "dismiss",
+                            "type": "LOADING_INDICATOR"
+                        },
+                        "failureAlert": {
+                            "alertMessage": "Record deletion failed! Please try again later.",
+                            "alertType": "constants.ALERT_TYPE_INFO",
+                            "id": "SHOW_ALERT_edd6c270a31e40c49474475af4ca15df",
+                            "parentId": "ELSE_CONDITION_a65b53c578b44a93a27fa4e39ac90269",
+                            "type": "SHOW_ALERT"
+                        },
+                        "failureCondition": {
+                            "callbackType": "Callback",
+                            "id": "ELSE_CONDITION_a65b53c578b44a93a27fa4e39ac90269",
+                            "parentId": "INVOKE_OBJECT_SERVICE_f79f9fda13f942f1b6b7ad82719f2652",
+                            "type": "ELSE_CONDITION"
+                        },
+                        "navigateBackToList": {
+                            "formKUID": "c7ce286d250148a2b059a2a16d99809d",
+                            "id": "NAVIGATE_TO_FORM_e614fa3a8f7b4977913156f79e48a2a0",
+                            "parentId": "IF_CONDITION_cd1188d8c82e4d83af79f98aca520424",
+                            "type": "NAVIGATE_TO_FORM"
+                        },
+                        "serviceCall": {
+                            "id": "INVOKE_OBJECT_SERVICE_f79f9fda13f942f1b6b7ad82719f2652",
+                            "mappings": {
+                                "ME_Mapping_b61e5ff156d94f49a287cffe783d761c": {
+                                    "id": "ME_Mapping_b61e5ff156d94f49a287cffe783d761c",
+                                    "source": {
+                                        "propertyName": "text",
+                                        "type": "Forms",
+                                        "widgetKUID": "fcbddeceba704824a443fb4ed202d267"
+                                    },
+                                    "target": {
+                                        "propertyName": "Id",
+                                        "serviceconfig": {
+                                            "methodname": "delete",
+                                            "objectname": "Clientes",
+                                            "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                                            "servicename": "AsilarBD",
+                                            "type": "objectsvcs"
+                                        },
+                                        "type": "Services"
+                                    }
+                                }
+                            },
+                            "mappingsOrder": [
+                                "ME_Mapping_b61e5ff156d94f49a287cffe783d761c"
+                            ],
+                            "serviceconfig": {
+                                "methodname": "delete",
+                                "objectname": "Clientes",
+                                "serviceid": "a0d88a0c-8bc3-4874-b29d-c177048c7fc6",
+                                "servicename": "AsilarBD",
+                                "type": "objectsvcs"
+                            },
+                            "type": "INVOKE_OBJECT_SERVICE"
+                        },
+                        "showLoadingIndicator": {
+                            "id": "LOADING_INDICATOR_h248fda0ac7c4afeb4837a4c4aa47ac6",
+                            "selectedOption": "show",
+                            "type": "LOADING_INDICATOR"
+                        },
+                        "successCondition": {
+                            "callbackType": "Callback",
+                            "conditions": [
+                                {
+                                    "leftValue": "Clientes.opstatus",
+                                    "leftValueType": "value",
+                                    "operator": "===",
+                                    "rightValue": "0",
+                                    "rightValueType": "value"
+                                }
+                            ],
+                            "id": "IF_CONDITION_cd1188d8c82e4d83af79f98aca520424",
+                            "parentId": "INVOKE_OBJECT_SERVICE_f79f9fda13f942f1b6b7ad82719f2652",
+                            "type": "IF_CONDITION"
+                        }
+                    }
+                }
+            ]
+        },
+        "skipMapping": true
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s8dd6d03b90d48eba7ed80e57cc26388",
+    "id": "btnDelete",
+    "ide_onClick": "AS_Button_edf32552f2cf46418d12376a441ad4e8",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "e00a6865f1fc4c2e8585d2caf6698452",
+    "name": "kony.ui.Button",
+    "parent": "flexSquaredBorderedButton",
+    "pf": "frmClientesDetails",
+    "responsiveData": {
+        "b1": {
+            "height": {
+                "type": "string",
+                "value": "65%"
+            },
+            "width": {
+                "type": "string",
+                "value": "15%"
+            }
+        },
+        "b2": {
+            "height": {
+                "type": "string",
+                "value": "70%"
+            },
+            "width": {
+                "type": "string",
+                "value": "31%"
+            }
+        },
+        "b3": {
+            "height": {
+                "type": "string",
+                "value": "70%"
+            },
+            "width": {
+                "type": "string",
+                "value": "31%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button"
+}

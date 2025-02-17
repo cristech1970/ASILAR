@@ -1,0 +1,30 @@
+{
+    "AS_FlexContainer_fa08f3b5ab88427aa6268a32b39b8b8d": {
+        "id": "AS_FlexContainer_fa08f3b5ab88427aa6268a32b39b8b8d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "f34adeca54cb4cf2b540ad722cbb125f"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__db5c5f337c2e49a68e0c95817fc6eb02",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "recolheMenu",
+            "display": "recolheMenu",
+            "inputparams": [{
+                "name": "eventobject"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}
